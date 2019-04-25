@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
     <meta charset="UTF-8">
+    <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load static %}
     <link rel="icon" type="image/png" href="{% static 'login/images/icons/favicon.ico' %}"/>
@@ -20,15 +20,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'login/css/main.css' %}">
 </head>
 <body>
-
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100">
-            <form class="login100-form validate-form" method="post" action="">
+            <form class="login100-form validate-form">
                 {% csrf_token %}
                 <span class="login100-form-title p-b-26">
-						Welcome To E-Procurement
-					</span>
+                    Sign Up
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Username">
+                    <input class="input100" type="text" name="username">
+                    <span class="focus-input100" data-placeholder="Username"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="">
+                    <input class="input100" type="text" name="companyName">
+                    <span class="focus-input100" data-placeholder="Company Name"></span>
+                </div>
+
                 <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
                     <input class="input100" type="text" name="email">
                     <span class="focus-input100" data-placeholder="Email"></span>
@@ -42,34 +52,27 @@
                     <span class="focus-input100" data-placeholder="Password"></span>
                 </div>
 
+                <div>
+                    <label class="label--block">Account type</label>
+                    <label class="radio-container m-r-55">Bidder
+                        <input type="radio" checked="checked" name="ac_type">
+                    </label>
+                    <label class="radio-container">Seller
+                        <input type="radio" name="ac_type">
+                    </label>
+                </div>
                 <div class="container-login100-form-btn">
                     <div class="wrap-login100-form-btn">
                         <div class="login100-form-bgbtn"></div>
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
+                        <button class="login100-form-btn" type="submit">Sign Up</button>
                     </div>
                 </div>
+
             </form>
-            <div class="text-center p-t-65">
-						<span class="txt1">
-							Don’t have an account?
-						</span>
-
-                <a class="txt2" href="sign up/signup.html">
-                    Sign Up
-                </a>
-            </div>
-
-            <div class="text-center p-t-45">
-                <a class="txt2" href="">
-                    Forgot password?
-                </a>
-            </div>
         </div>
     </div>
 </div>
-
+</body>
 <script src="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
 <script src="{% static 'login/vendor/animsition/js/animsition.min.js' %}"></script>
 <script src="{% static 'login/vendor/bootstrap/js/popper.js' %}"></script>
@@ -80,5 +83,4 @@
 <script src="{% static 'login/vendor/countdowntime/countdowntime.js' %}"></script>
 <script src="{% static 'login/js/main.js' %}"></script>
 
-</body>
 </html>
