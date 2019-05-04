@@ -1,0 +1,82 @@
+{% extends "home/base.html" %}
+{% block title %}
+    Home
+{% endblock %}
+{% block body %}
+    <section id="menu-0">
+        <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+            <div class="container">
+
+                <div class="mbr-table">
+                   <div class="mbr-table-cell">
+                        <div class="navbar-brand">
+                            <a class="mbr-iconfont mbr-iconfont-menu navbar-caption" href="{% url "bidderHome" %}">HOME</a>
+                        </div>
+                    </div>
+                    <div class="mbr-table-cell">
+                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                            id="exCollapsingNavbar">
+                            <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </section>
+
+    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-6" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+
+        <div class="container">
+            <p class="text-xs-center">E-PROCUREMENT</p>
+        </div>
+    </footer>
+
+    <section class="mbr-cards mbr-section mbr-section-nopadding" id="features2-3" style="background-color: rgb(255, 255, 255);">
+
+        <div class="mbr-cards-row row striped">
+            <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
+                <div class="container">
+                    <div class="card cart-block">
+                        <div class="card-img etl-icon icon-pencil mbr-iconfont mbr-iconfont-features2">
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">Equator</h4>
+                            <p class="card-text">Equator has been noted as one of the most reliable Computer garage
+                                equipped to meet all your needs using this framework. on your website easily and
+                                freely.</p>
+                            <div class="card-btn">
+                                <a href="" class="btn btn-primary">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
+                <div class="container">
+                    <div class="card cart-block">
+                        <div class="card-img etl-icon icon-global mbr-iconfont mbr-iconfont-features2">
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">Equator</h4>
+                            <p class="card-text">Equator has been noted as one of the most reliable Computer garage
+                                equipped to meet all your needs using this framework.</p>
+                            <div class="card-btn">
+                                <a href="" class="btn btn-primary">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+
+        <div class="container">
+            <p class="text-xs-center">E-Procurement System.</p>
+        </div>
+    </footer>
+{% endblock %}

@@ -22,7 +22,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/login/templates" />
-        <option value="$MODULE_DIR$/register/templates" />
+        <option value="$MODULE_DIR$/home/templates" />
       </list>
     </option>
   </component>

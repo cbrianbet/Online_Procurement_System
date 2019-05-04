@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Brian v3.3, Brian.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts1.css' %}">
+  <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts2.css' %}">
+  <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts3.css' %}">
+  <link rel="stylesheet" href="{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/et-line-font-plugin/style.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/tether/tether.min.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/dropdown/css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'home/assets/Brian/css/mbr-additional.css" type="text/css'%}">
+
+
+
+</head>
+<body>
+{% block body %}
+{% endblock %}
+
+
+  <script src="{% static 'home/assets/web/assets/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'home/assets/tether/tether.min.js'%}"></script>
+  <script src="{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}"></script>
+  <script src="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}"></script>
+  <script src="{% static 'home/assets/theme/js/script.js'%}"></script>
+  <script src="{% static 'home/assets/dropdown/js/script.min.js'%}"></script>
+  <script src="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}"></script>
+
+  <input name="animation" type="hidden">
+
+  </body>
+</html>
