@@ -23,6 +23,8 @@
       <list>
         <option value="$MODULE_DIR$/login/templates" />
         <option value="$MODULE_DIR$/home/templates" />
+        <option value="$MODULE_DIR$/create_tender/templates" />
+        <option value="$MODULE_DIR$/core/templates" />
       </list>
     </option>
   </component>

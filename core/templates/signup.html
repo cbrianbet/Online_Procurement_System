@@ -1,0 +1,41 @@
+{% extends 'login/base.html' %}
+{% block title %}Sign up{% endblock %}
+{% block body %}
+    <div class="limiter wrap-login100">
+        <span class="login100-form-title p-b-26">Sign up to E-procurement</span>
+
+        <form class="login100-form validate-form" method="post">
+            {% csrf_token %}
+            {% for field in form %}
+                <p>
+                    {{ field.label_tag }}
+                    {% if field.help_text %}
+                        <small style="color: grey">{{ field.help_text }}</small>
+                    {% endif %}
+                    {% for error in field.errors %}
+                        <p style="color: red">{{ error }}</p>
+                    {% endfor %}<br>
+                <div class="wrap-input100 validate-input input100" data-validate="{{ field.help_text }}">
+                    {{ field }}
+                </div>
+
+                </p>
+            {% endfor %}
+            <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+                    <button class="login100-form-btn" type="submit">Sign up</button>
+                </div>
+            </div>
+        </form>
+        <div class="text-center p-t-65">
+						<span class="txt1">
+							Already have an Account?
+						</span>
+
+            <a class="txt2" href="{% url 'login' %}">
+                Log in
+            </a>
+        </div>
+    </div>
+{% endblock %}
