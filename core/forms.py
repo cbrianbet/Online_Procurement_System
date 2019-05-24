@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class SignUpForm(UserCreationForm):
     AC_CHOICES = (
         ('Bidder', 'Bidder'),
-        ('Seller', 'Seller'),
+        ('Buyer', 'Buyer'),
     )
     company_name = forms.Field()
     account_type = forms.ChoiceField(help_text='Pick one', choices=AC_CHOICES)

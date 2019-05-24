@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'core.apps.CoreConfig',
+    'create_bids.apps.CreateBidsConfig',
     'create_tender.apps.CreateTenderConfig',
     'home.apps.HomeConfig',
     'login.apps.LoginConfig',

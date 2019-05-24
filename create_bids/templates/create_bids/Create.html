@@ -1,7 +1,7 @@
-{% extends 'create_tender/base.html'%}
+{% extends 'create_tender/base.html' %}
 {% block tilte %}<title>Creat Bid</title>{% endblock %}
 {% block body %}
-        <section id="menu-0">
+    <section id="menu-0">
 
         <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
             <div class="container">
@@ -15,11 +15,11 @@
                     </div>
                     <div class="mbr-table-cell" style="padding: 15px">
                         <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
-                            id="exCollapsingNavbar">
+                             id="exCollapsingNavbar">
                             <a class="nav-link link" data-toggle="dropdown-submenu" href="{% url 'login' %}">LOGOUT</a>
                         </div>
                         <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
-                            id="exCollapsingNavbar">
+                             id="exCollapsingNavbar">
                             <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
                         </div>
                     </div>
@@ -34,27 +34,26 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Create Tender</h2>
+                    <h2 class="title">Bid For Tender by </h2>
                     <form method="POST">
                         {% csrf_token %}
-                        <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="TITLE" name="name">
-                        </div>
-                        <div class="input-group">
-                            <textarea class="input--style-1" type="text" placeholder="Description" name="name"></textarea>
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Is tender active?" name="is_active">
-                        </div>
-                        <div>
-                            <input  type="number" placeholder="Tender Value" name="docs">
-                        </div>
-                         <div class="input-group">
-                            <input class="input--style-1" type="file" placeholder="Files" name="docs">
-                        </div>
-                        <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
-                        </div>
+                        {% for field in form %}
+                            <p>
+                                {{ field.label_tag }}
+                                {% if field.help_text %}
+                                    <small style="color: grey">{{ field.help_text }}</small>
+                                {% endif %}
+                                {% for error in field.errors %}
+                                    <p style="color: red">{{ error }}</p>
+                                {% endfor %}<br>
+                            <div class=" " data-validate="{{ field.help_text }}">
+                                <div class="input-group input--style-1">
+                                    {{ field }}
+                                </div>
+                            </div>
+
+                            </p>
+                        {% endfor %}
                     </form>
                 </div>
             </div>

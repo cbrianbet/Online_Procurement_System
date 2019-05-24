@@ -4,7 +4,6 @@
   <title>{% block title %}{% endblock %}</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Brian v3.3, Brian.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   {% load static %}
@@ -20,12 +19,45 @@
   <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css'%}">
   <link rel="stylesheet" href="{% static 'home/assets/dropdown/css/style.css'%}">
   <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/Brian/css/mbr-additional.css'%}"type="text/css">
-
 
 
 </head>
 <body>
+<section id="menu-0">
+
+        <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+            <div class="container">
+
+                <div class="mbr-table">
+                    <div class="mbr-table-cell">
+                        <div class="navbar-brand">
+                            <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
+                               href={% block link%} {% endblock %}>HOME</a>
+                        </div>
+                    </div>
+                    <div class="mbr-table-cell" style="padding: 15px">
+                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                            id="exCollapsingNavbar">
+                            <a class="nav-link link" data-toggle="dropdown-submenu" href="{% url 'login' %}">LOGOUT</a>
+                        </div>
+                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
+                            id="exCollapsingNavbar">
+                            <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-6"
+            style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+
+        <div class="container">
+            <p class="text-xs-center">Welcome {{ Profile.company_name }}</p>
+        </div>
+    </footer>
 {% block body %}
 {% endblock %}
 

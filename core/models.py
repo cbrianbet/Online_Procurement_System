@@ -10,7 +10,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     account_type = models.CharField(max_length=500, blank=False)
     company_name = models.CharField(max_length=30, blank=False)
-    birth_date = models.DateField(null=True, blank=True)
+    birth_date = models.DateField(auto_now=True)
 
 
 @receiver(post_save, sender=User)
