@@ -1,11 +1,11 @@
 from django.db import models
-from create_tender.models import CreateTender
+from create_tender.models import Tender
 from core.models import Profile
 
 
 class Bids(models.Model):
-    Tender_ID = models.ForeignKey(CreateTender, on_delete=models.CASCADE)
-    User_ID = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    Tender_ID = models.ForeignKey(Tender, on_delete=models.CASCADE)
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE, default='betts')
     Quote_amount = models.PositiveIntegerField()
     Bid_description = models.TextField(max_length=500)
     Bid_documents_url = models.FileField()

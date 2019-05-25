@@ -1,33 +1,9 @@
 {% extends 'create_tender/base.html' %}
-{% block tilte %}<title>Create a tender</title>{% endblock %}
+{% block tilte %}Create a tender{% endblock %}
+{% block link %}
+"{% url 'buyerHome' %}"
+{% endblock %}
 {% block body %}
-    <section id="menu-0">
-
-        <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
-            <div class="container">
-
-                <div class="mbr-table">
-                    <div class="mbr-table-cell">
-                        <div class="navbar-brand">
-                            <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
-                               href="{% url "buyerHome" %}">HOME</a>
-                        </div>
-                    </div>
-                    <div class="mbr-table-cell" style="padding: 15px">
-                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
-                             id="exCollapsingNavbar">
-                            <a class="nav-link link" data-toggle="dropdown-submenu" href="{% url 'login' %}">LOGOUT</a>
-                        </div>
-                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
-                             id="exCollapsingNavbar">
-                            <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </section>
 
     <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
         <div class="wrapper wrapper--w680">

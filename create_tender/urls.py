@@ -5,5 +5,7 @@ from create_bids import views as bid_view
 
 urlpatterns = [
     path('tender', views.index, name="create_tender"),
-    url(r'^bid/$', bid_view.index),
+    path('list', views.tenderlist),
+    url(r'^bid/$', bid_view.bidlist, name='bid_feed'),
+    path('bid<int:tender_id>', bid_view.index, name='bid_tender'),
 ]

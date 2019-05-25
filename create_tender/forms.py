@@ -1,5 +1,5 @@
 from django import forms
-from .models import CreateTender
+from .models import Tender
 
 
 class CreateTenderForm(forms.ModelForm):
@@ -21,5 +21,5 @@ class CreateTenderForm(forms.ModelForm):
     # TODO widgets Boolean fields
 
     class Meta:
-        model = CreateTender
+        model = Tender
         fields = ('tender_title', 'tender_desc', 'tender_duration', 'tender_value', 'is_active')

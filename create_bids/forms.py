@@ -2,8 +2,8 @@ from django import forms
 from .models import Bids
 
 
-class BidForm(forms.Form):
-    Quote_amount = forms.IntegerField(required=True, label='Quote Amount')
+class BidForm(forms.ModelForm):
+    Quote_amount = forms.IntegerField(required=True, min_value=1, label='Quote Amount')
     Bid_description = forms.CharField(
         widget=forms.Textarea(
             attrs={'cols': 62, 'rows': 3}

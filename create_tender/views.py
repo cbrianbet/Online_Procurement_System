@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from .models import Tender
 from .forms import CreateTenderForm
 
 
@@ -28,3 +29,10 @@ def index(request):
         # TODO  present success
         args = {'form': form}
         return render(request, 'create_tender/Create.html', args)
+
+
+def tenderlist(request):
+    context = {
+        'tenders': Tender.objects.all()
+    }
+    return render(request, 'create_tender/list.html', context)

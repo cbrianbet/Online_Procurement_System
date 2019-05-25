@@ -9,16 +9,13 @@
     <meta name="description" content="">
 
     <!-- Title Page-->
-    {% block tilte %}{% endblock %}
+    <title>{% block tilte %}{% endblock %}</title>
     {% load static %}
     <!-- Icons font CSS-->
     <link href="{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet"
           media="all">
     <link href="{% static 'create_tender/vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet"
           media="all">
-    <!-- Font special for pages-->
-    <link href="{% static 'login/fonts/iconic/fonts/css Fonts.css' %}" rel="stylesheet">
-
     <!-- Vendor CSS-->
     <link href="{% static 'create_tender/vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
     <link href="{% static 'create_tender/vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
@@ -38,6 +35,34 @@
 </head>
 
 <body>
+<section id="menu-0">
+
+        <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+            <div class="container">
+
+                <div class="mbr-table">
+                    <div class="mbr-table-cell">
+                        <div class="navbar-brand">
+                            <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
+                               href={% block link %} {% endblock %}>HOME</a>
+                        </div>
+                    </div>
+                    <div class="mbr-table-cell" style="padding: 15px">
+                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                             id="exCollapsingNavbar">
+                            <a class="nav-link link" data-toggle="dropdown-submenu" href="{% url 'logout' %}">LOGOUT</a>
+                        </div>
+                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
+                             id="exCollapsingNavbar">
+                            <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
 {% block body %}
 {% endblock %}
 <!-- Jquery JS-->

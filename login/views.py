@@ -1,7 +1,7 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
 from .forms import LoginForm
 
 
@@ -27,3 +27,10 @@ def index(request):
     else:
         form = LoginForm()
     return render(request, "login/login.html", {'form': form})
+
+
+def logout_view(request):
+    logout(request)
+    form = LoginForm(request.GET)
+    messages.info(request, "User is logged out")
+    return render(request, 'login/login.html', {'form': form})

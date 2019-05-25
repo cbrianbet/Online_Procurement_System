@@ -1,0 +1,26 @@
+{% extends 'create_tender/base.html' %}
+{% block tilte %}
+View Tenders
+{% endblock %}
+{% block link %}
+"{% url 'bidderHome' %}"
+{% endblock %}
+{% block body %}
+
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Available Tenders</h2>
+                    <ul>
+                        {% for tender in tenders %}
+                            <a href="{% url 'bid_tender' tender.id %}"><h4>{{ tender }}</h4></a>
+                            <p>{{ tender.date_created }}</p>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

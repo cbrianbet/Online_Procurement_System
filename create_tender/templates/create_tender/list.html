@@ -1,0 +1,24 @@
+{% extends 'create_tender/base.html' %}
+{% block tilte %}
+My Tenders
+{% endblock %}
+{% block link %}
+"{% url 'buyerHome' %}"
+{% endblock %}
+{% block body %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">My Tenders</h2>
+                    <ul>
+                        {% for tender in tenders %}
+                            <li>{{ tender }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

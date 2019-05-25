@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tender_feed.apps.TenderFeedConfig',
     'core.apps.CoreConfig',
     'create_bids.apps.CreateBidsConfig',
     'create_tender.apps.CreateTenderConfig',

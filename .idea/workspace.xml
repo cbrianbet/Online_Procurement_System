@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e5000f4-9599-4181-b282-627f4b92ca32" name="Default Changelist" comment="Fixes on user registration">
-      <change afterPath="$PROJECT_DIR$/core/migrations/0007_auto_20190519_1419.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/migrations/0008_profile_birth_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/migrations/0002_auto_20190524_1732.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/migrations/0003_auto_20190524_1807.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/migrations/0004_auto_20190524_1828.py" afterDir="false" />
+    <list default="true" id="5e5000f4-9599-4181-b282-627f4b92ca32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0002_auto_20190525_2123.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Bidlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_tender/migrations/0005_auto_20190525_1941.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/328ecc3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/6wbLCwJ51XyBMi45LjA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/816554411748126" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/Users_brian_kemboi_PortraitUrl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/Users_brian_kemboi_PortraitUrl_50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/air2.global.responsive.12.6.1.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/analytics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/app.fb466ed396627aaaeb3f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/fbevents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/fonts.air2-icons.2.4.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/fonts.gotham.2.4.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/fwh.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/fwh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/gtm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/runtime.30adef5115ceef05dd9c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/ugc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/ugc.mjxim7wi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/uploading.12.3.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/vendors.b79bf5b1e000fbcb4c91.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tender_feed/templates/tender_feed/tenderFeed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProcurementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcurementSystem/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProcurementSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcurementSystem/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_bids/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_bids/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_bids/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_bids/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_tender/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_tender/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/static/create_tender/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/Brian/css/mbr-additional.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/animate.css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/assets/animate.css/animate.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/css/socicon.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/assets/socicon/css/socicon.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/Create.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home/bidderLanding.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/bidderLanding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/buyerLanding.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/buyerLanding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/login/static/login/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/login/static/login/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/css Fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/images/icons/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/login/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/templates/login/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_tender/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -101,491 +102,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_tender/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-              <folding>
-                <element signature="e#478#497#0#HTML" expanded="true" />
-                <element signature="e#639#657#0#HTML" expanded="true" />
-                <element signature="e#1094#1119#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/templates/login/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-431">
-              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/static/login/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="324" column="1" selection-start-line="324" selection-start-column="1" selection-end-line="324" selection-end-column="1" />
+            <state relative-caret-position="246">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login/templates/login/base.html">
+        <entry file="file://$PROJECT_DIR$/login/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://JavaScript-modules-diagram/E:/SourceCode/Python/ProcurementSystem">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
-              <ID>JavaScript-modules-diagram</ID>
-              <OriginalElement>$PROJECT_DIR$</OriginalElement>
-              <nodes>
-                <node x="390.0" y="1992.0">;</node>
-                <node x="604.0" y="320.0">$PROJECT_DIR$/home/templates/home/base.html</node>
-                <node x="375.0" y="732.0">$PROJECT_DIR$/create_tender/templates/create_tender/base.html</node>
-                <node x="1308.0" y="1473.0">$PROJECT_DIR$/login/templates/login/base.html</node>
-                <node x="480.0" y="1525.0">;;</node>
-                <node x="446.0" y="1762.0">$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;</node>
-                <node x="43.0" y="1695.0">$PROJECT_DIR$/home/static/home/assets/touchSwipe/jquery.touchSwipe.min.js#jquery#566;</node>
-                <node x="136.0" y="1879.0">$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/moment.min.js#a#3896;</node>
-                <node x="379.0" y="1879.0" />
-                <node x="175.0" y="1283.0">;;;;;;;</node>
-                <node x="119.0" y="1553.0">$PROJECT_DIR$/create_tender/static/create_tender/vendor/select2/select2.min.js#jquery#270;</node>
-                <node x="223.0" y="2009.0">a</node>
-                <node x="394.0" y="1281.0">compat/containerCss</node>
-                <node x="45.0" y="1229.0">compat/dropdownCss</node>
-                <node x="0.0" y="1367.0">compat/initSelection</node>
-                <node x="296.0" y="1181.0">compat/inputData</node>
-                <node x="80.0" y="1476.0">compat/query</node>
-                <node x="344.0" y="1602.0">jquery</node>
-                <node x="629.0" y="1690.0">moment</node>
-                <node x="927.0" y="1466.0">name</node>
-                <node x="192.0" y="1168.0">path</node>
-                <node x="549.0" y="937.0">{% static 'create_tender/css/main.css' %}</node>
-                <node x="718.0" y="937.0">{% static 'create_tender/js/global.js' %}</node>
-                <node x="0.0" y="678.0">{% static 'create_tender/vendor/datepicker/daterangepicker.css' %}</node>
-                <node x="342.0" y="950.0">{% static 'create_tender/vendor/datepicker/daterangepicker.js' %}</node>
-                <node x="210.0" y="400.0">{% static 'create_tender/vendor/datepicker/moment.min.js' %}</node>
-                <node x="595.0" y="1005.0">{% static 'create_tender/vendor/font-awesome-4.7/css/font-awesome.min.css' %}</node>
-                <node x="71.0" y="814.0">{% static 'create_tender/vendor/jquery/jquery.min.js' %}</node>
-                <node x="4.0" y="1086.0">{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}</node>
-                <node x="630.0" y="869.0">{% static 'create_tender/vendor/select2/select2.min.css' %}</node>
-                <node x="180.0" y="882.0">{% static 'create_tender/vendor/select2/select2.min.js' %}</node>
-                <node x="588.0" y="627.0">{% static 'home/assets/animate.css/animate.min.css'%}</node>
-                <node x="637.0" y="484.0">{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}</node>
-                <node x="307.0" y="468.0">{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}</node>
-                <node x="698.0" y="711.0">{% static 'home/assets/bootstrap/js/bootstrap.min.js' %}</node>
-                <node x="865.0" y="123.0">{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}</node>
-                <node x="427.0" y="367.0">{% static 'home/assets/dropdown/css/style.css'%}</node>
-                <node x="219.0" y="542.0">{% static 'home/assets/dropdown/js/script.min.js' %}</node>
-                <node x="700.0" y="123.0">{% static 'home/assets/dropdown/js/script.min.js'%}</node>
-                <node x="500.0" y="504.0">{% static 'home/assets/et-line-font-plugin/style.css'%}</node>
-                <node x="368.0" y="131.0">{% static 'home/assets/fonts/fonts1.css' %}</node>
-                <node x="542.0" y="122.0">{% static 'home/assets/fonts/fonts2.css' %}</node>
-                <node x="889.0" y="443.0">{% static 'home/assets/fonts/fonts3.css' %}</node>
-                <node x="245.0" y="1018.0">{% static 'home/assets/smooth-scroll/SmoothScroll.js' %}</node>
-                <node x="921.0" y="254.0">{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}</node>
-                <node x="767.0" y="620.0">{% static 'home/assets/socicon/css/socicon.min.css'%}</node>
-                <node x="475.0" y="252.0">{% static 'home/assets/tether/tether.min.css'%}</node>
-                <node x="310.0" y="271.0">{% static 'home/assets/tether/tether.min.js'%}</node>
-                <node x="660.0" y="552.0">{% static 'home/assets/theme/css/style.css'%}</node>
-                <node x="170.0" y="610.0">{% static 'home/assets/theme/js/script.js' %}</node>
-                <node x="784.0" y="280.0">{% static 'home/assets/theme/js/script.js'%}</node>
-                <node x="763.0" y="801.0">{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}</node>
-                <node x="417.0" y="3.0">{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}</node>
-                <node x="34.0" y="474.0">{% static 'home/assets/viewportChecker/jquery.viewportchecker.js' %}</node>
-                <node x="659.0" y="0.0">{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}</node>
-                <node x="461.0" y="1096.0">{% static 'home/assets/web/assets/jquery/jquery.min.js' %}</node>
-                <node x="724.0" y="416.0">{% static 'home/assets/web/assets/jquery/jquery.min.js'%}</node>
-                <node x="1375.0" y="1693.0">{% static 'login/css/main.css' %}</node>
-                <node x="1238.0" y="1631.0">{% static 'login/css/util.css' %}</node>
-                <node x="1012.0" y="1480.0">{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}</node>
-                <node x="1591.0" y="1349.0">{% static 'login/fonts/iconic/css/material-design-iconic-font.min.css' %}</node>
-                <node x="179.0" y="746.0">{% static 'login/fonts/iconic/fonts/css Fonts.css' %}</node>
-                <node x="1124.0" y="1397.0">{% static 'login/js/main.js' %}</node>
-                <node x="1122.0" y="1563.0">{% static 'login/vendor/animate/animate.css' %}</node>
-                <node x="1532.0" y="1462.0">{% static 'login/vendor/animsition/css/animsition.min.css' %}</node>
-                <node x="1305.0" y="1372.0">{% static 'login/vendor/animsition/js/animsition.min.js' %}</node>
-                <node x="1019.0" y="1329.0">{% static 'login/vendor/bootstrap/css/bootstrap.min.css' %}</node>
-                <node x="1122.0" y="1245.0">{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}</node>
-                <node x="1439.0" y="1168.0">{% static 'login/vendor/bootstrap/js/popper.js' %}</node>
-                <node x="1242.0" y="1770.0">{% static 'login/vendor/countdowntime/countdowntime.js' %}</node>
-                <node x="1232.0" y="1177.0">{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}</node>
-                <node x="1604.0" y="1555.0">{% static 'login/vendor/daterangepicker/daterangepicker.css' %}</node>
-                <node x="1435.0" y="1761.0">{% static 'login/vendor/daterangepicker/daterangepicker.js' %}</node>
-                <node x="1419.0" y="1304.0">{% static 'login/vendor/daterangepicker/moment.min.js' %}</node>
-                <node x="1459.0" y="1623.0">{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}</node>
-                <node x="1520.0" y="1236.0">{% static 'login/vendor/select2/select2.min.css' %}</node>
-                <node x="1129.0" y="1699.0">{% static 'login/vendor/select2/select2.min.js' %}</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/jquery/jquery.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";" target="name">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";" target="a">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/smooth-scroll/SmoothScroll.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/js/global.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/daterangepicker/daterangepicker.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/datepicker/moment.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/select2/select2.min.js#jquery#270;" target="jquery">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/moment.min.js#a#3896;" target="a">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";" target="jquery">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/select2/select2.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/daterangepicker/daterangepicker.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/static/home/assets/touchSwipe/jquery.touchSwipe.min.js#jquery#566;" target="jquery">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="compat/query">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/socicon/css/socicon.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/select2/select2.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/animsition/css/animsition.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/select2/select2.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/animate.css/animate.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/theme/css/style.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;" target="moment">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/bootstrap/js/bootstrap.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";" target="">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/css/main.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/js/main.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="jquery">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/datepicker/daterangepicker.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/theme/js/script.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/tether/tether.min.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/font-awesome-4.7/css/font-awesome.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/fonts/fonts3.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;" target="jquery">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/countdowntime/countdowntime.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/daterangepicker/moment.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/fonts/fonts1.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/tether/tether.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/select2/select2.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/et-line-font-plugin/style.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/datepicker/daterangepicker.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="compat/initSelection">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/css/main.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/dropdown/css/style.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/dropdown/js/script.min.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/theme/js/script.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/et-line-font-plugin/style.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="path">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/web/assets/jquery/jquery.min.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;" target=";">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'login/fonts/iconic/fonts/css Fonts.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/bootstrap/css/bootstrap.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/socicon/css/socicon.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/animate.css/animate.min.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="compat/inputData">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/animsition/js/animsition.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/dropdown/js/script.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="compat/dropdownCss">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/fonts/iconic/css/material-design-iconic-font.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;;;;;;" target="compat/containerCss">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/bootstrap/js/popper.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/web/assets/jquery/jquery.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;" target="jquery">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source=";;" target="moment">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/dropdown/css/style.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/css/util.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/theme/css/style.css'%}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/fonts/fonts2.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/animate/animate.css' %}">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7686859273066169" x="1428.9914682146289" y="1301.2580019398642" />
-              <SelectedNodes>
-                <node>path</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>All</Category>
-              </Categories>
-              <VISIBILITY>Details</VISIBILITY>
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -595,20 +126,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>p-b</find>
-      <find>p-</find>
-      <find>p-t</find>
-      <find>p-l</find>
-      <find>p-b-</find>
-      <find>m-</find>
-      <find>m-l</find>
       <find>text-b</find>
       <find>text-</find>
       <find>text</find>
@@ -632,6 +156,13 @@
       <find>focus</find>
       <find>foc</find>
       <find>z</find>
+      <find>view</find>
+      <find>find W</find>
+      <find>messa</find>
+      <find>skip</find>
+      <find>my fee</find>
+      <find>recen</find>
+      <find>card</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -640,15 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/login/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/register/admin.py" />
-        <option value="$PROJECT_DIR$/register/models.py" />
-        <option value="$PROJECT_DIR$/register/forms.py" />
-        <option value="$PROJECT_DIR$/login/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/templates/create_tender/Create.html" />
-        <option value="$PROJECT_DIR$/register/views.py" />
-        <option value="$USER_HOME$/Downloads/Compressed/simple-signup-master/simple-signup-master/profile-model/manage.py" />
-        <option value="$USER_HOME$/Downloads/Compressed/simple-signup-master/simple-signup-master/profile-model/mysite/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/core/templates/login.html" />
         <option value="$PROJECT_DIR$/create_tender/url.py" />
@@ -656,47 +178,56 @@
         <option value="$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/home/static/home/assets/socicon/css/socicon.min.css" />
         <option value="$PROJECT_DIR$/home/static/home/assets/bootstrap/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/ProcurementSystem/urls.py" />
         <option value="$PROJECT_DIR$/login/templates/login/test.html" />
-        <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$USER_HOME$/Anaconda3/Lib/site-packages/django/contrib/auth/forms.py" />
-        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" />
-        <option value="$PROJECT_DIR$/ProcurementSystem/settings.py" />
         <option value="$PROJECT_DIR$/core/admin.py" />
         <option value="$PROJECT_DIR$/home/models.py" />
-        <option value="$PROJECT_DIR$/core/models.py" />
-        <option value="$PROJECT_DIR$/login/templates/login/login.html" />
         <option value="$PROJECT_DIR$/login/models.py" />
         <option value="$PROJECT_DIR$/create_tender/static/create_tender/css/main.css" />
-        <option value="$PROJECT_DIR$/create_bids/models.py" />
-        <option value="$PROJECT_DIR$/create_bids/views.py" />
         <option value="$PROJECT_DIR$/core/forms.py" />
-        <option value="$PROJECT_DIR$/login/views.py" />
         <option value="$PROJECT_DIR$/home/templates/home/buyerLanding.html" />
-        <option value="$PROJECT_DIR$/home/templates/home/bidderLanding.html" />
-        <option value="$PROJECT_DIR$/home/templates/home/base.html" />
         <option value="$PROJECT_DIR$/home/static/home/assets/animate.css/animate.min.css" />
-        <option value="$PROJECT_DIR$/create_tender/urls.py" />
-        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" />
-        <option value="$PROJECT_DIR$/create_bids/forms.py" />
-        <option value="$PROJECT_DIR$/create_bids/templates/create_bids/Create.html" />
-        <option value="$PROJECT_DIR$/create_tender/forms.py" />
         <option value="$PROJECT_DIR$/core/views.py" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.047/views.py" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.635/models.py" />
-        <option value="$PROJECT_DIR$/create_tender/views.py" />
-        <option value="$PROJECT_DIR$/create_tender/models.py" />
         <option value="$PROJECT_DIR$/core/templates/signup.html" />
         <option value="$PROJECT_DIR$/login/static/login/css/util.css" />
         <option value="$PROJECT_DIR$/login/forms.py" />
         <option value="$PROJECT_DIR$/login/static/login/css/main.css" />
         <option value="$PROJECT_DIR$/login/templates/login/base.html" />
+        <option value="$PROJECT_DIR$/ProcurementSystem/settings.py" />
+        <option value="$PROJECT_DIR$/tender_feed/templates/tender_feed/My Job Feed.html" />
+        <option value="$PROJECT_DIR$/ProcurementSystem/urls.py" />
+        <option value="$PROJECT_DIR$/tender_feed/views.py" />
+        <option value="$PROJECT_DIR$/tender_feed/templates/tender_feed/tenderFeed.html" />
+        <option value="$PROJECT_DIR$/create_tender/models.py" />
+        <option value="$PROJECT_DIR$/create_tender/views.py" />
+        <option value="$PROJECT_DIR$/create_tender/forms.py" />
+        <option value="$PROJECT_DIR$/create_tender/migrations/0005_auto_20190525_1941.py" />
+        <option value="$PROJECT_DIR$/create_tender/admin.py" />
+        <option value="$PROJECT_DIR$/create_bids/forms.py" />
+        <option value="$PROJECT_DIR$/home/templates/home/bidderLanding.html" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/list.html" />
+        <option value="$PROJECT_DIR$/create_tender/urls.py" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" />
+        <option value="$PROJECT_DIR$/create_bids/templates/create_bids/Create.html" />
+        <option value="$PROJECT_DIR$/core/models.py" />
+        <option value="$PROJECT_DIR$/create_bids/models.py" />
+        <option value="$PROJECT_DIR$/create_bids/admin.py" />
+        <option value="$PROJECT_DIR$/create_bids/templates/create_bids/Bidlist.html" />
+        <option value="$PROJECT_DIR$/create_bids/views.py" />
+        <option value="$PROJECT_DIR$/home/templates/home/base.html" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" />
+        <option value="$PROJECT_DIR$/home/views.py" />
+        <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$PROJECT_DIR$/login/templates/login/login.html" />
+        <option value="$PROJECT_DIR$/login/urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="368" />
-    <option name="y" value="6" />
+    <option name="x" value="284" />
+    <option name="y" value="-15" />
     <option name="width" value="1133" />
     <option name="height" value="735" />
   </component>
@@ -706,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -717,46 +247,35 @@
             <path>
               <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -764,25 +283,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/create_bids/templates/create_bids" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SourceCode\Python\ProcurementSystem\core" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\templates\create_tender" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\static\create_tender" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\static\tender_feed" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\core\templates\core" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\core" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\static\create_tender\" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\templates\tender_feed" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\core" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\templates\create_tender" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -864,7 +383,8 @@
       <workItem from="1558547268049" duration="4092000" />
       <workItem from="1558594976758" duration="1172000" />
       <workItem from="1558703927799" duration="8376000" />
-      <workItem from="1558719623597" duration="7081000" />
+      <workItem from="1558719623597" duration="7267000" />
+      <workItem from="1558788375078" duration="22004000" />
     </task>
     <task id="LOCAL-00001" summary="Added the signup page">
       <created>1556177680292</created>
@@ -915,11 +435,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558382396034</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removed some useless code and we can now add tenders">
+      <created>1558730323728</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558730323728</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205848000" />
+    <option name="totallyTimeSpent" value="228038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -935,13 +462,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.4408867" side_tool="true" weight="0.23765144" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5591133" visible="true" weight="0.22617246" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5591133" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="2" sideWeight="0.46481177" side_tool="true" weight="0.18154311" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.36446887" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.33224222" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3289689" />
-      <window_info anchor="bottom" id="manage.py@ProcurementSystem" order="4" weight="0.38952535" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info anchor="bottom" id="manage.py@ProcurementSystem" order="4" weight="0.31751227" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.33388704" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
@@ -959,9 +486,61 @@
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" sideWeight="0.4408867" side_tool="true" weight="0.23765144" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5591133" visible="true" weight="0.22239032" />
+      <window_info id="Structure" order="2" sideWeight="0.46481177" side_tool="true" weight="0.18154311" />
+      <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.36446887" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info anchor="bottom" id="manage.py@ProcurementSystem" order="4" weight="0.31751227" />
+      <window_info anchor="bottom" id="Python Console" order="5" weight="0.33388704" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49924356" visible="true" weight="0.32405892" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3289689" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.3289689" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3290469" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.32958803" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the signup page" />
@@ -971,157 +550,10 @@
     <MESSAGE value="profile added to admin panel" />
     <MESSAGE value="We can now define bids" />
     <MESSAGE value="Fixes on seller login validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes on seller login validation" />
+    <MESSAGE value="Removed some useless code and we can now add tenders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed some useless code and we can now add tenders" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProcurementSystem/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProcurementSystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/Create.html" />
-    <entry file="file://$PROJECT_DIR$/core/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://AlchemyModelDependency/#ProcurementSystem">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID />
-          <OriginalElement>#ProcurementSystem</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="541.0" y="280.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DjangoModelDependency/#ProcurementSystem">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID />
-          <OriginalElement>#ProcurementSystem</OriginalElement>
-          <nodes>
-            <node x="" y="">django.contrib.auth.models.Group</node>
-            <node x="" y="">create_tender.models.CreateTender</node>
-            <node x="" y="">core.models.Profile</node>
-            <node x="" y="">django.contrib.contenttypes.models.ContentType</node>
-            <node x="" y="">django.contrib.auth.models.User</node>
-            <node x="" y="">django.contrib.auth.models.Permission</node>
-            <node x="" y="">create_tender.models.AcceptBid</node>
-            <node x="" y="">create_bids.models.Bids</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5129793510324484" x="188.0" y="526.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="695" column="6" selection-start-line="695" selection-start-column="6" selection-end-line="695" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/forms/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="285" column="6" selection-start-line="285" selection-start-column="6" selection-end-line="285" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/static/create_tender/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="420" column="1" selection-start-line="420" selection-start-column="1" selection-end-line="420" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/ChurchManagementSystem/ChurchSystem/login/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/templates/home/buyerLanding.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1139,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/Create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1156,82 +581,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/Create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.635/models.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.047/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.047/views.py" />
     <entry file="file://$PROJECT_DIR$/core/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="57" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,39 +600,8 @@
     <entry file="file://$PROJECT_DIR$/login/static/login/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/bidderLanding.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/static/login/images/icons/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/login/static/login/images/icons/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/login/static/login/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" />
     <entry file="file://$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-BoldItalic.ttf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1290,437 +614,7 @@
     <entry file="file://$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="uml://JavaScript-modules-diagram/E:/SourceCode/Python/ProcurementSystem">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$</OriginalElement>
-          <nodes>
-            <node x="390.0" y="1992.0">;</node>
-            <node x="604.0" y="320.0">$PROJECT_DIR$/home/templates/home/base.html</node>
-            <node x="375.0" y="732.0">$PROJECT_DIR$/create_tender/templates/create_tender/base.html</node>
-            <node x="1308.0" y="1473.0">$PROJECT_DIR$/login/templates/login/base.html</node>
-            <node x="480.0" y="1525.0">;;</node>
-            <node x="446.0" y="1762.0">$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;</node>
-            <node x="43.0" y="1695.0">$PROJECT_DIR$/home/static/home/assets/touchSwipe/jquery.touchSwipe.min.js#jquery#566;</node>
-            <node x="136.0" y="1879.0">$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/moment.min.js#a#3896;</node>
-            <node x="379.0" y="1879.0" />
-            <node x="175.0" y="1283.0">;;;;;;;</node>
-            <node x="119.0" y="1553.0">$PROJECT_DIR$/create_tender/static/create_tender/vendor/select2/select2.min.js#jquery#270;</node>
-            <node x="223.0" y="2009.0">a</node>
-            <node x="394.0" y="1281.0">compat/containerCss</node>
-            <node x="45.0" y="1229.0">compat/dropdownCss</node>
-            <node x="0.0" y="1367.0">compat/initSelection</node>
-            <node x="296.0" y="1181.0">compat/inputData</node>
-            <node x="80.0" y="1476.0">compat/query</node>
-            <node x="344.0" y="1602.0">jquery</node>
-            <node x="629.0" y="1690.0">moment</node>
-            <node x="927.0" y="1466.0">name</node>
-            <node x="192.0" y="1168.0">path</node>
-            <node x="549.0" y="937.0">{% static 'create_tender/css/main.css' %}</node>
-            <node x="718.0" y="937.0">{% static 'create_tender/js/global.js' %}</node>
-            <node x="0.0" y="678.0">{% static 'create_tender/vendor/datepicker/daterangepicker.css' %}</node>
-            <node x="342.0" y="950.0">{% static 'create_tender/vendor/datepicker/daterangepicker.js' %}</node>
-            <node x="210.0" y="400.0">{% static 'create_tender/vendor/datepicker/moment.min.js' %}</node>
-            <node x="595.0" y="1005.0">{% static 'create_tender/vendor/font-awesome-4.7/css/font-awesome.min.css' %}</node>
-            <node x="71.0" y="814.0">{% static 'create_tender/vendor/jquery/jquery.min.js' %}</node>
-            <node x="4.0" y="1086.0">{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}</node>
-            <node x="630.0" y="869.0">{% static 'create_tender/vendor/select2/select2.min.css' %}</node>
-            <node x="180.0" y="882.0">{% static 'create_tender/vendor/select2/select2.min.js' %}</node>
-            <node x="588.0" y="627.0">{% static 'home/assets/animate.css/animate.min.css'%}</node>
-            <node x="637.0" y="484.0">{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}</node>
-            <node x="307.0" y="468.0">{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}</node>
-            <node x="698.0" y="711.0">{% static 'home/assets/bootstrap/js/bootstrap.min.js' %}</node>
-            <node x="865.0" y="123.0">{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}</node>
-            <node x="427.0" y="367.0">{% static 'home/assets/dropdown/css/style.css'%}</node>
-            <node x="219.0" y="542.0">{% static 'home/assets/dropdown/js/script.min.js' %}</node>
-            <node x="700.0" y="123.0">{% static 'home/assets/dropdown/js/script.min.js'%}</node>
-            <node x="500.0" y="504.0">{% static 'home/assets/et-line-font-plugin/style.css'%}</node>
-            <node x="368.0" y="131.0">{% static 'home/assets/fonts/fonts1.css' %}</node>
-            <node x="542.0" y="122.0">{% static 'home/assets/fonts/fonts2.css' %}</node>
-            <node x="889.0" y="443.0">{% static 'home/assets/fonts/fonts3.css' %}</node>
-            <node x="245.0" y="1018.0">{% static 'home/assets/smooth-scroll/SmoothScroll.js' %}</node>
-            <node x="921.0" y="254.0">{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}</node>
-            <node x="767.0" y="620.0">{% static 'home/assets/socicon/css/socicon.min.css'%}</node>
-            <node x="475.0" y="252.0">{% static 'home/assets/tether/tether.min.css'%}</node>
-            <node x="310.0" y="271.0">{% static 'home/assets/tether/tether.min.js'%}</node>
-            <node x="660.0" y="552.0">{% static 'home/assets/theme/css/style.css'%}</node>
-            <node x="170.0" y="610.0">{% static 'home/assets/theme/js/script.js' %}</node>
-            <node x="784.0" y="280.0">{% static 'home/assets/theme/js/script.js'%}</node>
-            <node x="763.0" y="801.0">{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}</node>
-            <node x="417.0" y="3.0">{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}</node>
-            <node x="34.0" y="474.0">{% static 'home/assets/viewportChecker/jquery.viewportchecker.js' %}</node>
-            <node x="659.0" y="0.0">{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}</node>
-            <node x="461.0" y="1096.0">{% static 'home/assets/web/assets/jquery/jquery.min.js' %}</node>
-            <node x="724.0" y="416.0">{% static 'home/assets/web/assets/jquery/jquery.min.js'%}</node>
-            <node x="1375.0" y="1693.0">{% static 'login/css/main.css' %}</node>
-            <node x="1238.0" y="1631.0">{% static 'login/css/util.css' %}</node>
-            <node x="1012.0" y="1480.0">{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}</node>
-            <node x="1591.0" y="1349.0">{% static 'login/fonts/iconic/css/material-design-iconic-font.min.css' %}</node>
-            <node x="179.0" y="746.0">{% static 'login/fonts/iconic/fonts/css Fonts.css' %}</node>
-            <node x="1124.0" y="1397.0">{% static 'login/js/main.js' %}</node>
-            <node x="1122.0" y="1563.0">{% static 'login/vendor/animate/animate.css' %}</node>
-            <node x="1532.0" y="1462.0">{% static 'login/vendor/animsition/css/animsition.min.css' %}</node>
-            <node x="1305.0" y="1372.0">{% static 'login/vendor/animsition/js/animsition.min.js' %}</node>
-            <node x="1019.0" y="1329.0">{% static 'login/vendor/bootstrap/css/bootstrap.min.css' %}</node>
-            <node x="1122.0" y="1245.0">{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}</node>
-            <node x="1439.0" y="1168.0">{% static 'login/vendor/bootstrap/js/popper.js' %}</node>
-            <node x="1242.0" y="1770.0">{% static 'login/vendor/countdowntime/countdowntime.js' %}</node>
-            <node x="1232.0" y="1177.0">{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}</node>
-            <node x="1604.0" y="1555.0">{% static 'login/vendor/daterangepicker/daterangepicker.css' %}</node>
-            <node x="1435.0" y="1761.0">{% static 'login/vendor/daterangepicker/daterangepicker.js' %}</node>
-            <node x="1419.0" y="1304.0">{% static 'login/vendor/daterangepicker/moment.min.js' %}</node>
-            <node x="1459.0" y="1623.0">{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}</node>
-            <node x="1520.0" y="1236.0">{% static 'login/vendor/select2/select2.min.css' %}</node>
-            <node x="1129.0" y="1699.0">{% static 'login/vendor/select2/select2.min.js' %}</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/jquery/jquery.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";" target="name">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";" target="a">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/smooth-scroll/SmoothScroll.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/js/global.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/daterangepicker/daterangepicker.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/datepicker/moment.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/select2/select2.min.js#jquery#270;" target="jquery">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/moment.min.js#a#3896;" target="a">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";" target="jquery">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/select2/select2.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/daterangepicker/daterangepicker.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/static/home/assets/touchSwipe/jquery.touchSwipe.min.js#jquery#566;" target="jquery">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="compat/query">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/socicon/css/socicon.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/select2/select2.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/animsition/css/animsition.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/select2/select2.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/animate.css/animate.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/theme/css/style.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;" target="moment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/bootstrap/js/bootstrap.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";" target="">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/css/main.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/js/main.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="jquery">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/datepicker/daterangepicker.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/theme/js/script.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/tether/tether.min.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/font-awesome-4.7/css/font-awesome.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/fonts/fonts3.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;" target="jquery">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/countdowntime/countdowntime.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/daterangepicker/moment.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/fonts/fonts1.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/tether/tether.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/select2/select2.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/et-line-font-plugin/style.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/datepicker/daterangepicker.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="compat/initSelection">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/css/main.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/dropdown/css/style.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/dropdown/js/script.min.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/theme/js/script.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/et-line-font-plugin/style.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="path">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/web/assets/jquery/jquery.min.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;" target=";">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'login/fonts/iconic/fonts/css Fonts.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/bootstrap/css/bootstrap.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/socicon/css/socicon.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/animate.css/animate.min.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="compat/inputData">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/animsition/js/animsition.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/dropdown/js/script.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="compat/dropdownCss">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/fonts/iconic/css/material-design-iconic-font.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;;;;;;" target="compat/containerCss">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/bootstrap/js/popper.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/web/assets/jquery/jquery.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;" target="jquery">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source=";;" target="moment">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/dropdown/css/style.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/css/util.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" target="{% static 'home/assets/theme/css/style.css'%}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/home/templates/home/base.html" target="{% static 'home/assets/fonts/fonts2.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="$PROJECT_DIR$/login/templates/login/base.html" target="{% static 'login/vendor/animate/animate.css' %}">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7686859273066169" x="1428.9914682146289" y="1301.2580019398642" />
-          <SelectedNodes>
-            <node>path</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/static/login/fonts/iconic/css/material-design-iconic-font.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80364" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/login/static/login/fonts/iconic/css/material-design-iconic-font.css" />
     <entry file="file://$PROJECT_DIR$/login/static/login/vendor/animate/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2720" />
@@ -1733,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1747,22 +634,418 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/templates/signup.html">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/My Job Feed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="19" column="95" lean-forward="true" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/E:/SourceCode/Python/ProcurementSystem">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/animsition/js/animsition.js#jquery#397;</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/animsition/js/animsition.min.js#jquery#327;</node>
+            <node x="" y="">$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI#58897;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.errorMessages#37220;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.freelancerLinks#47857;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.jobSearchProxy#16759;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.logging#57070;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.profileServicePrompt#24191;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.rssAtom#23006;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.services#38471;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#FindWorkHomeUI.templates#1492;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#dispatcher#69674;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils#164829;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.customSmf#163902;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.inputTrimAlert#72485;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobClientFeedback#74145;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobClientSpentTier#77399;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobDescription#78636;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobFeedback#118715;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobLocationRequirement#121165;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobPostedTime#122030;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobSave#125512;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobTile#142700;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobTileResponsive#147822;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobTileSwitcher#107138;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.jobTitle#157676;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.logging#115536;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.recentSearches#93859;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.sands#88753;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.search#104428;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.searchSuggestions#90235;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.shastaLogging#97113;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#jobSearchUtils.skills#83840;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/app.f628d3d8744457f4d10f.js#logging#115536;</node>
+            <node x="" y="">$PROJECT_DIR$/home/templates/home/base.html</node>
+            <node x="" y="">$PROJECT_DIR$/create_tender/templates/create_tender/base.html</node>
+            <node x="" y="">$PROJECT_DIR$/login/templates/login/base.html</node>
+            <node x="" y="">$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#adaptive.detection#397299;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core#528303;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.alert#423735;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.authorization.oauth2#471692;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.badges#379133;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.block#529844;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.buttons#459559;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.buttons.save#457560;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.carousel#429961;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.collapse#492401;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.countries.services#547898;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.dispute#476246;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.dropdown#412816;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.eventLogger#612048;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.fields.input#397758;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.fields.intlPhoneNumber#600616;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.gcModal#290222;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.interceptors.services#368208;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.log#374089;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.metrics#274634;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.modal#438629;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.model#362599;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.navigation#494272;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.navigation.header#482928;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.navigation.notification#490620;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.navigation.services#452144;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.newFeatureTour#636497;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.notification#488992;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.popover#625195;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.progressbar#643604;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.psmetrics#288124;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.rating#647798;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.smf#522053;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.storage#380624;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.templates#528597;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.time#679594;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.tokenizer#685452;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.tooltip#613282;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.truncation#691365;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.typeahead#538010;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.utils#389442;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.validation#698193;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#components.core.validation.validators.sba#694817;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#ngAnimate#250860;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#ngCookies#252466;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#ngMessages#253961;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#ngResource#256672;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/core.12.6.1.air2.min.js#ngSanitize#265578;</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/daterangepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/daterangepicker/daterangepicker.js;</node>
+            <node x="" y="">$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;E:/SourceCode/Python/ProcurementSystem/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js;</node>
+            <node x="" y="">$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/fwh.min.js#fe.components.fwh#258863;</node>
+            <node x="" y="">$PROJECT_DIR$/home/static/home/assets/touchSwipe/jquery.touchSwipe.min.js#jquery#566;</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/daterangepicker/moment.js#name#11829;</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/daterangepicker/moment.min.js#a#3896;</node>
+            <node x="" y="">$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/moment.min.js#a#3896;</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/popper.js</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/select2/select2.js#ContainerCSS#116614;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/select2/select2.js#DropdownCSS#115379;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/select2/select2.js#InitSelection#113810;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/select2/select2.js#InputCompat#122045;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/select2/select2.js#Query#113590;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/select2/select2.js#jquery#787;E:/SourceCode/Python/ProcurementSystem/login/static/login/vendor/select2/select2.js#translations#58328;</node>
+            <node x="" y="">$PROJECT_DIR$/create_tender/static/create_tender/vendor/select2/select2.min.js#jquery#270;</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/select2/select2.min.js#jquery#179;</node>
+            <node x="" y="">$PROJECT_DIR$/tender_feed/templates/tender_feed/tenderFeed.html</node>
+            <node x="" y="">$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/tooltip.js#popper.js#1380;</node>
+            <node x="" y="">$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/uploading.12.3.0.min.js#components.uploading.helpers.image#32867;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/uploading.12.3.0.min.js#components.uploading.images.crop#40515;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/uploading.12.3.0.min.js#components.uploading.uploaders.attachFiles#64379;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/uploading.12.3.0.min.js#components.uploading.uploaders.file#47208;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/uploading.12.3.0.min.js#ngImgCrop#36;</node>
+            <node x="" y="">$PROJECT_DIR$/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#cfe.mobile#1124;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#connectsV2Soon#218742;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#customSmf#218069;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#domestic#9741;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#domestic.config#2367;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#domestic.translation#61226;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#event-log#138824;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#event.logging#70004;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#fe.components.profile.delete-survey-modal#52043;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#fe.components.profile.denial-survey-modal#81365;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#fe.components.profile.service-profile-modal#204078;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#fwhDomestic#218894;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#jobDetails.ptc#229417;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#jobDetailsBundle.slider#374739;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#milestonePopup#218806;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#ptc-ui.find-work-home.directives#23718;E:/SourceCode/Python/ProcurementSystem/tender_feed/static/tender_feed/Feed_files/vendors.7f1bc217eafc3a9fc2ff.js#welcomeSmf#218602;</node>
+            <node x="" y="">./My Job Feed_files/328ecc3.js</node>
+            <node x="" y="">./My Job Feed_files/6wbLCwJ51XyBMi45LjA.js</node>
+            <node x="" y="">./My Job Feed_files/816554411748126</node>
+            <node x="" y="">./My Job Feed_files/Users_brian_kemboi_PortraitUrl</node>
+            <node x="" y="">./My Job Feed_files/Users_brian_kemboi_PortraitUrl_50</node>
+            <node x="" y="">./My Job Feed_files/air2.global.responsive.12.6.1.min.css</node>
+            <node x="" y="">./My Job Feed_files/analytics.js</node>
+            <node x="" y="">./My Job Feed_files/app.f628d3d8744457f4d10f.js</node>
+            <node x="" y="">./My Job Feed_files/app.fb466ed396627aaaeb3f.css</node>
+            <node x="" y="">./My Job Feed_files/core.12.6.1.air2.min.js</node>
+            <node x="" y="">./My Job Feed_files/fbevents.js</node>
+            <node x="" y="">./My Job Feed_files/fonts.air2-icons.2.4.0.css</node>
+            <node x="" y="">./My Job Feed_files/fonts.gotham.2.4.0.css</node>
+            <node x="" y="">./My Job Feed_files/fwh.min.css</node>
+            <node x="" y="">./My Job Feed_files/fwh.min.js</node>
+            <node x="" y="">./My Job Feed_files/gtm.js</node>
+            <node x="" y="">./My Job Feed_files/main.min.js</node>
+            <node x="" y="">./My Job Feed_files/runtime.30adef5115ceef05dd9c.js</node>
+            <node x="" y="">./My Job Feed_files/ugc.js</node>
+            <node x="" y="">./My Job Feed_files/ugc.mjxim7wi.js</node>
+            <node x="" y="">./My Job Feed_files/uploading.12.3.0.min.js</node>
+            <node x="" y="">./My Job Feed_files/vendors.7f1bc217eafc3a9fc2ff.js</node>
+            <node x="" y="">./My Job Feed_files/vendors.b79bf5b1e000fbcb4c91.css</node>
+            <node x="" y="">a</node>
+            <node x="" y="">compat/containerCss</node>
+            <node x="" y="">compat/dropdownCss</node>
+            <node x="" y="">compat/initSelection</node>
+            <node x="" y="">compat/inputData</node>
+            <node x="" y="">compat/query</node>
+            <node x="" y="">https://www.facebook.com/tr?id=816554411748126&amp;amp;ev=PageView&amp;amp;noscript=1</node>
+            <node x="" y="">https://www.upwork.com/favicon.ico</node>
+            <node x="" y="">https://www.upwork.com/job-details/prefetch_core.js</node>
+            <node x="" y="">https://www.upwork.com/job-details/prefetch_fonts.css</node>
+            <node x="" y="">https://www.upwork.com/job-details/prefetch_global.css</node>
+            <node x="" y="">https://www.upwork.com/job-details/prefetch_icons.css</node>
+            <node x="" y="">jquery</node>
+            <node x="" y="">moment</node>
+            <node x="" y="">name</node>
+            <node x="" y="">path</node>
+            <node x="" y="">{% static 'create_tender/css/main.css' %}</node>
+            <node x="" y="">{% static 'create_tender/js/global.js' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/datepicker/daterangepicker.css' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/datepicker/daterangepicker.js' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/datepicker/moment.min.js' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/font-awesome-4.7/css/font-awesome.min.css' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/jquery/jquery.min.js' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/select2/select2.min.css' %}</node>
+            <node x="" y="">{% static 'create_tender/vendor/select2/select2.min.js' %}</node>
+            <node x="" y="">{% static 'home/assets/animate.css/animate.min.css'%}</node>
+            <node x="" y="">{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}</node>
+            <node x="" y="">{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}</node>
+            <node x="" y="">{% static 'home/assets/bootstrap/js/bootstrap.min.js' %}</node>
+            <node x="" y="">{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}</node>
+            <node x="" y="">{% static 'home/assets/dropdown/css/style.css'%}</node>
+            <node x="" y="">{% static 'home/assets/dropdown/js/script.min.js' %}</node>
+            <node x="" y="">{% static 'home/assets/dropdown/js/script.min.js'%}</node>
+            <node x="" y="">{% static 'home/assets/et-line-font-plugin/style.css'%}</node>
+            <node x="" y="">{% static 'home/assets/fonts/fonts1.css' %}</node>
+            <node x="" y="">{% static 'home/assets/fonts/fonts2.css' %}</node>
+            <node x="" y="">{% static 'home/assets/fonts/fonts3.css' %}</node>
+            <node x="" y="">{% static 'home/assets/smooth-scroll/SmoothScroll.js' %}</node>
+            <node x="" y="">{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}</node>
+            <node x="" y="">{% static 'home/assets/socicon/css/socicon.min.css'%}</node>
+            <node x="" y="">{% static 'home/assets/tether/tether.min.css'%}</node>
+            <node x="" y="">{% static 'home/assets/tether/tether.min.js'%}</node>
+            <node x="" y="">{% static 'home/assets/theme/css/style.css'%}</node>
+            <node x="" y="">{% static 'home/assets/theme/js/script.js' %}</node>
+            <node x="" y="">{% static 'home/assets/theme/js/script.js'%}</node>
+            <node x="" y="">{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}</node>
+            <node x="" y="">{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}</node>
+            <node x="" y="">{% static 'home/assets/viewportChecker/jquery.viewportchecker.js' %}</node>
+            <node x="" y="">{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}</node>
+            <node x="" y="">{% static 'home/assets/web/assets/jquery/jquery.min.js' %}</node>
+            <node x="" y="">{% static 'home/assets/web/assets/jquery/jquery.min.js'%}</node>
+            <node x="" y="">{% static 'login/css/main.css' %}</node>
+            <node x="" y="">{% static 'login/css/util.css' %}</node>
+            <node x="" y="">{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}</node>
+            <node x="" y="">{% static 'login/fonts/iconic/fonts/css Fonts.css' %}</node>
+            <node x="" y="">{% static 'login/js/main.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/animate/animate.css' %}</node>
+            <node x="" y="">{% static 'login/vendor/animsition/css/animsition.min.css' %}</node>
+            <node x="" y="">{% static 'login/vendor/animsition/js/animsition.min.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/bootstrap/css/bootstrap.min.css' %}</node>
+            <node x="" y="">{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/bootstrap/js/popper.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/countdowntime/countdowntime.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}</node>
+            <node x="" y="">{% static 'login/vendor/daterangepicker/daterangepicker.css' %}</node>
+            <node x="" y="">{% static 'login/vendor/daterangepicker/daterangepicker.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/daterangepicker/moment.min.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}</node>
+            <node x="" y="">{% static 'login/vendor/select2/select2.min.css' %}</node>
+            <node x="" y="">{% static 'login/vendor/select2/select2.min.js' %}</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8" x="-712.5300483675949" y="-370.4331058904829" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tender_feed/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tender_feed/templates/tender_feed/tenderFeed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="105" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
           <folding>
-            <element signature="e#478#497#0#HTML" expanded="true" />
-            <element signature="e#639#657#0#HTML" expanded="true" />
-            <element signature="e#1094#1119#0#HTML" expanded="true" />
+            <element signature="e#153892#153920#0#HTML" expanded="true" />
+            <element signature="e#229030#229058#0#HTML" expanded="true" />
+            <element signature="e#273053#273059#0#HTML" expanded="true" />
+            <element signature="e#273065#273071#0#HTML" expanded="true" />
+            <element signature="e#274215#274221#0#HTML" expanded="true" />
+            <element signature="e#274227#274233#0#HTML" expanded="true" />
+            <element signature="e#301772#301800#0#HTML" expanded="true" />
+            <element signature="e#359742#359770#0#HTML" expanded="true" />
+            <element signature="e#412887#412915#0#HTML" expanded="true" />
+            <element signature="e#469798#469826#0#HTML" expanded="true" />
+            <element signature="e#539725#539753#0#HTML" expanded="true" />
+            <element signature="e#596946#596974#0#HTML" expanded="true" />
+            <element signature="e#663042#663070#0#HTML" expanded="true" />
+            <element signature="e#737925#737953#0#HTML" expanded="true" />
+            <element signature="e#857704#857709#0#HTML" expanded="true" />
+            <element signature="e#857829#857834#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#noscript#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/migrations/0005_auto_20190525_1941.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/migrations/0004_auto_20190524_1828.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templates/home/bidderLanding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/Create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/Create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcurementSystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login/base.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/register.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templates/home/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="40" column="104" selection-start-line="40" selection-start-column="104" selection-end-line="40" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcurementSystem/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="52" column="104" selection-start-line="52" selection-start-column="104" selection-end-line="52" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="6" column="99" lean-forward="true" selection-start-line="6" selection-start-column="99" selection-end-line="6" selection-end-column="99" />
+          <folding>
+            <element signature="e#527#555#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/Bidlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

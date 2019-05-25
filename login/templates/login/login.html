@@ -9,18 +9,31 @@
                     <span class="login100-form-title p-b-26">
                         Welcome To E-Procurement
                     </span>
-                    <div class="wrap-input100 input100 validate-input ">
-                        {{ form.as_p }}
-                    {% for error in form.username.errors %}
-                        <p style="color: red">{{ error }}</p>
-                    {% endfor %}<br>
-                    {% for error in form.password.errors %}
-                        <p style="color: red">{{ error }}</p>
-                    {% endfor %}<br>
+                    {% if messages %}
+                        <ul style="padding-bottom: 40px">
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    {% for field in form %}
+                        <p>
+                            {{ field.label_tag }}
+                            {% if field.help_text %}
+                                <small style="color: grey">{{ field.help_text }}</small>
+                            {% endif %}
+                            {% for error in field.errors %}
+                                <p style="color: red">{{ error }}</p>
+                            {% endfor %}<br>
+                        <div data-validate="{{ field.help_text }}">
+                            {{ field }}
+                        </div>
 
-                    </div>
+                        </p>
+                    {% endfor %}
 
-                    <div class="container-login100-form-btn" style="margin-top: 90px">
+
+                    <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn" type="submit">
