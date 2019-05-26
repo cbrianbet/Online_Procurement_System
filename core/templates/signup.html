@@ -15,7 +15,7 @@
                     {% for error in field.errors %}
                         <p style="color: red">{{ error }}</p>
                     {% endfor %}<br>
-                <div data-validate="{{ field.help_text }}">
+                <div class="wrap-input100" data-validate="{{ field.help_text }}">
                     {{ field }}
                 </div>
 
@@ -24,7 +24,7 @@
             <div class="container-login100-form-btn">
                 <div class="wrap-login100-form-btn">
                     <div class="login100-form-bgbtn"></div>
-                    <button class="login100-form-btn" style="padding-top: 20px" type="submit">Sign up</button>
+                    <button class="login100-form-btn"  type="submit">Sign up</button>
                 </div>
             </div>
         </form>

@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="login"),
-    path('logout', views.logout_view, name='logout'),
+    path('logout', views.logout_request, name='logout'),
 ]

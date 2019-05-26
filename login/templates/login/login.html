@@ -12,7 +12,9 @@
                     {% if messages %}
                         <ul style="padding-bottom: 40px">
                             {% for message in messages %}
-                                <li>{{ message }}</li>
+                                <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                    <li>{{ message }}</li>
+                                </div>
                             {% endfor %}
                         </ul>
                     {% endif %}

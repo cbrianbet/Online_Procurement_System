@@ -3,6 +3,7 @@ from django.http import Http404
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import BidForm
+from .models import Bids
 from create_tender.models import Tender
 
 
@@ -37,6 +38,7 @@ def index(request, tender_id):
             return redirect('bid_feed')
         # TODO send email
         # TODO  present success
+        # TODO add documents
 
         context = {
             'form': form
@@ -51,3 +53,10 @@ def bidlist(request):
         'tenders': Tender.objects.all()
     }
     return render(request, 'create_bids/Bidlist.html', context)
+
+@login_required
+def my_bids(request):
+    context = {
+        'bids': Bids.objects.filter(user=request.user)
+    }
+    return render(request, 'create_bids/bidHistory.html', context)

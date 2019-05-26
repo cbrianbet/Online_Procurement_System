@@ -29,8 +29,8 @@ def index(request):
     return render(request, "login/login.html", {'form': form})
 
 
-def logout_view(request):
+def logout_request(request):
     logout(request)
-    form = LoginForm(request.GET)
+    form = LoginForm()
     messages.info(request, "User is logged out")
     return render(request, 'login/login.html', {'form': form})

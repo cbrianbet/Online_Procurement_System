@@ -1,6 +1,6 @@
 {% extends 'create_tender/base.html' %}
 {% block tilte %}
-View Tenders
+My Bids
 {% endblock %}
 {% block link %}
 "{% url 'bidderHome' %}"
@@ -12,13 +12,13 @@ View Tenders
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Available Tenders</h2>
+                    <h2 class="title">Bid History</h2>
                     <ul>
-                        {% for tender in tenders %}
-                            <a href="{% url 'bid_tender' tender.id %}"><h4>{{ tender }}</h4></a>
-                            <p>{{ tender.date_created }}</p>
+                        {% for bid in bids %}
+                            <a href="{% url 'bid_tender' bid.id %}"><h4>{{ bid }}</h4></a>
+                            <p>{{ bid.Bid_created_date }}</p>
                             {% empty %}
-                                <li>No Tenders</li>
+                                <li>No Tenders Bid for yet</li>
                         {% endfor %}
                     </ul>
                 </div>
