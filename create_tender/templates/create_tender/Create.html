@@ -1,7 +1,7 @@
 {% extends 'create_tender/base.html' %}
 {% block tilte %}Create a tender{% endblock %}
 {% block link %}
-"{% url 'buyerHome' %}"
+    "{% url 'buyerHome' %}"
 {% endblock %}
 {% block body %}
 
@@ -13,6 +13,15 @@
                     <h2 class="title">Create Tender</h2>
                     <form method="POST">
                         {% csrf_token %}
+                        {% if messages %}
+                            <ul>
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                        <li>{{ message }}</li>
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                         {% for field in form %}
                             <p>
                                 {{ field.label_tag }}

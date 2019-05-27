@@ -54,6 +54,7 @@ def bidlist(request):
     }
     return render(request, 'create_bids/Bidlist.html', context)
 
+
 @login_required
 def my_bids(request):
     context = {

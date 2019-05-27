@@ -37,3 +37,11 @@ def tenderlist(request):
         'tenders': Tender.objects.all()
     }
     return render(request, 'create_tender/list.html', context)
+
+
+@login_required
+def my_tenders(request):
+    context = {
+        'my_tender': Tender.objects.filter(user=request.user)
+    }
+    return render(request, 'create_tender/tenderHistory.html', context)

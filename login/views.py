@@ -23,7 +23,9 @@ def index(request):
                 else:
                     return HttpResponse('Account is Disabled')
             else:
-                return form.errors('Invalid Credentials')
+                form = LoginForm()
+                inv = messages.error(request, "invalid credentials", fail_silently=True)
+                return render(request, 'login/login.html', {'form': form, 'inv': inv})
     else:
         form = LoginForm()
     return render(request, "login/login.html", {'form': form})
@@ -32,5 +34,5 @@ def index(request):
 def logout_request(request):
     logout(request)
     form = LoginForm()
-    messages.info(request, "User is logged out")
-    return render(request, 'login/login.html', {'form': form})
+    logoutmessages = messages.info(request, "User is logged out", fail_silently=True)
+    return render(request, 'login/login.html', {'form': form, 'logoutmessages': logoutmessages})

@@ -10,10 +10,11 @@
                         Welcome To E-Procurement
                     </span>
                     {% if messages %}
-                        <ul style="padding-bottom: 40px">
+                        <ul>
                             {% for message in messages %}
                                 <div class="alert alert-{{ message.level_tag }}" role="alert">
                                     <li>{{ message }}</li>
+
                                 </div>
                             {% endfor %}
                         </ul>
@@ -21,12 +22,7 @@
                     {% for field in form %}
                         <p>
                             {{ field.label_tag }}
-                            {% if field.help_text %}
-                                <small style="color: grey">{{ field.help_text }}</small>
-                            {% endif %}
-                            {% for error in field.errors %}
-                                <p style="color: red">{{ error }}</p>
-                            {% endfor %}<br>
+
                         <div data-validate="{{ field.help_text }}">
                             {{ field }}
                         </div>
