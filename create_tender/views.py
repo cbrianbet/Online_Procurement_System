@@ -1,6 +1,9 @@
+from django.http import Http404
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+
+from create_bids.models import Bids
 from .models import Tender
 from .forms import CreateTenderForm
 

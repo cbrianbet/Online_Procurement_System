@@ -26,7 +26,7 @@
         <option value="$MODULE_DIR$/create_tender/templates" />
         <option value="$MODULE_DIR$/core/templates" />
         <option value="$MODULE_DIR$/create_bids/templates" />
-        <option value="$MODULE_DIR$/tender_feed/templates" />
+        <option value="$MODULE_DIR$/approve_bids/templates" />
       </list>
     </option>
   </component>

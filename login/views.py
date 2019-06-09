@@ -15,9 +15,9 @@ def index(request):
                 if user.is_active:
                     login(request, user)
                     if request.user.profile.account_type == 'Bidder':
-                        return render(request, 'home/bidderLanding.html')
+                        return redirect('bidderHome')
                     elif request.user.profile.account_type == 'Buyer':
-                        return render(request, 'home/buyerLanding.html')
+                        return redirect('buyerHome')
                     else:
                         return render(request, "login/login.html", {'form': form})
                 else:

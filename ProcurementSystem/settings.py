@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'tender_feed.apps.TenderFeedConfig',
+    'approve_bids.apps.ApproveBidsConfig',
     'core.apps.CoreConfig',
     'create_bids.apps.CreateBidsConfig',
     'create_tender.apps.CreateTenderConfig',
@@ -128,4 +128,5 @@ STATIC_URL = '/static/'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_URL = '/logout'
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/docs/'

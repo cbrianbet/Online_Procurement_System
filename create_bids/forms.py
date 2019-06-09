@@ -3,7 +3,7 @@ from .models import Bids
 
 
 class BidForm(forms.ModelForm):
-    Quote_amount = forms.IntegerField(required=True, min_value=1, label='Quote Amount')
+    Quote_amount = forms.IntegerField(required=True, min_value=1, label='Quote Amount(Ksh.)')
     Bid_description = forms.CharField(
         widget=forms.Textarea(
             attrs={'cols': 62, 'rows': 3}
@@ -11,7 +11,6 @@ class BidForm(forms.ModelForm):
         required=True,
         label='Bid Description'
     )
-    Bid_documents_url = forms.FileField(required=False, label='Upload documents for Bid')
 
     class Meta:
         model = Bids

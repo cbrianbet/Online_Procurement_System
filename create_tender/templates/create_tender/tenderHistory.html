@@ -15,8 +15,8 @@ My Bids
                     <h2 class="title">Tender History</h2>
                     <ul>
                         {% for tender in my_tender %}
-                            <a href=""><h4>{{ tender }}</h4></a>
-                            <p>{{ tender.date_created }}</p>
+                            <a href="{% url 'accept_list' tender.pk %}"><h4>{{ tender }}</h4></a>
+                            <p>created on: {{ tender.date_created }}</p>
                             {% empty %}
                                 <li>No Tenders created yet</li>
                         {% endfor %}

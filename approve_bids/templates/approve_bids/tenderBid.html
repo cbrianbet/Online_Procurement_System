@@ -15,10 +15,10 @@ My Bids
                     <h2 class="title">Bid History</h2>
                     <ul>
                         {% for bid in bids %}
-                            <a href="{% url 'bid_update' bid.id %}"><h4>{{ bid }}</h4></a>
-                            <p>{{ bid.Bid_created_date }}</p>
+                            <a href=""><h4>Bid by {{ bid.user.profile.company_name }}</h4></a>
+                            <p>created on: {{ bid.Bid_created_date }}</p>
                             {% empty %}
-                                <li>No Bids Bid for Tender yet</li>
+                                <li>No Bids for Tender yet</li>
                         {% endfor %}
                     </ul>
                 </div>
