@@ -11,6 +11,7 @@ class Tender(models.Model):
     is_active = models.CharField(max_length=10, default=None)
     tender_value = models.PositiveIntegerField()
     tender_duration = models.PositiveIntegerField(default=10)
+    tender_award = models.CharField(max_length=10, default="No")
 
     def __str__(self):
         return f"{self.tender_title}"

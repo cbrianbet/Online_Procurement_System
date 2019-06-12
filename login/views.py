@@ -33,6 +33,5 @@ def index(request):
 
 def logout_request(request):
     logout(request)
-    form = LoginForm()
-    logoutmessages = messages.info(request, "User is logged out", fail_silently=True)
-    return render(request, 'login/login.html', {'form': form, 'logoutmessages': logoutmessages})
+    messages.info(request, "User is logged out", fail_silently=True)
+    return redirect('login')

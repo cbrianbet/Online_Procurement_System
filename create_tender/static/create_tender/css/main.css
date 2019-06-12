@@ -168,6 +168,10 @@ h6 {
   padding-top: 100px;
 }
 
+.p-t-10 {
+  padding-top: 20px;
+}
+
 .p-t-20 {
   padding-top: 20px;
 }
@@ -221,6 +225,14 @@ h6 {
 
 .btn--red {
   background: #ff003c;
+}
+
+.btn--def {
+  background: #948c81;
+}
+
+.btn--def:hover {
+  background: #2e2e2e;
 }
 
 .btn--red:hover {

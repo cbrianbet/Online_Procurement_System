@@ -18,15 +18,18 @@
                             {% for message in messages %}
                                 <div class="alert alert-{{ message.level_tag }}" role="alert">
                                     <li>{{ message }}</li>
-
                                 </div>
                             {% endfor %}
                         </ul>
                     {% endif %}
                     <ul>
                         {% for tender in tenders %}
-                            <a href="{% url 'bid_tender' tender.id %}"><h4>{{ tender }}</h4></a>
-                            <p>{{ tender.date_created }}</p>
+                            <div class="card card-1 card-body">
+                                <h4>{{ tender }}</h4>
+                                <p>posed on:
+                                    {{ tender.date_created }}</p>
+                                <a href="{% url 'bid_tender' tender.id %}" class="btn btn--radius btn--green">Bid</a>
+                            </div>
                         {% empty %}
                             <li>No Tenders</li>
                         {% endfor %}

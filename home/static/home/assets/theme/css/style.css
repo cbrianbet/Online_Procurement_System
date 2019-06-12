@@ -1857,27 +1857,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     transform: rotate(0deg); }
   to {
     transform: rotate(359deg); } }
-.btn-loader {
-  -webkit-animation: btnCircleLoading .6s infinite linear;
-  animation: btnCircleLoading .6s infinite linear;
-  border-radius: 50%;
-  border: 4px rgba(255, 255, 255, 0.25) solid;
-  border-top-color: white;
-  display: none;
-  height: 26px;
-  left: 50%;
-  margin-left: -13px;
-  margin-top: -13px;
-  position: absolute;
-  top: 50%;
-  width: 26px; }
 
-.btn-loading {
-  position: relative; }
-  .btn-loading .btn-text {
-    visibility: hidden; }
-  .btn-loading .btn-loader {
-    display: block; }
 
 .hidden {
   visibility: hidden; }
@@ -1960,43 +1940,3 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   font-size: 119px;
   text-decoration: none;
   color: #9C9C9C; }
-
-/* contacts3 */
-.mbr-iconfont.mbr-iconfont-logo-contacts3 {
-  font-size: 58px;
-  text-decoration: none;
-  color: #9C9C9C;
-  margin-bottom: 1.57rem; }
-
-.mbr-iconfont-company-contacts3 {
-  font-size: 22px;
-  color: #cfcfcf; }
-
-.mbr-iconfont-company-contacts5 {
-  font-size: 22px;
-  color: #000; }
-
-html.is-builder .mbr-cards .card-img + .card-block {
-  padding-top: 0; }
-html.is-builder .mbr-cards .card-text + .card-btn {
-  padding-top: 0; }
-html.is-builder .mbr-cards .card-title + * {
-  padding-top: 0; }
-html.is-builder .mbr-cards .card-title + .card-btn {
-  padding-top: 0; }
-html.is-builder .mbr-cards .card-subtitle + .card-btn {
-  padding-top: 0; }
-html.is-builder :not([data-app-remove-it]).card-img + .card-block {
-  padding-top: 2.3125rem; }
-html.is-builder :not([data-app-remove-it]).card-title + .card-subtitle, html.is-builder :not([data-app-remove-it]).card-title ~ .card-text {
-  padding-top: 1rem; }
-html.is-builder :not([data-app-remove-it]).card-title ~ .card-btn {
-  padding-top: 1.4375rem; }
-html.is-builder :not([data-app-remove-it]).card-subtitle + .card-text {
-  padding-top: 0; }
-html.is-builder :not([data-app-remove-it]).card-subtitle ~ .card-btn {
-  padding-top: 0.3125rem; }
-html.is-builder :not([data-app-remove-it]).card-text + .card-btn {
-  padding-top: 1.375rem; }
-
-/*# sourceMappingURL=style.css.map */

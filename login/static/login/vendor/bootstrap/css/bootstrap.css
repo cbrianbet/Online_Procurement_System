@@ -8115,22 +8115,6 @@ a.text-secondary:focus, a.text-secondary:hover {
   color: #6c757d !important;
 }
 
-.text-success {
-  color: #28a745 !important;
-}
-
-a.text-success:focus, a.text-success:hover {
-  color: #1e7e34 !important;
-}
-
-.text-info {
-  color: #17a2b8 !important;
-}
-
-a.text-info:focus, a.text-info:hover {
-  color: #117a8b !important;
-}
-
 .text-warning {
   color: #ffc107 !important;
 }

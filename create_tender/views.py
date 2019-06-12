@@ -6,6 +6,7 @@ from django.contrib import messages
 from create_bids.models import Bids
 from .models import Tender
 from .forms import CreateTenderForm
+from approve_bids.models import AcceptBid
 
 
 @login_required
@@ -44,7 +45,21 @@ def tenderlist(request):
 
 @login_required
 def my_tenders(request):
+
+    awarded_tender = AcceptBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    my_tender = Tender.objects.filter(user=request.user, tender_award__exact="No")
+
     context = {
-        'my_tender': Tender.objects.filter(user=request.user)
+        "acc_bids": awarded_tender,
+        'my_tender': my_tender
     }
     return render(request, 'create_tender/tenderHistory.html', context)
+
+
+@login_required
+def del_tender(request, pk):
+    if request.method == 'POST':
+        tender = Tender.objects.get(pk=pk)
+        messages.error(request, f"{tender.tender_title} deleted")
+        tender.delete()
+    return redirect('tender_history')

@@ -39,12 +39,6 @@ def index(request, tender_id):
         # TODO send email
         # TODO  present success
 
-        context = {
-            'form': form
-        }
-
-        return render(request, 'create_bids/Create.html', context)
-
 
 @login_required
 def tender_list(request):
@@ -72,6 +66,39 @@ def bid_update(request, bids_id):
         'bid': bid
     }
     return render(request, 'create_bids/Bidupdate.html', context)
+
+
+@login_required
+def bid_edit(request, bids_id):
+    bid = Bids.objects.get(pk=bids_id)
+
+    if request.method == 'GET':
+        try:
+            form = BidForm()
+        except Tender.DoesNotExist:
+            raise Http404("Tender does not exist")
+
+        context = {
+            'bid': bid,
+            'form': form
+        }
+        return render(request, "create_bids/Updatebid.html", context)
+
+    if request.method == 'POST':
+        form = BidForm(request.POST, request.FILES)
+        if form.is_valid():
+            bids = form.save(commit=False)
+            bids.user = request.user
+            bids.Tender_ID = bid.Tender_ID
+            bids.id = bid
+            bids.save()
+            bids.Quote_amount = form.cleaned_data.get('Quote_amount')
+            bids.Bid_description = form.cleaned_data.get('Bid_description')
+
+            messages.success(request, "Bid updated successfully")
+            return redirect('bid_history')
+        # TODO send email
+        # TODO  present success
 
 
 @login_required

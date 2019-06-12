@@ -17,8 +17,7 @@ class CreateTenderForm(forms.ModelForm):
     )
     tender_duration = forms.IntegerField(required=True, help_text='(in months)')
     is_active = forms.ChoiceField(required=True, choices=choice, label="Is the tender active?")
-    tender_value = forms.IntegerField(required=False, min_value=1, label="Value of tender")
-    # TODO widgets Boolean fields
+    tender_value = forms.IntegerField(required=False, min_value=1, label="Value of tender)", help_text='(Ksh.)')
 
     class Meta:
         model = Tender

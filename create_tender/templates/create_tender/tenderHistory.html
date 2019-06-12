@@ -1,9 +1,9 @@
 {% extends 'create_tender/base.html' %}
 {% block tilte %}
-My Bids
+    My Bids
 {% endblock %}
 {% block link %}
-"{% url 'buyerHome' %}"
+    "{% url 'buyerHome' %}"
 {% endblock %}
 {% block body %}
 
@@ -12,15 +12,67 @@ My Bids
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Tender History</h2>
-                    <ul>
-                        {% for tender in my_tender %}
-                            <a href="{% url 'accept_list' tender.pk %}"><h4>{{ tender }}</h4></a>
-                            <p>created on: {{ tender.date_created }}</p>
-                            {% empty %}
-                                <li>No Tenders created yet</li>
-                        {% endfor %}
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a href="#unawarded" class="nav-link active" data-toggle="tab">Un-awarded Tenders</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#awarded" class="nav-link" data-toggle="tab">Awarded Tender</a>
+                        </li>
                     </ul>
+                    <div class="tab-content">
+                        <div id="unawarded" class="container tab-pane active">
+                            <h2 class="title">Un-awarded Tenders History</h2>
+                            {% if messages %}
+                                <ul>
+                                    {% for message in messages %}
+                                        <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                            <li>{{ message }}</li>
+
+                                        </div>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                            <ul>
+                                {% for tender in my_tender %}
+                                    <div class="card card-1 card-body">
+                                        <h4>{{ tender }}</h4>
+                                        <div class="p-t-10">
+                                            <p>created on: {{ tender.date_created }}</p>
+                                            <a class="btn btn--radius btn--green"
+                                               href="{% url 'accept_list' tender.pk %}">View bids</a>
+                                            <a class="btn btn--radius btn--green"
+                                               href="">Update</a>
+                                            <form method="post" action="{% url 'del_tender' tender.id %}">
+                                                {% csrf_token %}
+                                                <button class="btn btn--radius btn--red" type="submit">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    <li>No Tenders created yet</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div id="awarded" class="container tab-pane active">
+                            <h2 class="title">Awarded Tenders History</h2>
+                            <ul>
+                                {% for tend in acc_bids %}
+                                    <div class="card card-1 card-body">
+                                        <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                        <div class="p-t-10">
+                                            <p>awarded on: {{ tend.date }} to {{ tend.bid_ID.user.profile.company_name }}</p>
+                                            <a class="btn btn--radius btn--green"
+                                               href="">View</a>
+                                        </div>
+                                    </div>
+                                {% empty %}
+                                    <li>No Tenders awarded yet</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

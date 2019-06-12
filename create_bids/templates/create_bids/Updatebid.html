@@ -1,7 +1,7 @@
 {% extends 'create_tender/base.html' %}
-{% block tilte %}Create Bid{% endblock %}
+{% block tilte %}Update Bid{% endblock %}
 {% block link %}
-    "{% url 'bidderHome' %}"
+"{% url 'bidderHome' %}"
 {% endblock %}
 {% block body %}
 
@@ -10,19 +10,20 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Bid For {{ tender.tender_title }} Tender
-                        by {{ tender.user.profile.company_name }}</h2>
+                <div class="row-sm-offset">
+                    <h2 class="title">Update Bid For {{ bid.Tender_ID.tender_title }} Tender by {{ bid.user.profile.company_name }}</h2>
                     <h5>Description:</h5>
-                    <p>{{ tender.tender_desc }}</p>
-                    <p>Duration: {{ tender.tender_duration }} months</p>
+                    <p>{{ bid.Tender_ID.tender_desc }}</p>
+                    <p>Duration: {{ bid.Tender_ID.tender_duration }} months</p>
                     {% if tender.tender_value %}
                         <h5>Tender worth:</h5>
-                        <p>Ksh.{{ tender.tender_value }}</p>
+                        <p>Ksh.{{ bid.Tender_ID.tender_value }}</p>
                     {% endif %}
                     <br>
+                </div>
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
-                        <h4>Bid:</h4>
+                        <h5>Update Bid</h5><br>
                         {% for field in form %}
                             <p>
                                 {{ field.label_tag }}

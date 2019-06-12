@@ -1,9 +1,9 @@
 {% extends 'create_tender/base.html' %}
 {% block tilte %}
-My Bids
+    My Bids
 {% endblock %}
 {% block link %}
-"{% url 'bidderHome' %}"
+    "{% url 'bidderHome' %}"
 {% endblock %}
 {% block body %}
 
@@ -13,12 +13,25 @@ My Bids
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Bid History</h2>
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                    <li>{{ message }}</li>
+
+                                </div>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                     <ul>
                         {% for bid in bids %}
-                            <a href="{% url 'bid_update' bid.id %}"><h4>{{ bid }}</h4></a>
-                            <p>{{ bid.Bid_created_date }}</p>
-                            {% empty %}
-                                <li>No Bids Bid for Tender yet</li>
+                            <div class="card card-1 card-body">
+                                <h4>{{ bid }}</h4>
+                                <a href="{% url 'bid_update' bid.id %}" class="btn--green btn--radius btn">View Bid</a>
+                                <p>Bid created on: {{ bid.Bid_created_date }}</p>
+                            </div>
+                        {% empty %}
+                            <li>No Bids Bid for Tender yet</li>
                         {% endfor %}
                     </ul>
                 </div>
