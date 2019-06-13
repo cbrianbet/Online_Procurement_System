@@ -12,13 +12,10 @@
                 <div class="card-body">
                     <h2 class="title">Bid For {{ tender.tender_title }} Tender
                         by {{ tender.user.profile.company_name }}</h2>
-                    <h5>Description:</h5>
+                    <h5>Tender Specifications:</h5>
                     <p>{{ tender.tender_desc }}</p>
                     <p>Duration: {{ tender.tender_duration }} months</p>
-                    {% if tender.tender_value %}
-                        <h5>Tender worth:</h5>
-                        <p>Ksh.{{ tender.tender_value }}</p>
-                    {% endif %}
+
                     <br>
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}

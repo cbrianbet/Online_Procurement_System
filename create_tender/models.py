@@ -9,7 +9,7 @@ class Tender(models.Model):
     tender_desc = models.CharField(max_length=500)
     date_created = models.DateField(auto_now=True)
     is_active = models.CharField(max_length=10, default=None)
-    tender_value = models.PositiveIntegerField()
+    tender_value = models.PositiveIntegerField(null=True)
     tender_duration = models.PositiveIntegerField(default=10)
     tender_award = models.CharField(max_length=10, default="No")
 

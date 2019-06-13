@@ -9,7 +9,7 @@ class BidForm(forms.ModelForm):
             attrs={'cols': 62, 'rows': 3}
         ),
         required=True,
-        label='Bid Description'
+        label='Bid Specifications'
     )
 
     class Meta:

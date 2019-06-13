@@ -24,7 +24,6 @@ def index(request):
             tender.tender_title = form.cleaned_data.get('tender_title')
             tender.tender_desc = form.cleaned_data.get('tender_desc')
             tender.tender_duration = form.cleaned_data.get('tender_duration')
-            tender.tender_value = form.cleaned_data.get('tender_value')
             tender.is_active = form.cleaned_data.get('is_active')
             messages.success(request, "Tender Posted successfully")
             form = CreateTenderForm()
@@ -48,10 +47,11 @@ def my_tenders(request):
 
     awarded_tender = AcceptBid.objects.filter(bid_ID__Tender_ID__user=request.user)
     my_tender = Tender.objects.filter(user=request.user, tender_award__exact="No")
-
+    bid = Bids.objects.all()
     context = {
         "acc_bids": awarded_tender,
-        'my_tender': my_tender
+        'my_tender': my_tender,
+        'bid': bid
     }
     return render(request, 'create_tender/tenderHistory.html', context)
 
@@ -63,3 +63,11 @@ def del_tender(request, pk):
         messages.error(request, f"{tender.tender_title} deleted")
         tender.delete()
     return redirect('tender_history')
+
+
+@login_required
+def acc_list(request, bid_id):
+    context = {
+        "bid": AcceptBid.objects.filter(id=bid_id)
+    }
+    return render(request, "create_tender/acc_bid.html", context)

@@ -12,13 +12,11 @@ class CreateTenderForm(forms.ModelForm):
         widget=forms.Textarea(
             attrs={'cols': 62, 'rows': 3}
         ),
-        help_text='Describe the tender',
-        label='Tender Description'
+        label='Tender specifications'
     )
     tender_duration = forms.IntegerField(required=True, help_text='(in months)')
     is_active = forms.ChoiceField(required=True, choices=choice, label="Is the tender active?")
-    tender_value = forms.IntegerField(required=False, min_value=1, label="Value of tender)", help_text='(Ksh.)')
 
     class Meta:
         model = Tender
-        fields = ('tender_title', 'tender_desc', 'tender_duration', 'tender_value', 'is_active')
+        fields = ('tender_title', 'tender_desc', 'tender_duration', 'is_active')
