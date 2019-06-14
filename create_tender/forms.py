@@ -1,5 +1,5 @@
 from django import forms
-from .models import Tender
+from .models import *
 
 
 class CreateTenderForm(forms.ModelForm):
@@ -20,3 +20,35 @@ class CreateTenderForm(forms.ModelForm):
     class Meta:
         model = Tender
         fields = ('tender_title', 'tender_desc', 'tender_duration', 'is_active')
+
+
+class DesktopTenderForm(forms.ModelForm):
+    Product = forms.CharField(required=True)
+    Processor = forms.CharField(required=True)
+    Memory = forms.CharField(required=True)
+    Operating_system = forms.CharField(required=True)
+    Graphics = forms.CharField(required=True)
+    Storage = forms.CharField(required=True)
+    Quantity = forms.IntegerField(required=True, min_value=1)
+
+    class Meta:
+        model = Desktop_Tender
+        fields = ('Product', 'Processor', 'Memory', 'Operating_system', 'Storage', 'Graphics', 'Quantity')
+
+
+class ConstTenderForm(forms.ModelForm):
+    choice = (
+        ('Yes', 'Yes'),
+        ('No', 'No')
+    )
+    Mod = forms.CharField(required=True, label='Model')
+    Net_power = forms.CharField(required=True)
+    Electric = forms.ChoiceField(required=True, choices=choice)
+    Engine = forms.CharField(required=True)
+    Operating_weight = forms.CharField(required=True)
+    Certification = forms.CharField(required=True)
+    Quantity = forms.CharField(required=True)
+
+    class Meta:
+        model = ConstructionTender
+        fields = ('Mod', 'Net_power', 'Electric', 'Engine', 'Operating_weight', 'Certification', 'Quantity')

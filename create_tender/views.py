@@ -4,29 +4,58 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from create_bids.models import Bids
-from .models import Tender
-from .forms import CreateTenderForm
+from .models import *
+from .forms import *
 from approve_bids.models import AcceptBid
 
 
 @login_required
 def index(request):
     if request.method == 'GET':
-        form = CreateTenderForm()
+        form = DesktopTenderForm()
         return render(request, "create_tender/Create.html", {'form': form})
 
     if request.method == 'POST':
-        form = CreateTenderForm(request.POST)
+        form = DesktopTenderForm(request.POST)
         if form.is_valid():
             tender = form.save(commit=False)
             tender.user = request.user
             tender.save()
-            tender.tender_title = form.cleaned_data.get('tender_title')
-            tender.tender_desc = form.cleaned_data.get('tender_desc')
-            tender.tender_duration = form.cleaned_data.get('tender_duration')
-            tender.is_active = form.cleaned_data.get('is_active')
+            tender.Product = form.cleaned_data.get('Product')
+            tender.Memory = form.cleaned_data.get('Memory')
+            tender.Graphics = form.cleaned_data.get('Graphics')
+            tender.Processor = form.cleaned_data.get('Processor')
+            tender.Storage = form.cleaned_data.get('Storage')
+            tender.Operating_system = form.cleaned_data.get('Operating_system')
+            tender.Quantity = form.cleaned_data.get('Quantity')
             messages.success(request, "Tender Posted successfully")
-            form = CreateTenderForm()
+            return redirect('create_tender')
+        # TODO send email
+        # TODO  present success
+        args = {'form': form}
+        return render(request, 'create_tender/Create.html', args)
+
+
+@login_required
+def const_tender(request):
+    if request.method == 'GET':
+        form = ConstTenderForm()
+        return render(request, "create_tender/Create.html", {'form': form})
+
+    if request.method == 'POST':
+        form = ConstTenderForm(request.POST)
+        if form.is_valid():
+            tender = form.save(commit=False)
+            tender.user = request.user
+            tender.save()
+            tender.Mod = form.cleaned_data.get('Mod')
+            tender.Net_power = form.cleaned_data.get('Net_power')
+            tender.Electric = form.cleaned_data.get('Electric')
+            tender.Operating_weight = form.cleaned_data.get('Operating_weight')
+            tender.Certification = form.cleaned_data.get('Certification')
+            tender.Engine = form.cleaned_data.get('Engine')
+            tender.Quantity = form.cleaned_data.get('Quantity')
+            messages.success(request, "Tender Posted successfully")
             return redirect('create_tender')
         # TODO send email
         # TODO  present success
@@ -54,6 +83,11 @@ def my_tenders(request):
         'bid': bid
     }
     return render(request, 'create_tender/tenderHistory.html', context)
+
+
+@login_required
+def tender_type(request):
+    return render(request, "create_tender/tenderType.html")
 
 
 @login_required

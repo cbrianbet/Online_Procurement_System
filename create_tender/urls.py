@@ -8,9 +8,11 @@ from create_bids import views as bid_view
 
 urlpatterns = [
     # Seller Urls and paths
-    path('tender', views.index, name="create_tender"),
+    path('desktop_tender', views.index, name="create_tender"),
+    path('const_tender', views.const_tender, name="constTender"),
     path('list', views.tenderlist),
     url(r'^tender_history/$', views.my_tenders, name='tender_history'),
+    url(r'^tenderType/$', views.tender_type, name='tenderType'),
     path('tender_delete<int:pk>/', views.del_tender, name='del_tender'),
     path('acc_bid_info<int:bid_id>/', views.acc_list, name='acc_bid_info'),
     # Bidder Urls and paths

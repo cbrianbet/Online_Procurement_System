@@ -18,3 +18,58 @@ class Tender(models.Model):
 
     class Meta:
         ordering = ['-date_created']
+
+
+class Desktop_Tender(models.Model):
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    Product = models.CharField(max_length=120)
+    Processor = models.CharField(max_length=120)
+    Operating_system = models.CharField(max_length=80)
+    Memory = models.CharField(max_length=100)
+    Storage = models.CharField(max_length=100)
+    Graphics = models.CharField(max_length=100)
+    tender_award = models.CharField(max_length=10, default="No")
+    date_created = models.DateField(auto_now=True)
+    Quantity = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"{self.Product}"
+
+    class Meta:
+        ordering = ['-date_created']
+
+
+class ConstructionTender(models.Model):
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    Mod = models.CharField(max_length=80)
+    Net_power = models.CharField(max_length=80)
+    Electric = models.CharField(max_length=80)
+    Engine = models.CharField(max_length=80, default="No")
+    Operating_weight = models.CharField(max_length=80)
+    Certification = models.CharField(max_length=80)
+    Quantity = models.PositiveIntegerField()
+    tender_award = models.CharField(max_length=10, default="No")
+    date_created = models.DateField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.Mod}"
+
+    class Meta:
+        ordering = ['-date_created']
+
+
+class FurnitureTender(models.Model):
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    Product = models.CharField(max_length=100)
+    Dimensions = models.CharField(max_length=80)
+    Material = models.CharField(max_length=80)
+    Color = models.CharField(max_length=80)
+    Quantity = models.PositiveIntegerField()
+    tender_award = models.CharField(max_length=10, default="No")
+    date_created = models.DateField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.Product}"
+
+    class Meta:
+        ordering = ['-date_created']

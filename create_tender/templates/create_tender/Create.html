@@ -11,33 +11,37 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Create Tender</h2>
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                    <li>{{ message }}</li>
+                                </div>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                     <form method="POST">
                         {% csrf_token %}
-                        {% if messages %}
-                            <ul>
-                                {% for message in messages %}
-                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
-                                        <li>{{ message }}</li>
-                                    </div>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                        {% for field in form %}
-                            <p>
-                                {{ field.label_tag }}
-                                {% if field.help_text %}
-                                    <small style="color: grey">{{ field.help_text }}</small>
-                                {% endif %}
-                                {% for error in field.errors %}
-                                    <p style="color: red">{{ error }}</p>
-                                {% endfor %}<br>
-                            <div class=" " data-validate="{{ field.help_text }}">
-                                <div class="input-group input--style-1">
-                                    {{ field }}
-                                </div>
-                            </div>
-                            </p>
-                        {% endfor %}
+                        <table>
+                            {% for field in form %}
+                                <tr>
+                                    <td>
+                                        {{ field.label_tag }}
+                                        {% if field.help_text %}
+                                            <small style="color: grey">{{ field.help_text }}</small>
+                                        {% endif %}
+                                        {% for error in field.errors %}
+                                            <p style="color: red">{{ error }}</p>
+                                        {% endfor %}
+                                    </td>
+                                    <td>
+                                        <div class="input-group input--style-1">
+                                            {{ field }}
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Submit</button>
                         </div>

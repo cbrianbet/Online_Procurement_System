@@ -3,17 +3,17 @@ from django.http import Http404
 from django.shortcuts import render, redirect
 from django.contrib import messages
 
-from .forms import BidForm
-from .models import Bids
-from create_tender.models import Tender
+from .forms import *
+from .models import *
+from create_tender.models import *
 
 
 @login_required
 def index(request, tender_id):
-    tender = Tender.objects.get(pk=tender_id)
+    tender = Desktop_Tender.objects.get(pk=tender_id)
     if request.method == 'GET':
         try:
-            form = BidForm()
+            form = DesktopBidForm()
         except Tender.DoesNotExist:
             raise Http404("Tender does not exist")
 
@@ -24,26 +24,32 @@ def index(request, tender_id):
         return render(request, "create_bids/Create.html", context)
 
     if request.method == 'POST':
-        form = BidForm(request.POST, request.FILES)
+        form = DesktopBidForm(request.POST, request.FILES)
         if form.is_valid():
             bid = form.save(commit=False)
             bid.user = request.user
             bid.Tender_ID = tender
             bid.save()
+            tender.Product = form.cleaned_data.get('Product')
+            tender.Memory = form.cleaned_data.get('Memory')
+            tender.Graphics = form.cleaned_data.get('Graphics')
+            tender.Processor = form.cleaned_data.get('Processor')
+            tender.Storage = form.cleaned_data.get('Storage')
+            tender.Operating_system = form.cleaned_data.get('Operating_system')
             bid.Quote_amount = form.cleaned_data.get('Quote_amount')
-            bid.Bid_description = form.cleaned_data.get('Bid_description')
 
             messages.success(request, "Bid Posted successfully")
-            form = BidForm()
             return redirect('tender_feed')
         # TODO send email
         # TODO  present success
+        args = {'form': form}
+        return render(request, 'create_bids/Create.html', args)
 
 
 @login_required
 def tender_list(request):
     context = {
-        'tenders': Tender.objects.filter(is_active__exact="Yes")
+        'tenders': Desktop_Tender.objects.all()
     }
     return render(request, 'create_bids/Tenderlist.html', context)
 

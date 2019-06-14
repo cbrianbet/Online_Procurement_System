@@ -10,33 +10,48 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Bid For {{ tender.tender_title }} Tender
+                    <h2 class="title">Bid For Desktop Tender
                         by {{ tender.user.profile.company_name }}</h2>
                     <h5>Tender Specifications:</h5>
-                    <p>{{ tender.tender_desc }}</p>
-                    <p>Duration: {{ tender.tender_duration }} months</p>
+                    <p>Product: {{ tender.Product }}</p>
+                    <p>Processor: {{ tender.Processor }}</p>
+                    <p>Memory: {{ tender.Memory }}</p>
+                    <p>Operating System: {{ tender.Operating_system }}</p>
+                    <p>Storage: {{ tender.Storage }}</p>
+                    <p>Graphics: {{ tender.Graphics }} months</p>
+                    <p>Quantity: {{ tender.Quantity }}</p>
 
                     <br>
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         <h4>Bid:</h4>
-                        {% for field in form %}
-                            <p>
-                                {{ field.label_tag }}
-                                {% if field.help_text %}
-                                    <small style="color: grey">{{ field.help_text }}</small>
-                                {% endif %}
-                                {% for error in field.errors %}
-                                    <p style="color: red">{{ error }}</p>
-                                {% endfor %}<br>
-                            <div class=" " data-validate="{{ field.help_text }}">
-                                <div class="input-group input--style-1">
-                                    {{ field }}
-                                </div>
-                            </div>
+                        <table>
 
-                            </p>
-                        {% endfor %}
+                            {% for field in form %}
+                                <tr>
+                                    <td>
+                                        {{ field.label_tag }}
+                                        {% if field.help_text %}
+                                            <small style="color: grey">{{ field.help_text }}</small>
+                                        {% endif %}
+                                        {% for error in field.errors %}
+                                            <p style="color: red">{{ error }}</p>
+                                        {% endfor %}
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div data-validate="{{ field.help_text }}">
+                                            <div class="input-group input--style-1">
+                                                {{ field }}
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            {% endfor %}
+                        </table>
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Submit</button>
                         </div>

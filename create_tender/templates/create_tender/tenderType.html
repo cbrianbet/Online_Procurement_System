@@ -1,0 +1,66 @@
+{% extends "home/base.html" %}
+{% block title %}
+    Home
+{% endblock %}
+{% block link %}
+    "{% url 'buyerHome' %}"
+{% endblock %}
+{% block body %}
+    <section class="mbr-cards mbr-section mbr-section-nopadding" id="features2-3"
+             style="background-color: rgb(255, 255, 255);">
+        <div class="mbr-cards-row row striped">
+
+            <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
+                <div class="container">
+                    <div class="card cart-block">
+                        <div class="card-img etl-icon icon-desktop mbr-iconfont mbr-iconfont-features2"></div>
+                        <div class="card-block">
+                            <h4 class="card-title">Desktop Tenders</h4>
+                            <br><br><br>
+                            <div class="card-btn">
+                                <a href="{% url 'create_tender' %}" class="btn btn-primary">CREATE TENDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
+                <div class="container">
+                    <div class="card cart-block">
+                        <div class="card-img etl-icon icon-tools-2 mbr-iconfont mbr-iconfont-features2"></div>
+                        <div class="card-block">
+                            <h4 class="card-title">Construction Equipment Tenders</h4>
+                            <h5 class="card-subtitle"></h5>
+                            <br><br><br>
+                            <div class="card-btn">
+                                <a href="{% url 'constTender' %}" class="btn btn-primary">CREATE TENDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 80px;">
+                <div class="container">
+                    <div class="card cart-block">
+                        <div class="card-img etl-icon icon-adjustments mbr-iconfont mbr-iconfont-features2"></div>
+                        <div class="card-block">
+                            <h4 class="card-title">History</h4>
+                            <br><br><br>
+                            <div class="card-btn">
+                                <a href="{% url 'tender_history' %}" class="btn btn-primary">CREATE TENDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2"
+            style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem; height: min-content">
+        <div class="container">
+            <p class="text-xs-center">E-Procurement System.</p>
+        </div>
+    </footer>
+
+{% endblock %}
