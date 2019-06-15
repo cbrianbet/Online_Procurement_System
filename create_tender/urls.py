@@ -8,9 +8,9 @@ from create_bids import views as bid_view
 
 urlpatterns = [
     # Seller Urls and paths
-    path('desktop_tender', views.index, name="create_tender"),
+    path('desktop_tender', views.index, name="desktp_tender"),
     path('const_tender', views.const_tender, name="constTender"),
-    path('list', views.tenderlist),
+    path('furn_tender', views.furn_tender, name="furnitureTender"),
     url(r'^tender_history/$', views.my_tenders, name='tender_history'),
     url(r'^tenderType/$', views.tender_type, name='tenderType'),
     path('tender_delete<int:pk>/', views.del_tender, name='del_tender'),
@@ -19,7 +19,11 @@ urlpatterns = [
     url(r'^bid/$', bid_view.tender_list, name='tender_feed'),
     url(r'^bid_history/$', bid_view.my_bids, name='bid_history'),
     path('bid<int:tender_id>', bid_view.index, name='bid_tender'),
-    path('bidview<int:bids_id>', bid_view.bid_update, name='bid_update'),
+    path('furn_bid<int:tender_id>', bid_view.furn_bid, name='furnBid'),
+    path('const_bid<int:tender_id>', bid_view.const_bid, name='constBid'),
+    path('bidview<int:bids_id>', bid_view.bid_update, name='deskBidUpdate'),
+    path('constbidview<int:bids_id>', bid_view.const_bid_update, name='constBidUpdate'),
+    path('furnbidview<int:bids_id>', bid_view.furn_bid_update, name='furnBidUpdate'),
     path('bidedit<int:bids_id>', bid_view.bid_edit, name='bid_edit'),
     path('biddelete<int:pk>/', bid_view.del_bid, name='del_bid'),
 ]

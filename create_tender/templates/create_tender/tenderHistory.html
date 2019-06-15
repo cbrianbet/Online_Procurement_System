@@ -1,80 +1,124 @@
-{% extends 'create_tender/base.html' %}
-{% block tilte %}
-    My Bids
-{% endblock %}
-{% block link %}
-    "{% url 'buyerHome' %}"
-{% endblock %}
-{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tender List</title>
+    {% load static %}
+    <!-- Latest compiled and minified CSS -->
+    <link href="{% static "create_tender/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "create_tender/css/main.css" %}" rel="stylesheet">
+    <link href="{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet"
+          media="all">
+    <link rel="stylesheet" href="{% static 'home/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css' %}">
+    <!-- jQuery library -->
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-1">
-                <div class="card-heading"></div>
-                <div class="card-body">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a href="#unawarded" class="nav-link active" data-toggle="tab">Un-awarded Tenders</a>
-                        </li>
+    <!-- Popper JS -->
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-                        <li class="nav-item">
-                            <a href="#awarded" class="nav-link" data-toggle="tab">Awarded Tender</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="unawarded" class="container tab-pane active">
-                            <h2 class="title">Un-awarded Tenders History</h2>
-                            {% if messages %}
-                                <ul>
-                                    {% for message in messages %}
-                                        <div class="alert alert-{{ message.level_tag }}" role="alert">
-                                            <li>{{ message }}</li>
+    <!-- Latest compiled JavaScript -->
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial scale=1 ">
+</head>
+<body>
+<nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+    <div class="container">
 
-                                        </div>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
+        <div class="mbr-table">
+            <div class="mbr-table-cell">
+                <div class="navbar-brand">
+                    <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
+                       href="{% url 'bidderHome' %}">HOME</a>
+                </div>
+            </div>
+            <div class="mbr-table-cell" style="padding: 15px">
+                <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                     id="exCollapsingNavbar">
+                    <a class="nav-link link" href="{% url 'logout' %}">LOGOUT</a>
+                </div>
+                <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
+                     id="exCollapsingNavbar">
+                    <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a href="#unawarded" class="nav-link active" data-toggle="tab">Un-awarded Tenders</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#awarded" class="nav-link" data-toggle="tab">Awarded Tender</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="unawarded" class="container tab-pane active">
+                        <h2 class="title">Un-awarded Tenders History</h2>
+                        {% if messages %}
                             <ul>
-                                {% for tender in my_tender %}
-                                    <div class="card card-1 card-body">
-                                        <h4>{{ tender }}</h4>
-                                        <div class="p-t-10">
-                                            <p>created on: {{ tender.date_created }}</p>
-                                            <a class="btn btn--radius btn--green"
-                                               href="{% url 'accept_list' tender.pk %}">View bids</a>
-                                            <a class="btn btn--radius btn--green"
-                                               href="">Update</a>
-                                            <form method="post" action="{% url 'del_tender' tender.id %}">
-                                                {% csrf_token %}
-                                                <button class="btn btn--radius btn--red" type="submit">Delete</button>
-                                            </form>
-                                        </div>
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                        <li>{{ message }}</li>
+
                                     </div>
-                                {% empty %}
-                                    <li>No Tenders created yet</li>
                                 {% endfor %}
                             </ul>
-                        </div>
-                        <div id="awarded" class="container tab-pane active">
-                            <h2 class="title">Awarded Tenders History</h2>
-                            <ul>
-                                {% for tend in acc_bids %}
-                                    <div class="card card-1 card-body">
-                                        <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
-                                        <div class="p-t-10">
-                                            <p>awarded on: {{ tend.date }} to {{ tend.bid_ID.user.profile.company_name }}</p>
-                                            <a class="btn btn--radius btn--green"
-                                               href="">View</a>
-                                        </div>
+                        {% endif %}
+                        <ul>
+                            {% for tender in my_tender %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ tender }}</h4>
+                                    <div class="p-t-10">
+                                        <p>created on: {{ tender.date_created }}</p>
+                                        <a class="btn btn--radius btn--green"
+                                           href="{% url 'accept_list' tender.pk %}">View bids</a>
+                                        <a class="btn btn--radius btn--green"
+                                           href="">Update</a>
+                                        <form method="post" action="{% url 'del_tender' tender.id %}">
+                                            {% csrf_token %}
+                                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
+                                        </form>
                                     </div>
-                                {% empty %}
-                                    <li>No Tenders awarded yet</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+                                </div>
+                            {% empty %}
+                                <li>No Tenders created yet</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="awarded" class="container tab-pane active">
+                        <h2 class="title">Awarded Tenders History</h2>
+                        <ul>
+                            {% for tend in acc_bids %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                    <div class="p-t-10">
+                                        <p>awarded on: {{ tend.date }}
+                                            to {{ tend.bid_ID.user.profile.company_name }}</p>
+                                        <a class="btn btn--radius btn--green"
+                                           href="">View</a>
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <li>No Tenders awarded yet</li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-{% endblock %}
+</div>
+</body>
+</html>

@@ -1,41 +1,151 @@
-{% extends 'create_tender/base.html' %}
-{% block tilte %}
-    My Bids
-{% endblock %}
-{% block link %}
-    "{% url 'bidderHome' %}"
-{% endblock %}
-{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tender List</title>
+    {% load static %}
+    <!-- Latest compiled and minified CSS -->
+    <link href="{% static "create_tender/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "create_tender/css/main.css" %}" rel="stylesheet">
+    <link href="{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet"
+          media="all">
+    <link rel="stylesheet" href="{% static 'home/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css' %}">
+    <!-- jQuery library -->
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-1">
-                <div class="card-heading"></div>
-                <div class="card-body">
-                    <h2 class="title">Bid History</h2>
-                    {% if messages %}
-                        <ul>
-                            {% for message in messages %}
-                                <div class="alert alert-{{ message.level_tag }}" role="alert">
-                                    <li>{{ message }}</li>
+    <!-- Popper JS -->
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-                                </div>
-                            {% endfor %}
-                        </ul>
-                    {% endif %}
-                    <ul>
-                        {% for bid in bids %}
-                            <div class="card card-1 card-body">
-                                <h4>{{ bid }}</h4>
-                                <a href="{% url 'bid_update' bid.id %}" class="btn--green btn--radius btn">View Bid</a>
-                                <p>Bid created on: {{ bid.Bid_created_date }}</p>
-                            </div>
-                        {% empty %}
-                            <li>No Bids Bid for Tender yet</li>
-                        {% endfor %}
-                    </ul>
+    <!-- Latest compiled JavaScript -->
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial scale=1 ">
+</head>
+<body>
+<nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+    <div class="container">
+
+        <div class="mbr-table">
+            <div class="mbr-table-cell">
+                <div class="navbar-brand">
+                    <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
+                       href="{% url 'bidderHome' %}">HOME</a>
+                </div>
+            </div>
+            <div class="mbr-table-cell" style="padding: 15px">
+                <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                     id="exCollapsingNavbar">
+                    <a class="nav-link link" href="{% url 'logout' %}">LOGOUT</a>
+                </div>
+                <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
+                     id="exCollapsingNavbar">
+                    <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
                 </div>
             </div>
         </div>
     </div>
-{% endblock %}
+</nav>
+
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link active" href="#desktop">Desktop bids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link" href="#construction">Construction bids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="tab" class="nav-link" href="#furniture">Furniture bids</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="desktop" class="container tab-pane active">
+                        <h2 class="title">Desktop Bid History</h2>
+                        {% if messages %}
+                            <ul>
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                        <li>{{ message }}</li>
+
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        <ul>
+                            {% for bid in deskbid %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ bid }}</h4>
+                                    <a href="{% url 'deskBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                        Bid</a>
+                                    <p>Bid created on: {{ bid.date_created }}</p>
+                                </div>
+                            {% empty %}
+                                <li>No Bids made yet</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="construction" class="container tab-pane">
+                        <h2 class="title">Construction Bid History</h2>
+                        {% if messages %}
+                            <ul>
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                        <li>{{ message }}</li>
+
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        <ul>
+                            {% for bid in constbid %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ bid }}</h4>
+                                    <a href="{% url 'constBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                        Bid</a>
+                                    <p>Bid created on: {{ bid.date_created }}</p>
+                                </div>
+                            {% empty %}
+                                <li>No Bids Made yet</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="furniture" class="container tab-pane">
+                        <h2 class="title">Furniture Bid History</h2>
+                        {% if messages %}
+                            <ul>
+                                {% for message in messages %}
+                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                        <li>{{ message }}</li>
+
+                                    </div>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        <ul>
+                            {% for bid in furnbid %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ bid }}</h4>
+                                    <a href="{% url 'furnBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                        Bid</a>
+                                    <p>Bid created on: {{ bid.date_created }}</p>
+                                </div>
+                            {% empty %}
+                                <li>No Bids Made yet</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

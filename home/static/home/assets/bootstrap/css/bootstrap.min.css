@@ -3205,13 +3205,6 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     margin-left: 1rem
 }
 
-.tab-content > .tab-pane {
-    display: none
-}
-
-.tab-content > .active {
-    display: block
-}
 
 .nav-tabs .dropdown-menu {
     margin-top: -1px;

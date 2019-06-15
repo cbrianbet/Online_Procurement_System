@@ -52,3 +52,15 @@ class ConstTenderForm(forms.ModelForm):
     class Meta:
         model = ConstructionTender
         fields = ('Mod', 'Net_power', 'Electric', 'Engine', 'Operating_weight', 'Certification', 'Quantity')
+
+
+class FurnitureTenderForm(forms.ModelForm):
+    Product = forms.CharField(required=True)
+    Dimensions = forms.CharField(required=True, help_text='(Length x Width x Height)cm')
+    Material = forms.CharField(required=True)
+    Color = forms.CharField(required=True)
+    Quantity = forms.CharField(required=True)
+
+    class Meta:
+        model = FurnitureTender
+        fields = ('Product', 'Dimensions', 'Color', 'Material', 'Quantity')

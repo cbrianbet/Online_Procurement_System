@@ -33,7 +33,7 @@ class Desktop_Tender(models.Model):
     Quantity = models.PositiveIntegerField()
 
     def __str__(self):
-        return f"{self.Product}"
+        return f"{self.Product} by {self.user.profile.company_name}"
 
     class Meta:
         ordering = ['-date_created']
@@ -52,7 +52,7 @@ class ConstructionTender(models.Model):
     date_created = models.DateField(auto_now=True)
 
     def __str__(self):
-        return f"{self.Mod}"
+        return f"{self.Mod} by {self.user.profile.company_name}"
 
     class Meta:
         ordering = ['-date_created']
@@ -69,7 +69,7 @@ class FurnitureTender(models.Model):
     date_created = models.DateField(auto_now=True)
 
     def __str__(self):
-        return f"{self.Product}"
+        return f"{self.Product} by {self.user.profile.company_name}"
 
     class Meta:
         ordering = ['-date_created']

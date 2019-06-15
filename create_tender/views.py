@@ -29,7 +29,7 @@ def index(request):
             tender.Operating_system = form.cleaned_data.get('Operating_system')
             tender.Quantity = form.cleaned_data.get('Quantity')
             messages.success(request, "Tender Posted successfully")
-            return redirect('create_tender')
+            return redirect('desktp_tender')
         # TODO send email
         # TODO  present success
         args = {'form': form}
@@ -56,7 +56,7 @@ def const_tender(request):
             tender.Engine = form.cleaned_data.get('Engine')
             tender.Quantity = form.cleaned_data.get('Quantity')
             messages.success(request, "Tender Posted successfully")
-            return redirect('create_tender')
+            return redirect('constTender')
         # TODO send email
         # TODO  present success
         args = {'form': form}
@@ -64,16 +64,32 @@ def const_tender(request):
 
 
 @login_required
-def tenderlist(request):
-    context = {
-        'tenders': Tender.objects.all()
-    }
-    return render(request, 'create_tender/list.html', context)
+def furn_tender(request):
+    if request.method == 'GET':
+        form = FurnitureTenderForm()
+        return render(request, "create_tender/Create.html", {'form': form})
+
+    if request.method == 'POST':
+        form = FurnitureTenderForm(request.POST)
+        if form.is_valid():
+            tender = form.save(commit=False)
+            tender.user = request.user
+            tender.save()
+            tender.Product = form.cleaned_data.get('Product')
+            tender.Dimensions = form.cleaned_data.get('Dimensions')
+            tender.Material = form.cleaned_data.get('Material')
+            tender.Color = form.cleaned_data.get('Color')
+            tender.Quantity = form.cleaned_data.get('Quantity')
+            messages.success(request, "Tender Posted successfully")
+            return redirect('furnitureTender')
+        # TODO send email
+        # TODO  present success
+        args = {'form': form}
+        return render(request, 'create_tender/Create.html', args)
 
 
 @login_required
 def my_tenders(request):
-
     awarded_tender = AcceptBid.objects.filter(bid_ID__Tender_ID__user=request.user)
     my_tender = Tender.objects.filter(user=request.user, tender_award__exact="No")
     bid = Bids.objects.all()
