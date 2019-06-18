@@ -53,6 +53,16 @@
         <div class="card card-1">
             <div class="card-heading"></div>
             <div class="card-body">
+                {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                <li>{{ message }}</li>
+
+                            </div>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
                 <h2 class="title">Bids for </h2>
                 <table class="table">
                     <tr>
@@ -60,22 +70,22 @@
                             Company
                         </th>
                         <th>
-                            Product
+                            Model
                         </th>
                         <th>
-                            Operating System
+                            Operating Weight
                         </th>
                         <th>
-                            Processor
+                            Engine
                         </th>
                         <th>
-                            Memory
+                            Net Power
                         </th>
                         <th>
-                            Storage
+                            Electric
                         </th>
                         <th>
-                            Graphics
+                            Certification
                         </th>
                         <th>
                             Quote Amount
@@ -91,29 +101,30 @@
                         </th>
                     </tr>
 
-                    {% for bid in bids %}
+                    {% for bid in cbids %}
                         <tr>
                             <td>
-                                <a href="{% url 'user_info' bid.pk %}"><p>Bid by {{ bid.user.profile.company_name }}</p>
+                                <a href="{% url 'user_info' bid.user.id %}"><p>Bid
+                                    by {{ bid.user.profile.company_name }}</p>
                                 </a>
                             </td>
                             <td>
-                                <p>{{ bid.Product }}</p>
+                                <p>{{ bid.Mod }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Operating_system }}</p>
+                                <p>{{ bid.Operating_weight }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Processor }}</p>
+                                <p>{{ bid.Engine }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Memory }}</p>
+                                <p>{{ bid.Net_power }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Storage }}</p>
+                                <p>{{ bid.Electric }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Graphics }}</p>
+                                <p>{{ bid.Certification }}</p>
                             </td>
                             <td>
                                 <p>{{ bid.Quote_amount }}</p>
@@ -126,13 +137,13 @@
                                 {% endif %}
                             </td>
                             <td>
-                                <form method="post" action="{% url 'approve_bid' bid.id %}">
+                                <form method="post" action="{% url 'approveConstBid' bid.id %}">
                                     {% csrf_token %}
                                     <button class="btn btn--def" type="submit">Accept</button>
                                 </form>
                             </td>
                             <td>
-                                <form method="post" action="{% url 'desRejectBid' bid.id %}">
+                                <form method="post" action="{% url 'constRejectBid' bid.id %}">
                                     {% csrf_token %}
                                     <button class="btn btn--red" type="submit">Reject</button>
                                 </form>

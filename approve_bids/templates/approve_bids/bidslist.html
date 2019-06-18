@@ -11,28 +11,46 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Bid by {{ bid.user.profile.company_name }}</h2>
-                    <h5>Bid description:</h5>
-                    <p>{{ bid.Bid_description }}</p>
-                    <h5>Quoted Amount:</h5>
-                    <p>Ksh. {{ bid.Quote_amount }}</p>
-                    <h5>Documents Uploaded:</h5>
-                    {% if bid.Bid_documents_url %}
-                    {% else %}
-                        <p>No documents available</p>
-                    {% endif %}
+
+
+                    <h2 class="title">Bid by {{ name.company_name }}</h2>
+                    <h5>Number of tenders won:</h5>
+                    <p>{{ fcount }}</p>
+                    <h5>past construction tenders:</h5>
+                    <ul>
+                        {% for foo in bid %}
+                            <li>{{ foo.bid_ID.Tender_ID.Mod }} tender
+                                by {{ foo.bid_ID.Tender_ID.user.profile.company_name }} on {{ foo.date }}</li>
+                        {% empty %}
+                            <li>No tenders</li>
+                        {% endfor %}
+
+
+                    </ul>
+                    <h5>past desktop tenders:</h5>
+                    <ul>
+                        {% for foo in dbid %}
+                            <li>{{ foo.bid_ID.Tender_ID.Mod }} tender
+                                by {{ foo.bid_ID.Tender_ID.user.profile.company_name }} on {{ foo.date }}</li>
+                        {% empty %}
+                            <li>No tenders</li>
+                        {% endfor %}
+                    </ul>
+                    <h5>past furniture tenders:</h5>
+
+                    <ul>
+                        {% for foo in fbid %}
+                            <li>{{ foo.bid_ID.Tender_ID.Mod }} tender
+                                by {{ foo.bid_ID.Tender_ID.user.profile.company_name }} on {{ foo.date }}</li>
+                        {% empty %}
+                            <li>No tenders</li>
+                        {% endfor %}
+                    </ul>
                     <h5>Posted on:</h5>
-                    <p>{{ bid.Bid_created_date }}</p>
+                    <p>{{ bid.date_created }}</p>
 
                     <div class="p-t-10">
-                        <form method="post" action="{% url 'approve_bid' bid.id%}">
-                            {% csrf_token %}
-                            <button class="btn btn--radius btn--def" type="submit">Accept</button>
-                        </form>
-                        <form method="post" action="{% url 'del_bid' bid.id %}">
-                            {% csrf_token %}
-                            <button  class="btn btn--radius btn--red" type="submit">Reject</button>
-                        </form>
+
                     </div>
 
                 </div>

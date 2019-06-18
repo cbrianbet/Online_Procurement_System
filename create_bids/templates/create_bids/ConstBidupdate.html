@@ -14,17 +14,17 @@
                     <h2 class="title">Bid for {{ bid.Tender_ID.Mod }}</h2>
                     <h5>Bid description:</h5>
                     <h5>Model:</h5>
-                    <p>Ksh. {{ bid.Mod }}</p>
+                    <p>{{ bid.Mod }}</p>
                     <h5>Electric:</h5>
-                    <p>Ksh. {{ bid.Electric }}</p>
+                    <p>{{ bid.Electric }}</p>
                     <h5>Certification:</h5>
-                    <p>Ksh. {{ bid.Certification }}</p>
+                    <p>{{ bid.Certification }}</p>
                     <h5>Operating weight:</h5>
-                    <p>Ksh. {{ bid.Operating_weight }}</p>
+                    <p>{{ bid.Operating_weight }}</p>
                     <h5>Engine:</h5>
-                    <p>Ksh. {{ bid.Engine }}</p>
+                    <p>{{ bid.Engine }}</p>
                     <h5>Net power:</h5>
-                    <p>Ksh. {{ bid.Net_power }}</p>
+                    <p>{{ bid.Net_power }}</p>
                     <h5>Quoted Amount:</h5>
                     <p>Ksh. {{ bid.Quote_amount }}</p>
                     <h5>Documents Uploaded:</h5>
@@ -38,7 +38,7 @@
                     <p>{{ bid.date_created }}</p>
 
                     <div class="p-t-20">
-                        <a class="btn btn--radius btn--green" href="{% url 'bid_edit' bid.pk %}">Update</a>
+                        <a class="btn btn--radius btn--green" href="{% url 'constBidEdit' bid.pk %}">Update</a>
                         <form method="post" action="{% url 'del_bid' bid.id %}">
                             {% csrf_token %}
                             <button class="btn btn--radius btn--red" type="submit">Delete</button>

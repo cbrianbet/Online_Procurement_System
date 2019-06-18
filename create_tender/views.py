@@ -6,7 +6,7 @@ from django.contrib import messages
 from create_bids.models import Bids
 from .models import *
 from .forms import *
-from approve_bids.models import AcceptBid
+from approve_bids.models import *
 
 
 @login_required
@@ -91,12 +91,18 @@ def furn_tender(request):
 @login_required
 def my_tenders(request):
     awarded_tender = AcceptBid.objects.filter(bid_ID__Tender_ID__user=request.user)
-    my_tender = Tender.objects.filter(user=request.user, tender_award__exact="No")
-    bid = Bids.objects.all()
+    awarded_furn_tender = AcceptFurnBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    awarded_const_tender = AcceptConstBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    my_tender = Desktop_Tender.objects.filter(user=request.user, tender_award__exact="No")
+    my_const_tender = ConstructionTender.objects.filter(user=request.user, tender_award__exact="No")
+    my_furn_tender = FurnitureTender.objects.filter(user=request.user, tender_award__exact="No")
     context = {
         "acc_bids": awarded_tender,
+        'acc_furn': awarded_furn_tender,
+        'acc_const': awarded_const_tender,
         'my_tender': my_tender,
-        'bid': bid
+        'my_furn': my_const_tender,
+        'my_const': my_furn_tender
     }
     return render(request, 'create_tender/tenderHistory.html', context)
 
@@ -109,7 +115,7 @@ def tender_type(request):
 @login_required
 def del_tender(request, pk):
     if request.method == 'POST':
-        tender = Tender.objects.get(pk=pk)
+        tender = Desktop_Tender.objects.get(pk=pk)
         messages.error(request, f"{tender.tender_title} deleted")
         tender.delete()
     return redirect('tender_history')

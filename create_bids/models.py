@@ -23,7 +23,7 @@ class Bids(models.Model):
 
 
 class DesktopBid(models.Model):
-    Tender_ID = models.ForeignKey(Desktop_Tender, on_delete=models.CASCADE, related_name='deskbidder')
+    Tender_ID = models.ForeignKey(Desktop_Tender, on_delete=models.CASCADE)
     user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     Quote_amount = models.PositiveIntegerField()
     Product = models.CharField(max_length=120)
@@ -37,7 +37,7 @@ class DesktopBid(models.Model):
     bid_award = models.CharField(max_length=10, null=True)
 
     def __str__(self):
-        return f"{self.Tender_ID.Product}"
+        return f"{self.user.profile.company_name} for {self.Tender_ID.Product}"
 
     def delete(self, *args, **kwargs):
         self.Bid_documents_url.delete()
@@ -48,7 +48,7 @@ class DesktopBid(models.Model):
 
 
 class ConstructionBid(models.Model):
-    user = models.ForeignKey("auth.User", on_delete=models.CASCADE, related_name='constbidder')
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     Tender_ID = models.ForeignKey(ConstructionTender, on_delete=models.CASCADE)
     Mod = models.CharField(max_length=80)
     Net_power = models.CharField(max_length=80)
@@ -62,7 +62,7 @@ class ConstructionBid(models.Model):
     Bid_documents_url = models.FileField(upload_to='bid/documents/', null=True, blank=True)
 
     def __str__(self):
-        return f"{self.Tender_ID.Mod}"
+        return f"{self.user.profile.company_name}"
 
     def delete(self, *args, **kwargs):
         self.Bid_documents_url.delete()
@@ -73,7 +73,7 @@ class ConstructionBid(models.Model):
 
 
 class FurnitureBid(models.Model):
-    user = models.ForeignKey("auth.User", on_delete=models.CASCADE, related_name='bidder')
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
     Tender_ID = models.ForeignKey(FurnitureTender, on_delete=models.CASCADE)
     Product = models.CharField(max_length=100)
     Dimensions = models.CharField(max_length=80)

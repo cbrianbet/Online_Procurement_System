@@ -11,14 +11,22 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Bid for {{ bid.Tender_ID.tender_title }}</h2>
+                    <h2 class="title">Bid for {{ bid.Product }}</h2>
                     <h5>Bid description:</h5>
-                    <p>{{ bid.Bid_description }}</p>
+                    <h5>Product:</h5>
+                    <p>{{ bid.Product }}</p>
+                    <h5>Material:</h5>
+                    <p>{{ bid.Material }}</p>
+                    <h5>Color:</h5>
+                    <p>{{ bid.Color }}</p>
+                    <h5>Dimensions:</h5>
+                    <p>{{ bid.Dimensions }}</p>
                     <h5>Quoted Amount:</h5>
                     <p>Ksh. {{ bid.Quote_amount }}</p>
                     <h5>Documents Uploaded:</h5>
                     {% if bid.Bid_documents_url %}
-                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View Document</a>
+                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View
+                            Document</a>
                     {% else %}
                         <p>No documents available</p>
                     {% endif %}
@@ -26,10 +34,10 @@
                     <p>{{ bid.Bid_created_date }}</p>
 
                     <div class="p-t-20">
-                        <a class="btn btn--radius btn--green" href="{% url 'bid_edit' bid.pk %}">Update</a>
+                        <a class="btn btn--radius btn--green" href="{% url 'furnBidEdit' bid.pk %}">Update</a>
                         <form method="post" action="{% url 'del_bid' bid.id %}">
                             {% csrf_token %}
-                            <button  class="btn btn--radius btn--red" type="submit">Delete</button>
+                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
                         </form>
                     </div>
 

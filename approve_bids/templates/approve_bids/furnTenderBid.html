@@ -63,19 +63,13 @@
                             Product
                         </th>
                         <th>
-                            Operating System
+                            Material
                         </th>
                         <th>
-                            Processor
+                            Dimensions
                         </th>
                         <th>
-                            Memory
-                        </th>
-                        <th>
-                            Storage
-                        </th>
-                        <th>
-                            Graphics
+                            Color
                         </th>
                         <th>
                             Quote Amount
@@ -91,29 +85,24 @@
                         </th>
                     </tr>
 
-                    {% for bid in bids %}
+                    {% for bid in fbids %}
                         <tr>
                             <td>
-                                <a href="{% url 'user_info' bid.pk %}"><p>Bid by {{ bid.user.profile.company_name }}</p>
+                                <a href="{% url 'user_info' bid.pk %}">
+                                    <p>Bid by {{ bid.user.profile.company_name }}</p>
                                 </a>
                             </td>
                             <td>
                                 <p>{{ bid.Product }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Operating_system }}</p>
+                                <p>{{ bid.Material }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Processor }}</p>
+                                <p>{{ bid.Dimensions }}</p>
                             </td>
                             <td>
-                                <p>{{ bid.Memory }}</p>
-                            </td>
-                            <td>
-                                <p>{{ bid.Storage }}</p>
-                            </td>
-                            <td>
-                                <p>{{ bid.Graphics }}</p>
+                                <p>{{ bid.Color }}</p>
                             </td>
                             <td>
                                 <p>{{ bid.Quote_amount }}</p>
@@ -126,13 +115,13 @@
                                 {% endif %}
                             </td>
                             <td>
-                                <form method="post" action="{% url 'approve_bid' bid.id %}">
+                                <form method="post" action="{% url 'approveFurnBid' bid.id %}">
                                     {% csrf_token %}
                                     <button class="btn btn--def" type="submit">Accept</button>
                                 </form>
                             </td>
                             <td>
-                                <form method="post" action="{% url 'desRejectBid' bid.id %}">
+                                <form method="post" action="{% url 'furnRejectBid' bid.id %}">
                                     {% csrf_token %}
                                     <button class="btn btn--red" type="submit">Reject</button>
                                 </form>

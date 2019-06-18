@@ -25,7 +25,11 @@ urlpatterns = [
     path('constbidview<int:bids_id>', bid_view.const_bid_update, name='constBidUpdate'),
     path('furnbidview<int:bids_id>', bid_view.furn_bid_update, name='furnBidUpdate'),
     path('bidedit<int:bids_id>', bid_view.bid_edit, name='bid_edit'),
+    path('constbidedit<int:bids_id>', bid_view.const_bid_edit, name='constBidEdit'),
+    path('furnbidedit<int:bids_id>', bid_view.furn_bid_edit, name='furnBidEdit'),
     path('biddelete<int:pk>/', bid_view.del_bid, name='del_bid'),
+    path('bidconstdelete<int:pk>/', bid_view.const_del_bid, name='constDelBid'),
+    path('bidfurndelete<int:pk>/', bid_view.furn_del_bid, name='furnDelBid'),
 ]
 
 if settings.DEBUG:

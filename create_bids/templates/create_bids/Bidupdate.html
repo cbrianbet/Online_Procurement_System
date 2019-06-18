@@ -11,14 +11,25 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Bid for {{ bid.Tender_ID.tender_title }}</h2>
+                    <h2 class="title">Bid for {{ bid.Tender_ID.Product }}</h2>
                     <h5>Bid description:</h5>
-                    <p>{{ bid.Bid_description }}</p>
+                    <h5>Product:</h5>
+                    <p>{{ bid.Product }}</p>
+                    <h5>Processor:</h5>
+                    <p> {{ bid.Processor }}</p>
+                    <h5>Graphics:</h5>
+                    <p>{{ bid.Graphics }}</p>
+                    <h5>Operating system:</h5>
+                    <p>{{ bid.Operating_system }}</p>
+                    <h5>Storage:</h5>
+                    <p>{{ bid.Storage }}</p>
+                    <h5>Memory:</h5>
+                    <p>{{ bid.Memory }}</p>
                     <h5>Quoted Amount:</h5>
-                    <p>Ksh. {{ bid.Quote_amount }}</p>
-                    <h5>Documents Uploaded:</h5>
+                    <p>Ksh. {{ bid.Quote_amount }}</p>                    <h5>Documents Uploaded:</h5>
                     {% if bid.Bid_documents_url %}
-                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View Document</a>
+                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View
+                            Document</a>
                     {% else %}
                         <p>No documents available</p>
                     {% endif %}
@@ -29,7 +40,7 @@
                         <a class="btn btn--radius btn--green" href="{% url 'bid_edit' bid.pk %}">Update</a>
                         <form method="post" action="{% url 'del_bid' bid.id %}">
                             {% csrf_token %}
-                            <button  class="btn btn--radius btn--red" type="submit">Delete</button>
+                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
                         </form>
                     </div>
 

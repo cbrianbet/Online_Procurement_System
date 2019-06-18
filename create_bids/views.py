@@ -191,20 +191,92 @@ def bid_edit(request, bids_id):
         return render(request, "create_bids/Updatebid.html", context)
 
     if request.method == 'POST':
-        form = BidForm(request.POST, request.FILES)
+        form = DesktopBidForm(request.POST, request.FILES)
         if form.is_valid():
             bids = form.save(commit=False)
             bids.user = request.user
             bids.Tender_ID = bid.Tender_ID
-            bids.id = bid
+            bids.id = bid.id
             bids.save()
-            bid.Product = form.cleaned_data.get('Product')
-            bid.Memory = form.cleaned_data.get('Memory')
-            bid.Graphics = form.cleaned_data.get('Graphics')
-            bid.Processor = form.cleaned_data.get('Processor')
-            bid.Storage = form.cleaned_data.get('Storage')
-            bid.Operating_system = form.cleaned_data.get('Operating_system')
-            bid.Quote_amount = form.cleaned_data.get('Quote_amount')
+            bids.Product = form.cleaned_data.get('Product')
+            bids.Memory = form.cleaned_data.get('Memory')
+            bids.Graphics = form.cleaned_data.get('Graphics')
+            bids.Processor = form.cleaned_data.get('Processor')
+            bids.Storage = form.cleaned_data.get('Storage')
+            bids.Operating_system = form.cleaned_data.get('Operating_system')
+            bids.Quote_amount = form.cleaned_data.get('Quote_amount')
+
+            messages.success(request, "Bid updated successfully")
+            return redirect('bid_history')
+        # TODO send email
+
+
+@login_required
+def furn_bid_edit(request, bids_id):
+    bid = FurnitureBid.objects.get(pk=bids_id)
+
+    if request.method == 'GET':
+        try:
+            form = FurnitureBidForm()
+        except Tender.DoesNotExist:
+            raise Http404("Tender does not exist")
+
+        context = {
+            'bid': bid,
+            'form': form
+        }
+        return render(request, "create_bids/Updatebid.html", context)
+
+    if request.method == 'POST':
+        form = FurnitureBidForm(request.POST, request.FILES)
+        if form.is_valid():
+            bids = form.save(commit=False)
+            bids.user = request.user
+            bids.Tender_ID = bid.Tender_ID
+            bids.id = bid.id
+            bids.save()
+            bids.Color = form.cleaned_data.get('Color')
+            bids.Product = form.cleaned_data.get('Product')
+            bids.Material = form.cleaned_data.get('Material')
+            bids.Dimensions = form.cleaned_data.get('Dimensions')
+            bids.Quote_amount = form.cleaned_data.get('Quote_amount')
+
+            messages.success(request, "Bid updated successfully")
+            return redirect('bid_history')
+        # TODO send email
+
+
+@login_required
+def const_bid_edit(request, bids_id):
+    bid = ConstructionBid.objects.get(pk=bids_id)
+
+    if request.method == 'GET':
+        try:
+            form = ConstructionBidForm()
+        except Tender.DoesNotExist:
+            raise Http404("Tender does not exist")
+
+        context = {
+            'bid': bid,
+            'form': form
+        }
+        return render(request, "create_bids/Updatebid.html", context)
+
+    if request.method == 'POST':
+        form = ConstructionBidForm(request.POST, request.FILES)
+        if form.is_valid():
+            bids = form.save(commit=False)
+            bids.user = request.user
+            bids.Tender_ID = bid.Tender_ID
+            bids.id = bid.id
+            bids.save()
+            bids.Net_power = form.cleaned_data.get('Net_power')
+            bids.Certification = form.cleaned_data.get('Certification')
+            bids.Mod = form.cleaned_data.get('Mod')
+            bids.Operating_weight = form.cleaned_data.get('Operating_weight')
+            bids.Electric = form.cleaned_data.get('Electric')
+            bids.Engine = form.cleaned_data.get('Engine')
+            bids.Quote_amount = form.cleaned_data.get('Quote_amount')
 
             messages.success(request, "Bid updated successfully")
             return redirect('bid_history')
@@ -214,6 +286,22 @@ def bid_edit(request, bids_id):
 @login_required
 def del_bid(request, pk):
     if request.method == 'POST':
-        bid = Bids.objects.get(pk=pk)
+        bid = DesktopBid.objects.get(pk=pk)
+        bid.delete()
+    return redirect('bid_history')
+
+
+@login_required
+def furn_del_bid(request, pk):
+    if request.method == 'POST':
+        bid = FurnitureBid.objects.get(pk=pk)
+        bid.delete()
+    return redirect('bid_history')
+
+
+@login_required
+def const_del_bid(request, pk):
+    if request.method == 'POST':
+        bid = ConstructionBid.objects.get(pk=pk)
         bid.delete()
     return redirect('bid_history')

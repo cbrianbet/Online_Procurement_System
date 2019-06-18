@@ -33,7 +33,7 @@
             <div class="mbr-table-cell">
                 <div class="navbar-brand">
                     <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
-                       href="{% url 'bidderHome' %}">HOME</a>
+                       href="{% url 'buyerHome' %}">HOME</a>
                 </div>
             </div>
             <div class="mbr-table-cell" style="padding: 15px">
@@ -51,18 +51,18 @@
 </nav>
 <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
     <div class="wrapper wrapper--w680">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a href="#unawarded" class="nav-link active" data-toggle="tab">Un-awarded Tenders</a>
+            </li>
+            <li class="nav-item">
+                <a href="#awarded" class="nav-link" data-toggle="tab">Awarded Tender</a>
+            </li>
+        </ul>
         <div class="card card-1">
             <div class="card-heading"></div>
             <div class="card-body">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a href="#unawarded" class="nav-link active" data-toggle="tab">Un-awarded Tenders</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a href="#awarded" class="nav-link" data-toggle="tab">Awarded Tender</a>
-                    </li>
-                </ul>
                 <div class="tab-content">
                     <div id="unawarded" class="container tab-pane active">
                         <h2 class="title">Un-awarded Tenders History</h2>
@@ -76,6 +76,7 @@
                                 {% endfor %}
                             </ul>
                         {% endif %}
+                        <h3>Desktop Tenders</h3>
                         <ul>
                             {% for tender in my_tender %}
                                 <div class="card card-1 card-body">
@@ -83,7 +84,50 @@
                                     <div class="p-t-10">
                                         <p>created on: {{ tender.date_created }}</p>
                                         <a class="btn btn--radius btn--green"
-                                           href="{% url 'accept_list' tender.pk %}">View bids</a>
+                                           href="{% url 'accept_list' tender.id %}">View bids</a>
+                                        <a class="btn btn--radius btn--green"
+                                           href="">Update</a>
+                                        <form method="post" action="{% url 'del_tender' tender.id %}">
+                                            {% csrf_token %}
+                                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <li>No Tenders created yet</li>
+                            {% endfor %}
+                        </ul>
+                        <h3>Furniture</h3>
+                        <ul>
+                            {% for tender in my_const %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ tender }}</h4>
+                                    <div class="p-t-10">
+                                        <p>created on: {{ tender.date_created }}</p>
+                                        <a class="btn btn--radius btn--green"
+                                           href="{% url 'acceptFurn' tender.id %}">View bids</a>
+                                        <a class="btn btn--radius btn--green"
+                                           href="">Update</a>
+                                        <form method="post" action="{% url 'del_tender' tender.id %}">
+                                            {% csrf_token %}
+                                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <li>No Tenders created yet</li>
+                            {% endfor %}
+                        </ul>
+
+                        <h3>Construction tenders</h3>
+                        <ul>
+                            {% for tender in my_furn %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ tender }}</h4>
+                                    <div class="p-t-10">
+                                        <p>created on: {{ tender.date_created }}</p>
+                                        <a class="btn btn--radius btn--green"
+                                           href="{% url 'acceptConst' tender.id %}">View bids</a>
                                         <a class="btn btn--radius btn--green"
                                            href="">Update</a>
                                         <form method="post" action="{% url 'del_tender' tender.id %}">
@@ -97,10 +141,43 @@
                             {% endfor %}
                         </ul>
                     </div>
-                    <div id="awarded" class="container tab-pane active">
+                    <div id="awarded" class="container tab-pane">
                         <h2 class="title">Awarded Tenders History</h2>
+                        <h3>Desktop tenders</h3>
                         <ul>
                             {% for tend in acc_bids %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                    <div class="p-t-10">
+                                        <p>awarded on: {{ tend.date }}
+                                            to {{ tend.bid_ID.user.profile.company_name }}</p>
+                                        <a class="btn btn--radius btn--green"
+                                           href="">View</a>
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <li>No Tenders awarded yet</li>
+                            {% endfor %}
+                        </ul>
+                        <h3>Construction tenders</h3>
+                        <ul>
+                            {% for tend in acc_const %}
+                                <div class="card card-1 card-body">
+                                    <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                    <div class="p-t-10">
+                                        <p>awarded on: {{ tend.date }}
+                                            to {{ tend.bid_ID.user.profile.company_name }}</p>
+                                        <a class="btn btn--radius btn--green"
+                                           href="">View</a>
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <li>No Tenders awarded yet</li>
+                            {% endfor %}
+                        </ul>
+                        <h3>Furniture tenders</h3>
+                        <ul>
+                            {% for tend in acc_furn %}
                                 <div class="card card-1 card-body">
                                     <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
                                     <div class="p-t-10">

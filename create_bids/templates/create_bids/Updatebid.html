@@ -1,7 +1,7 @@
 {% extends 'create_tender/base.html' %}
 {% block tilte %}Update Bid{% endblock %}
 {% block link %}
-"{% url 'bidderHome' %}"
+    "{% url 'bidderHome' %}"
 {% endblock %}
 {% block body %}
 
@@ -10,37 +10,42 @@
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                <div class="row-sm-offset">
-                    <h2 class="title">Update Bid For {{ bid.Tender_ID.tender_title }} Tender by {{ bid.user.profile.company_name }}</h2>
-                    <h5>Description:</h5>
-                    <p>{{ bid.Tender_ID.tender_desc }}</p>
-                    <p>Duration: {{ bid.Tender_ID.tender_duration }} months</p>
-                    {% if tender.tender_value %}
-                        <h5>Tender worth:</h5>
-                        <p>Ksh.{{ bid.Tender_ID.tender_value }}</p>
-                    {% endif %}
-                    <br>
-                </div>
+                    <div class="row-sm-offset">
+                        <h2 class="title">Update Bid For {{ bid.Tender_ID.Mod }}{{ bid.Product }} Tender
+                            by {{ bid.user.profile.company_name }}</h2>
+
+                        <br>
+                    </div>
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         <h5>Update Bid</h5><br>
-                        {% for field in form %}
-                            <p>
-                                {{ field.label_tag }}
-                                {% if field.help_text %}
-                                    <small style="color: grey">{{ field.help_text }}</small>
-                                {% endif %}
-                                {% for error in field.errors %}
-                                    <p style="color: red">{{ error }}</p>
-                                {% endfor %}<br>
-                            <div class=" " data-validate="{{ field.help_text }}">
-                                <div class="input-group input--style-1">
-                                    {{ field }}
-                                </div>
-                            </div>
+                        <table>
 
-                            </p>
-                        {% endfor %}
+                            {% for field in form %}
+                                <tr>
+                                    <td>
+                                        {{ field.label_tag }}
+                                        {% if field.help_text %}
+                                            <small style="color: grey">{{ field.help_text }}</small>
+                                        {% endif %}
+                                        {% for error in field.errors %}
+                                            <p style="color: red">{{ error }}</p>
+                                        {% endfor %}
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <div data-validate="{{ field.help_text }}">
+                                            <div class="input-group input--style-1">
+                                                {{ field }}
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            {% endfor %}
+                        </table>
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Submit</button>
                         </div>
