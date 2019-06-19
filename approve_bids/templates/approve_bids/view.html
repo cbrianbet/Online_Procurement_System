@@ -1,0 +1,49 @@
+{% extends 'create_tender/base.html' %}
+{% block link %}
+    "{% url 'buyerHome' %}"
+{% endblock %}
+{% block tilte %}
+    Update Bid
+{% endblock %}
+{% block body %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Bid awarded to {{ atend.user.profile.company_name }}</h2>
+
+                    <h5>
+                        Product
+                    </h5>
+                    <p>{{ atend.Product }}</p>
+                    <h5>
+                        Material
+                    </h5>
+                    <p>{{ atend.Material }}</p>
+                    <h5>
+                        Dimensions
+                    </h5>
+                    <p>{{ atend.Dimensions }}</p>
+                    <h5>
+                        Color
+                    </h5>
+                    <p>{{ atend.Color }}</p>
+                    <h5>
+                        Quote Amount
+                    </h5>
+                    <p>{{ atend.Quote_amount }}</p>
+                    <h5>
+                        Documents
+                    </h5>
+                    {% if bid.Bid_documents_url %}
+                        <a class="btn btn--green">Download</a>
+                    {% else %}
+                        <p>No documents available</p>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

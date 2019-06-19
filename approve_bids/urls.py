@@ -13,9 +13,12 @@ urlpatterns = [
     path('approveconst<int:b_id>', views.accept_const_bid, name='approveConstBid'),
     path('approvefurn<int:b_id>', views.accept_furn_bid, name='approveFurnBid'),
     path('info<int:bid>', views.bid_info, name='user_info'),
+    path('desk_userinfo<int:bid>', views.bid_info, name='deskUserInfo'),
+    path('furn_userinfo<int:bid>', views.bid_info, name='furnUserInfo'),
     path('bidrej<int:pk>/', views.del_bid, name='desRejectBid'),
     path('bidconstrej<int:pk>/', views.const_del_bid, name='constRejectBid'),
     path('bidfurnrej<int:pk>/', views.furn_del_bid, name='furnRejectBid'),
+    path('afurnview<int:bid>/', views.furn_view_bid, name='awFurnView'),
 
 ]
 

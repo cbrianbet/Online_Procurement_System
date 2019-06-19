@@ -94,7 +94,8 @@
                     {% for bid in bids %}
                         <tr>
                             <td>
-                                <a href="{% url 'user_info' bid.pk %}"><p>Bid by {{ bid.user.profile.company_name }}</p>
+                                <a href="{% url 'deskUserInfo' bid.pk %}"><p>Bid
+                                    by {{ bid.user.profile.company_name }}</p>
                                 </a>
                             </td>
                             <td>

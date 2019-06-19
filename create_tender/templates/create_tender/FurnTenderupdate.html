@@ -1,0 +1,41 @@
+{% extends 'create_tender/base.html' %}
+{% block link %}
+    "{% url 'bidderHome' %}"
+{% endblock %}
+{% block tilte %}
+    Update Bid
+{% endblock %}
+{% block body %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Tender for {{ tender.Product }}</h2>
+                    <h5>Bid description:</h5>
+                    <h5>Product:</h5>
+                    <p>{{ tender.Product }}</p>
+                    <h5>Material:</h5>
+                    <p>{{ tender.Material }}</p>
+                    <h5>Color:</h5>
+                    <p>{{ tender.Color }}</p>
+                    <h5>Dimensions:</h5>
+                    <p>{{ tender.Dimensions }}</p>
+                    <h5>Quantity:</h5>
+                    <p>Ksh. {{ tender.Quantity }}</p>
+                    <h5>Posted on:</h5>
+                    <p>{{ tender.date_created }}</p>
+
+                    <div class="p-t-20">
+                        <a class="btn btn--radius btn--green" href="{% url 'furnBidEdit' bid.pk %}">Update</a>
+                        <form method="post" action="{% url 'del_bid' bid.id %}">
+                            {% csrf_token %}
+                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css' %}">
     <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css' %}">
+
     <!-- jQuery library -->
     <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -85,8 +86,7 @@
                                         <p>created on: {{ tender.date_created }}</p>
                                         <a class="btn btn--radius btn--green"
                                            href="{% url 'accept_list' tender.id %}">View bids</a>
-                                        <a class="btn btn--radius btn--green"
-                                           href="">Update</a>
+                                        <a class="btn btn--radius btn--green" href="{% url 'tenderEdit' tender.id %}">Update</a>
                                         <form method="post" action="{% url 'del_tender' tender.id %}">
                                             {% csrf_token %}
                                             <button class="btn btn--radius btn--red" type="submit">Delete</button>
@@ -107,7 +107,7 @@
                                         <a class="btn btn--radius btn--green"
                                            href="{% url 'acceptFurn' tender.id %}">View bids</a>
                                         <a class="btn btn--radius btn--green"
-                                           href="">Update</a>
+                                           href="{% url 'furnEdit' tender.id %}">Update</a>
                                         <form method="post" action="{% url 'del_tender' tender.id %}">
                                             {% csrf_token %}
                                             <button class="btn btn--radius btn--red" type="submit">Delete</button>
@@ -128,8 +128,7 @@
                                         <p>created on: {{ tender.date_created }}</p>
                                         <a class="btn btn--radius btn--green"
                                            href="{% url 'acceptConst' tender.id %}">View bids</a>
-                                        <a class="btn btn--radius btn--green"
-                                           href="">Update</a>
+                                        <a class="btn btn--radius btn--green" href="{% url 'constEdit' tender.id %}">Update</a>
                                         <form method="post" action="{% url 'del_tender' tender.id %}">
                                             {% csrf_token %}
                                             <button class="btn btn--radius btn--red" type="submit">Delete</button>
@@ -147,7 +146,7 @@
                         <ul>
                             {% for tend in acc_bids %}
                                 <div class="card card-1 card-body">
-                                    <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                    <h4>{{ tend.bid_ID.Tender_ID.Product }}</h4>
                                     <div class="p-t-10">
                                         <p>awarded on: {{ tend.date }}
                                             to {{ tend.bid_ID.user.profile.company_name }}</p>
@@ -163,7 +162,7 @@
                         <ul>
                             {% for tend in acc_const %}
                                 <div class="card card-1 card-body">
-                                    <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                    <h4>{{ tend.bid_ID.Tender_ID.Mod }}</h4>
                                     <div class="p-t-10">
                                         <p>awarded on: {{ tend.date }}
                                             to {{ tend.bid_ID.user.profile.company_name }}</p>
@@ -179,12 +178,12 @@
                         <ul>
                             {% for tend in acc_furn %}
                                 <div class="card card-1 card-body">
-                                    <h4>{{ tend.bid_ID.Tender_ID.tender_title }}</h4>
+                                    <h4>{{ tend.bid_ID.Tender_ID.Product }}</h4>
                                     <div class="p-t-10">
                                         <p>awarded on: {{ tend.date }}
                                             to {{ tend.bid_ID.user.profile.company_name }}</p>
                                         <a class="btn btn--radius btn--green"
-                                           href="">View</a>
+                                           href="{% url 'awFurnView' tend.bid_ID.id %}">View</a>
                                     </div>
                                 </div>
                             {% empty %}

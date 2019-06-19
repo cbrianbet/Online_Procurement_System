@@ -2,41 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5000f4-9599-4181-b282-627f4b92ca32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/approve_bids/migrations/0003_acceptconstbid_acceptfurnbid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/approve_bids/migrations/0004_auto_20190617_1441.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/approve_bids/migrations/0005_auto_20190617_1446.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0018_auto_20190617_1440.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0019_auto_20190617_1636.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0020_auto_20190617_1821.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0021_auto_20190617_1823.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0022_auto_20190617_2112.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/ConstTenderupdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/FurnTenderupdate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/UpdateTender.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/approve_bids/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/approve_bids/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Bidupdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Bidupdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/ConstBidupdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/ConstBidupdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Updatebid.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Updatebid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/bootstrap.min.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderType.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderType.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_tender/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/bid/documents/Count_your_age_by_friends_not_years.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/create_tender/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+            <state relative-caret-position="126">
+              <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
               <folding>
                 <element signature="e#328#1410#0" />
                 <element signature="e#1460#2540#0" />
@@ -81,58 +64,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/approve_bids/urls.py">
+        <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/UpdateTender.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_bids/views.py">
+        <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/FurnTenderupdate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1741">
-              <caret line="264" column="26" lean-forward="true" selection-start-line="264" selection-start-column="26" selection-end-line="264" selection-end-column="26" />
-              <folding>
-                <element signature="e#304#1605#0" />
-                <element signature="e#2898#4227#0" />
-                <element signature="e#5262#5509#0" />
-                <element signature="e#5571#5814#0" />
-              </folding>
+            <state relative-caret-position="347">
+              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html">
+        <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+            <state relative-caret-position="170">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_bids/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-231">
-              <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/approve_bids/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="106" column="38" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
+            <state relative-caret-position="1190">
+              <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -140,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="58">
+              <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -152,15 +114,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="Setup Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>op-</find>
-      <find>wra</find>
       <find>ab</find>
       <find>fle</find>
       <find>tr</find>
@@ -189,6 +149,8 @@
       <find>ul</find>
       <find>user</find>
       <find>bid</find>
+      <find>p</find>
+      <find>edit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="F:/projo/category/category.py" />
-        <option value="F:/projo/category/category.kv" />
-        <option value="F:/projo/upload/upload.py" />
         <option value="F:/projo/main.py" />
         <option value="F:/projo/main.kv" />
         <option value="F:/projo/login/login.py" />
@@ -211,7 +170,6 @@
         <option value="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" />
         <option value="$PROJECT_DIR$/home/templates/home/buyerLanding.html" />
         <option value="$PROJECT_DIR$/create_tender/forms.py" />
-        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/tenderType.html" />
         <option value="$PROJECT_DIR$/create_tender/admin.py" />
         <option value="$PROJECT_DIR$/create_bids/admin.py" />
         <option value="$PROJECT_DIR$/create_bids/forms.py" />
@@ -237,17 +195,21 @@
         <option value="$PROJECT_DIR$/create_bids/templates/create_bids/Updatebid.html" />
         <option value="$PROJECT_DIR$/approve_bids/admin.py" />
         <option value="$PROJECT_DIR$/approve_bids/models.py" />
-        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" />
         <option value="$PROJECT_DIR$/create_bids/models.py" />
-        <option value="$PROJECT_DIR$/create_tender/urls.py" />
         <option value="$PROJECT_DIR$/create_bids/views.py" />
-        <option value="$PROJECT_DIR$/create_tender/views.py" />
-        <option value="$PROJECT_DIR$/approve_bids/urls.py" />
-        <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" />
-        <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/tenderType.html" />
         <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html" />
         <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" />
+        <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" />
+        <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" />
         <option value="$PROJECT_DIR$/approve_bids/views.py" />
+        <option value="$PROJECT_DIR$/approve_bids/urls.py" />
+        <option value="$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/UpdateTender.html" />
+        <option value="$PROJECT_DIR$/create_tender/urls.py" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/FurnTenderupdate.html" />
+        <option value="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" />
+        <option value="$PROJECT_DIR$/create_tender/views.py" />
       </list>
     </option>
   </component>
@@ -273,19 +235,11 @@
             <path>
               <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
+              <item name="create_bids" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="create_tender" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -299,25 +253,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/approve_bids/templates/approve_bids" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/create_tender/templates/create_tender" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SourceCode\Python\ProcurementSystem\approve_bids\templates\approve_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\static\create_tender" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\templates\create_tender" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\templates\tender_feed" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\SourceCode\Python\ProcurementSystem\media" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\media\bid" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\media\bid\documents" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\static\tender_feed" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\core\templates\core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\templates\create_tender" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\approve_bids\templates\approve_bids" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\static\create_tender" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\templates\tender_feed" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -478,7 +432,8 @@
       <workItem from="1560594874655" duration="5643000" />
       <workItem from="1560631128679" duration="3464000" />
       <workItem from="1560759528198" duration="28310000" />
-      <workItem from="1560864202862" duration="17920000" />
+      <workItem from="1560864202862" duration="18096000" />
+      <workItem from="1560929772416" duration="12348000" />
     </task>
     <task id="LOCAL-00001" summary="Added the signup page">
       <created>1556177680292</created>
@@ -592,11 +547,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560634686328</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added reject and award tender&#10;End of business today">
+      <created>1560885083076</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560885083076</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="466741000" />
+    <option name="totallyTimeSpent" value="479265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,7 +574,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.4408867" side_tool="true" weight="0.23765144" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.5591133" visible="true" weight="0.1732224" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5591133" visible="true" weight="0.17549168" />
       <window_info id="Structure" order="2" sideWeight="0.46481177" side_tool="true" weight="0.18154311" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3633388" />
@@ -623,7 +585,7 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32405892" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49848714" visible="true" weight="0.29787233" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49848714" visible="true" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -723,17 +685,14 @@
     <MESSAGE value="Changed specifications&#10;fixed some bugs" />
     <MESSAGE value="Changed specifications&#10;End of business" />
     <MESSAGE value="added furniture bids and tenders&#10;End of business" />
-    <option name="LAST_COMMIT_MESSAGE" value="added furniture bids and tenders&#10;End of business" />
+    <MESSAGE value="added reject and award tender&#10;End of business today" />
+    <option name="LAST_COMMIT_MESSAGE" value="added reject and award tender&#10;End of business today" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProcurementSystem$testdb.coverage" NAME="testdb Coverage Results" MODIFIED="1560340090564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/ProcurementSystem$main.coverage" NAME="main Coverage Results" MODIFIED="1560344328615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/projo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/create_bids/migrations/0015_desktopbid_bid_award.py" />
-    <entry file="file://$PROJECT_DIR$/create_bids/migrations/0014_constructionbid_furniturebid.py" />
-    <entry file="file://$PROJECT_DIR$/create_bids/migrations/0017_auto_20190614_2319.py" />
-    <entry file="file://$PROJECT_DIR$/create_bids/migrations/0018_auto_20190614_2319.py" />
     <entry file="file://$PROJECT_DIR$/create_bids/migrations/0021_auto_20190614_2324.py" />
     <entry file="file://$PROJECT_DIR$/create_bids/migrations/0020_auto_20190614_2320.py" />
     <entry file="file://$PROJECT_DIR$/create_bids/migrations/0019_auto_20190614_2320.py" />
@@ -892,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/Tenderlist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-374">
@@ -947,16 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/bidHistory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_tender/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -991,31 +933,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html">
+    <entry file="file://$PROJECT_DIR$/create_bids/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="134" column="80" selection-start-line="134" selection-start-column="80" selection-end-line="134" selection-end-column="80" />
+        <state relative-caret-position="-153">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html">
+    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="123" column="81" selection-start-line="123" selection-start-column="81" selection-end-line="123" selection-end-column="81" />
+        <state relative-caret-position="102">
+          <caret line="106" column="54" lean-forward="true" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1067">
+          <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="43" column="102" selection-start-line="43" selection-start-column="102" selection-end-line="43" selection-end-column="102" />
+        <state relative-caret-position="595">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/bidHistory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/approve_bids/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="117" column="53" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/tenderType.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="46" column="68" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/FurnTenderupdate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/approve_bids/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/create_bids/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1741">
-          <caret line="264" column="26" lean-forward="true" selection-start-line="264" selection-start-column="26" selection-end-line="264" selection-end-column="26" />
+        <state relative-caret-position="194">
+          <caret line="234" column="42" lean-forward="true" selection-start-line="234" selection-start-column="42" selection-end-line="234" selection-end-column="42" />
           <folding>
             <element signature="e#304#1605#0" />
             <element signature="e#2898#4227#0" />
@@ -1025,66 +1053,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/urls.py">
+    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/UpdateTender.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/create_tender/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        <state relative-caret-position="126">
+          <caret line="226" column="19" selection-start-line="226" selection-start-column="19" selection-end-line="226" selection-end-column="19" />
           <folding>
             <element signature="e#328#1410#0" />
             <element signature="e#1460#2540#0" />
             <element signature="e#2589#3535#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/approve_bids/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_bids/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/approve_bids/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="106" column="38" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
         </state>
       </provider>
     </entry>

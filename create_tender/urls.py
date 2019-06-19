@@ -15,6 +15,10 @@ urlpatterns = [
     url(r'^tenderType/$', views.tender_type, name='tenderType'),
     path('tender_delete<int:pk>/', views.del_tender, name='del_tender'),
     path('acc_bid_info<int:bid_id>/', views.acc_list, name='acc_bid_info'),
+    path('tenderedit<int:tender_id>', views.tender_edit, name='tenderEdit'),
+    path('furnedit<int:tender_id>', views.furn_tender_edit, name='furnEdit'),
+    path('constedit<int:tender_id>', views.const_tender_edit, name='constEdit'),
+
     # Bidder Urls and paths
     url(r'^bid/$', bid_view.tender_list, name='tender_feed'),
     url(r'^bid_history/$', bid_view.my_bids, name='bid_history'),

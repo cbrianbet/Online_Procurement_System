@@ -98,11 +98,51 @@ def bid_info(request, bid):
 
 
 @login_required
+def desk_bid_info(request, bid):
+    bids = AcceptBid.objects.filter(bid_ID__user=bid)
+    fbids = AcceptFurnBid.objects.filter(bid_ID__user=bid)
+    dbids = AcceptConstBid.objects.filter(bid_ID__user=bid)
+    name = Profile.objects.get(user=bid)
+
+    fcount = fbids.count()
+    fcount += dbids.count()
+    fcount += bids.count()
+    context = {
+        'bid': bids,
+        'fbid': fbids,
+        'dbid': dbids,
+        'fcount': fcount,
+        'name': name
+    }
+    return render(request, "approve_bids/bidslist.html", context)
+
+
+@login_required
+def furn_bid_info(request, bid):
+    bids = AcceptFurnBid.objects.filter(bid_ID__user=bid)
+    fbids = AcceptConstBid.objects.filter(bid_ID__user=bid)
+    dbids = AcceptBid.objects.filter(bid_ID__user=bid)
+    name = Profile.objects.get(user=bid)
+
+    fcount = fbids.count()
+    fcount += dbids.count()
+    fcount += bids.count()
+    context = {
+        'bid': bids,
+        'fbid': fbids,
+        'dbid': dbids,
+        'fcount': fcount,
+        'name': name
+    }
+    return render(request, "approve_bids/bidslist.html", context)
+
+
+@login_required
 def del_bid(request, pk):
     if request.method == 'POST':
         bid = DesktopBid.objects.get(pk=pk)
         bid.delete()
-        messages.info(request, f"Bid by {bid.user.profile.company_name} for {bid.Tender_ID.Mod} rejected")
+        messages.info(request, f"Bid by {bid.user.profile.company_name} for {bid.Tender_ID.Product} rejected")
 
     return HttpResponse("Bid removed")
 
@@ -112,7 +152,7 @@ def furn_del_bid(request, pk):
     if request.method == 'POST':
         bid = FurnitureBid.objects.get(pk=pk)
         bid.delete()
-        messages.info(request, f"Bid by {bid.user.profile.company_name} for {bid.Tender_ID.Mod} rejected")
+        messages.info(request, f"Bid by {bid.user.profile.company_name} for {bid.Tender_ID.Product} rejected")
     return HttpResponse("Bid removed")
 
 
@@ -125,3 +165,11 @@ def const_del_bid(request, pk):
         bid.delete()
 
     return HttpResponse("Bid removed")
+
+
+@login_required
+def furn_view_bid(request, bid):
+    context = {
+        'atend': FurnitureBid.objects.get(pk=bid)
+    }
+    return render(request, 'approve_bids/view.html', context)

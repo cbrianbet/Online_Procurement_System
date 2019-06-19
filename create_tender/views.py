@@ -127,3 +127,109 @@ def acc_list(request, bid_id):
         "bid": AcceptBid.objects.filter(id=bid_id)
     }
     return render(request, "create_tender/acc_bid.html", context)
+
+
+@login_required
+def tender_edit(request, tender_id):
+    tender = Desktop_Tender.objects.get(pk=tender_id)
+
+    if request.method == 'GET':
+        try:
+            form = DesktopTenderForm()
+        except Tender.DoesNotExist:
+            raise Http404("Tender does not exist")
+
+        context = {
+            'tender': tender,
+            'form': form
+        }
+        return render(request, "create_tender/UpdateTender.html", context)
+
+    if request.method == 'POST':
+        form = DesktopTenderForm(request.POST, request.FILES)
+        if form.is_valid():
+            tenders = form.save(commit=False)
+            tenders.user = request.user
+            tenders.id = tender.id
+            tenders.save()
+            tenders.Product = form.cleaned_data.get('Product')
+            tenders.Memory = form.cleaned_data.get('Memory')
+            tenders.Graphics = form.cleaned_data.get('Graphics')
+            tenders.Processor = form.cleaned_data.get('Processor')
+            tenders.Storage = form.cleaned_data.get('Storage')
+            tenders.Operating_system = form.cleaned_data.get('Operating_system')
+            tenders.Quantity = form.cleaned_data.get('Quantity')
+
+            messages.success(request, "Tender updated successfully")
+            return redirect('tender_history')
+        # TODO send email
+
+
+@login_required
+def const_tender_edit(request, tender_id):
+    tender = ConstructionTender.objects.get(pk=tender_id)
+
+    if request.method == 'GET':
+        try:
+            form = ConstTenderForm()
+        except Tender.DoesNotExist:
+            raise Http404("Tender does not exist")
+
+        context = {
+            'tender': tender,
+            'form': form
+        }
+        return render(request, "create_tender/UpdateTender.html", context)
+
+    if request.method == 'POST':
+        form = ConstTenderForm(request.POST, request.FILES)
+        if form.is_valid():
+            tenders = form.save(commit=False)
+            tenders.user = request.user
+            tenders.id = tender.id
+            tenders.save()
+            tenders.Net_power = form.cleaned_data.get('Net_power')
+            tenders.Certification = form.cleaned_data.get('Certification')
+            tenders.Mod = form.cleaned_data.get('Mod')
+            tenders.Operating_weight = form.cleaned_data.get('Operating_weight')
+            tenders.Electric = form.cleaned_data.get('Electric')
+            tenders.Engine = form.cleaned_data.get('Engine')
+            tenders.Quantity = form.cleaned_data.get('Quantity')
+
+            messages.success(request, "Tender updated successfully")
+            return redirect('tender_history')
+        # TODO send email
+
+
+@login_required
+def furn_tender_edit(request, tender_id):
+    tender = FurnitureTender.objects.get(pk=tender_id)
+
+    if request.method == 'GET':
+        try:
+            form = FurnitureTenderForm()
+        except Tender.DoesNotExist:
+            raise Http404("Tender does not exist")
+
+        context = {
+            'tender': tender,
+            'form': form
+        }
+        return render(request, "create_tender/UpdateTender.html", context)
+
+    if request.method == 'POST':
+        form = FurnitureTenderForm(request.POST, request.FILES)
+        if form.is_valid():
+            tenders = form.save(commit=False)
+            tenders.user = request.user
+            tenders.id = tender_id.id
+            tenders.save()
+            tenders.Color = form.cleaned_data.get('Color')
+            tenders.Product = form.cleaned_data.get('Product')
+            tenders.Material = form.cleaned_data.get('Material')
+            tenders.Dimensions = form.cleaned_data.get('Dimensions')
+            tenders.Quantity = form.cleaned_data.get('Quantity')
+
+            messages.success(request, "Tender updated successfully")
+            return redirect('bid_history')
+        # TODO send email

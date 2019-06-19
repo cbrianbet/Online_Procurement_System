@@ -1,0 +1,52 @@
+{% extends 'create_tender/base.html' %}
+{% block link %}
+    "{% url 'bidderHome' %}"
+{% endblock %}
+{% block tilte %}
+    Bid
+{% endblock %}
+{% block body %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Bid for {{ bid.Tender_ID.Mod }}</h2>
+                    <h5>Bid description:</h5>
+                    <h5>Model:</h5>
+                    <p>{{ bid.Mod }}</p>
+                    <h5>Electric:</h5>
+                    <p>{{ bid.Electric }}</p>
+                    <h5>Certification:</h5>
+                    <p>{{ bid.Certification }}</p>
+                    <h5>Operating weight:</h5>
+                    <p>{{ bid.Operating_weight }}</p>
+                    <h5>Engine:</h5>
+                    <p>{{ bid.Engine }}</p>
+                    <h5>Net power:</h5>
+                    <p>{{ bid.Net_power }}</p>
+                    <h5>Quoted Amount:</h5>
+                    <p>Ksh. {{ bid.Quote_amount }}</p>
+                    <h5>Documents Uploaded:</h5>
+                    {% if bid.Bid_documents_url %}
+                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View
+                            Document</a>
+                    {% else %}
+                        <p>No documents available</p>
+                    {% endif %}
+                    <h5>Posted on:</h5>
+                    <p>{{ bid.date_created }}</p>
+
+                    <div class="p-t-20">
+                        <a class="btn btn--radius btn--green" href="{% url 'constBidEdit' bid.pk %}">Update</a>
+                        <form method="post" action="{% url 'del_bid' bid.id %}">
+                            {% csrf_token %}
+                            <button class="btn btn--radius btn--red" type="submit">Delete</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
