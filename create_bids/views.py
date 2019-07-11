@@ -2,10 +2,13 @@ from django.contrib.auth.decorators import login_required
 from django.http import Http404
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.utils import timezone
 
 from .forms import *
 from .models import *
+from reports.to_pdf import *
 from create_tender.models import *
+from approve_bids.models import *
 
 
 @login_required
@@ -120,22 +123,52 @@ def const_bid(request, tender_id):
 @login_required
 def tender_list(request):
     context = {
-        'furnTender': FurnitureTender.objects.all(),
-        'tenders': Desktop_Tender.objects.all(),
-        'constTender': ConstructionTender.objects.all()
+        'tenders': Desktop_Tender.objects.filter(is_active__exact='Yes')
     }
     return render(request, 'create_bids/Tenderlist.html', context)
 
 
 @login_required
+def tender_list_f(request):
+    context = {
+        'furnTender': FurnitureTender.objects.exclude(is_active__exact='Yes')
+    }
+    return render(request, 'create_bids/Tenderlistf.html', context)
+
+
+@login_required
+def tender_list_c(request):
+    context = {
+        'constTender': ConstructionTender.objects.filter(is_active__exact='Yes')
+    }
+    return render(request, 'create_bids/TenderlistC.html', context)
+
+
+@login_required
 def my_bids(request):
     context = {
-        'furnbid': FurnitureBid.objects.filter(user=request.user),
         'deskbid': DesktopBid.objects.filter(user=request.user),
-        'constbid': ConstructionBid.objects.filter(user=request.user),
         'bids': Bids.objects.filter(user=request.user)
     }
     return render(request, 'create_bids/bidHistory.html', context)
+
+
+@login_required
+def my_bids_c(request):
+    context = {
+        'constbid': ConstructionBid.objects.filter(user=request.user),
+        'bids': Bids.objects.filter(user=request.user)
+    }
+    return render(request, 'create_bids/bidHistoryC.html', context)
+
+
+@login_required
+def my_bids_f(request):
+    context = {
+        'furnbid': FurnitureBid.objects.filter(user=request.user),
+        'bids': Bids.objects.filter(user=request.user)
+    }
+    return render(request, 'create_bids/bidHistoryF.html', context)
 
 
 @login_required
@@ -305,3 +338,21 @@ def const_del_bid(request, pk):
         bid = ConstructionBid.objects.get(pk=pk)
         bid.delete()
     return redirect('bid_history')
+
+
+def aw_rep(request):
+    const = AcceptConstBid.objects.filter(bid_ID__user=request.user)
+    furn = AcceptFurnBid.objects.filter(bid_ID__user=request.user)
+    desk = AcceptBid.objects.filter(bid_ID__user=request.user)
+    number = const.count() + furn.count() + desk.count()
+    today = timezone.now()
+
+    params = {
+        'today': today,
+        'sales': const,
+        'furn': furn,
+        'desk': desk,
+        'request': request,
+        'num': number
+    }
+    return Render.render('create_bids/report.html', params)

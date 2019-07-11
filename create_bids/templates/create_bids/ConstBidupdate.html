@@ -29,7 +29,7 @@
                     <p>Ksh. {{ bid.Quote_amount }}</p>
                     <h5>Documents Uploaded:</h5>
                     {% if bid.Bid_documents_url %}
-                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View
+                        <a href="{{ bid.Bid_documents_url.url }}" class="btn btn-primary" target="_blank">View
                             Document</a>
                     {% else %}
                         <p>No documents available</p>

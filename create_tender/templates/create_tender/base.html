@@ -48,13 +48,12 @@
                     </div>
                 </div>
                 <div class="mbr-table-cell" style="padding: 15px">
-                    <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
-                         id="exCollapsingNavbar">
+                    <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
                         <a class="nav-link link" href="{% url 'logout' %}">LOGOUT</a>
                     </div>
                     <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
                          id="exCollapsingNavbar">
-                        <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
+                        <a class="nav-link link" href="{% url 'help' %}" target="_blank" >HELP</a>
                     </div>
                 </div>
             </div>
@@ -81,8 +80,6 @@
 <script src="{% static 'home/assets/theme/js/script.js' %}"></script>
 <script src="{% static 'home/assets/dropdown/js/script.min.js' %}"></script>
 <script src="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
-<script src="{% static 'create_tender/js/bootstrap.bundle.js' %}"></script>
-<script src="{% static 'create_tender/js/bootstrap.js' %}"></script>
 <input name="animation" type="hidden">
 
 <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-6"

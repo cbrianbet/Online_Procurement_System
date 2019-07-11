@@ -42,7 +42,7 @@
                 </div>
                 <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
                      id="exCollapsingNavbar">
-                    <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
+                    <a class="nav-link link" data-toggle="dropdown-submenu" href="{% url 'help' %}">HELP</a>
                 </div>
             </div>
         </div>
@@ -63,7 +63,10 @@
                         {% endfor %}
                     </ul>
                 {% endif %}
-                <h2 class="title">Bids for </h2>
+                <h2 class="title">Bids for {{ tender.Mod }}</h2>
+{#                {% if cbids %}#}
+{#                    <a class="btn btn-primary" href="{% url 'autoAward' tender.id %}">Auto award tender</a>#}
+{#                {% endif %}#}
                 <table class="table">
                     <tr>
                         <th>
@@ -104,7 +107,7 @@
                     {% for bid in cbids %}
                         <tr>
                             <td>
-                                <a href="{% url 'user_info' bid.user.id %}"><p>Bid
+                                <a href="{% url 'user_info' bid.user.profile.id %}"><p>Bid
                                     by {{ bid.user.profile.company_name }}</p>
                                 </a>
                             </td>
@@ -130,8 +133,9 @@
                                 <p>{{ bid.Quote_amount }}</p>
                             </td>
                             <td>
+
                                 {% if bid.Bid_documents_url %}
-                                    <a href="" class="btn btn--green">Download</a>
+                                    <a href="{{ bid.Bid_documents_url.url }}" target="_blank" class="btn btn--green">Download</a>
                                 {% else %}
                                     <p>No documents available</p>
                                 {% endif %}

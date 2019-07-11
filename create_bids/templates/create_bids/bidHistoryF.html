@@ -12,17 +12,7 @@
     <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css' %}">
     <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css' %}">
-    <!-- jQuery library -->
-    <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial scale=1 ">
 </head>
 <body>
@@ -57,7 +47,8 @@
             <div class="card-body">
 
                 <a href="{% url 'awRepb' %}" target="_blank" class="btn--def btn--radius btn">Awarded tenders report</a>
-                <h2 class="title">Desktop Bid History</h2>
+
+                <h2 class="title">Furniture Bid History</h2>
                 {% if messages %}
                     <ul>
                         {% for message in messages %}
@@ -69,48 +60,53 @@
                     </ul>
                 {% endif %}
                 <ul>
-                    {% for bid in deskbid %}
+                    {% for bid in furnbid %}
                         {% if bid.bid_award == 'Yes' %}
                             <div class="card card-1 card-body">
-                                <h4>{{ bid }}</h4>
-                                <a href="{% url 'deskBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                <h4>Tender for {{ bid.Product }}
+                                    by {{ bid.Tender_ID.user.profile.company_name }}</h4>
+                                <a href="{% url 'furnBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
                                     Bid</a>
                                 <div>Status: <p style="color: #1c7430">Awarded</p></div>
                                 <p>Bid created on: {{ bid.date_created }}</p>
                             </div>
                         {% elif bid.Tender_ID.tender_award == 'Yes' %}
                             <div class="card card-1 card-body">
-                                <h4>{{ bid }}</h4>
-                                <a href="{% url 'deskBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                <h4>Tender for {{ bid.Product }}
+                                    by {{ bid.Tender_ID.user.profile.company_name }}</h4>
+                                <a href="{% url 'furnBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
                                     Bid</a>
                                 <div>Status: <p style="color: red">Rejected</p></div>
                                 <p>Bid created on: {{ bid.date_created }}</p>
                             </div>
                         {% elif bid.bid_award == 'null' %}
                             <div class="card card-1 card-body">
-                                <h4>{{ bid }}</h4>
-                                <a href="{% url 'deskBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                <h4>Tender for {{ bid.Product }}
+                                    by {{ bid.Tender_ID.user.profile.company_name }}</h4>
+                                <a href="{% url 'furnBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
                                     Bid</a>
-                                <div>Status: <p style="color: #004e72">Pending evaluation</p></div>
+                                <div>Status: <p style="color:#004e72;">Pending</p></div>
                                 <p>Bid created on: {{ bid.date_created }}</p>
                             </div>
                         {% else %}
                             <div class="card card-1 card-body">
-                                <h4>{{ bid }}</h4>
-                                <a href="{% url 'deskBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
+                                <h4>Tender for {{ bid.Product }}
+                                    by {{ bid.Tender_ID.user.profile.company_name }}</h4>
+                                <a href="{% url 'constBidUpdate' bid.id %}" class="btn--green btn--radius btn">View
                                     Bid</a>
                                 <div>Status: <p style="color: red">Rejected</p></div>
                                 <p>Bid created on: {{ bid.date_created }}</p>
                             </div>
                         {% endif %}
+
                     {% empty %}
-                        <li>No Bids made yet</li>
+                        <li>No Bids Made yet</li>
                     {% endfor %}
                 </ul>
-
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

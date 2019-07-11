@@ -30,6 +30,7 @@
         <option value="$MODULE_DIR$/core/templates" />
         <option value="$MODULE_DIR$/create_bids/templates" />
         <option value="$MODULE_DIR$/approve_bids/templates" />
+        <option value="$MODULE_DIR$/reports/templates" />
       </list>
     </option>
   </component>

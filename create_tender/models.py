@@ -31,6 +31,7 @@ class Desktop_Tender(models.Model):
     tender_award = models.CharField(max_length=10, default="No")
     date_created = models.DateField(auto_now=True)
     Quantity = models.PositiveIntegerField()
+    is_active = models.CharField(max_length=10, default='Yes')
 
     def __str__(self):
         return f"{self.Product} by {self.user.profile.company_name}"
@@ -50,6 +51,7 @@ class ConstructionTender(models.Model):
     Quantity = models.PositiveIntegerField()
     tender_award = models.CharField(max_length=10, default="No")
     date_created = models.DateField(auto_now=True)
+    is_active = models.CharField(max_length=10, default='Yes')
 
     def __str__(self):
         return f"{self.Mod} by {self.user.profile.company_name}"
@@ -66,6 +68,7 @@ class FurnitureTender(models.Model):
     Color = models.CharField(max_length=80)
     Quantity = models.PositiveIntegerField()
     tender_award = models.CharField(max_length=10, default="No")
+    is_active = models.CharField(max_length=10, default='Yes')
     date_created = models.DateField(auto_now=True)
 
     def __str__(self):

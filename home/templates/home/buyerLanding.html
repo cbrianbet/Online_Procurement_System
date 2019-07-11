@@ -6,6 +6,7 @@
     "{% url 'buyerHome' %}"
 {% endblock %}
 {% block body %}
+
     <section class="mbr-cards mbr-section mbr-section-nopadding" id="features2-3"
              style="background-color: rgb(255, 255, 255);">
         <div class="mbr-cards-row row striped">
@@ -17,7 +18,8 @@
                         <div class="card-block">
                             <h4 class="card-title">Create Tender</h4>
                             <h5 class="card-subtitle"></h5>
-                            <p class="card-text">Using this you can create tenders for your organization, let us help you meet your needs.</p>
+                            <p class="card-text">Using this you can create tenders for your organization, let us help
+                                you meet your needs.</p>
                             <div class="card-btn">
                                 <a href="{% url 'tenderType' %}" class="btn btn-primary">CREATE TENDER</a>
                             </div>
@@ -32,17 +34,25 @@
                         <div class="card-block">
                             <h4 class="card-title">History</h4>
                             <p class="card-text">Created a tender? Who bid for it? Want to take it down?.</p>
-                            <div class="card-btn">
-                                <a href="{% url 'tender_history' %}" class="btn btn-primary">VIEW TENDER HISTORY</a>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">TENDER HISTORY</button>
+                                <div id="myDropdown" class="dropdown-content">
+
+                                    <a href="{% url 'tender_historyA' %}" class="card-btn btn btn-primary">Un-awarded
+                                        Tenders</a>
+
+                                    <a href="{% url 'tender_history' %}" class="card-btn btn btn-primary">Awarded
+                                        Tenders</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
-    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2"
+            style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
         <div class="container">
             <p class="text-xs-center">E-Procurement System.</p>
         </div>

@@ -34,7 +34,7 @@ class DesktopBid(models.Model):
     Graphics = models.CharField(max_length=100)
     date_created = models.DateTimeField(auto_now=True)
     Bid_documents_url = models.FileField(upload_to='bid/documents/', null=True, blank=True)
-    bid_award = models.CharField(max_length=10, null=True)
+    bid_award = models.CharField(max_length=10, default='null')
 
     def __str__(self):
         return f"{self.user.profile.company_name} for {self.Tender_ID.Product}"
@@ -57,12 +57,12 @@ class ConstructionBid(models.Model):
     Operating_weight = models.CharField(max_length=80)
     Certification = models.CharField(max_length=80)
     Quote_amount = models.PositiveIntegerField()
-    bid_award = models.CharField(max_length=10, null=True)
+    bid_award = models.CharField(max_length=10, default='null')
     date_created = models.DateTimeField(auto_now=True)
     Bid_documents_url = models.FileField(upload_to='bid/documents/', null=True, blank=True)
 
     def __str__(self):
-        return f"{self.user.profile.company_name}"
+        return f"{self.user.profile.company_name} for {self.Tender_ID.Mod}"
 
     def delete(self, *args, **kwargs):
         self.Bid_documents_url.delete()
@@ -80,12 +80,12 @@ class FurnitureBid(models.Model):
     Material = models.CharField(max_length=80)
     Color = models.CharField(max_length=80)
     Quote_amount = models.PositiveIntegerField()
-    tender_award = models.CharField(max_length=10, null=True)
+    bid_award = models.CharField(max_length=10, default='null')
     date_created = models.DateTimeField(auto_now=True)
     Bid_documents_url = models.FileField(upload_to='bid/documents/', null=True, blank=True)
 
     def __str__(self):
-        return f"{self.Tender_ID.Product}"
+        return f"{self.user.profile.company_name} for {self.Tender_ID.Product}"
 
     def delete(self, *args, **kwargs):
         self.Bid_documents_url.delete()

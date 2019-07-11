@@ -1,5 +1,4 @@
 from django.urls import path
-from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -19,6 +18,9 @@ urlpatterns = [
     path('bidconstrej<int:pk>/', views.const_del_bid, name='constRejectBid'),
     path('bidfurnrej<int:pk>/', views.furn_del_bid, name='furnRejectBid'),
     path('afurnview<int:bid>/', views.furn_view_bid, name='awFurnView'),
+    path('adeskview<int:bid>/', views.view_bid, name='awDeskView'),
+    path('aconstview<int:bid>/', views.const_view_bid, name='awConstView'),
+    # path('auto_award<int:tender_id>/', views.auto_award, name='autoAward'),
 
 ]
 

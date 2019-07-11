@@ -12,3 +12,8 @@ def buyerHome(request):
 @login_required
 def bidderHome(request):
     return render(request, "home/bidderLanding.html")
+
+
+@login_required
+def help(request):
+    return render(request, "home/help.html")

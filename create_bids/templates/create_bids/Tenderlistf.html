@@ -1,0 +1,41 @@
+{% extends 'create_tender/base.html' %}
+{% block link %}
+    "{% url 'bidderHome' %}"
+{% endblock %}
+{% block tilte %}
+    Furniture tenders
+{% endblock %}
+{% block body %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h3 class="title">Available Furniture Tenders</h3>
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                    <li>{{ message }}</li>
+                                </div>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    <ul>
+                        {% for tender in furnTender %}
+                            <div class="card card-1 card-body">
+                                <h4>{{ tender }}</h4>
+                                <p>posted on:
+                                    {{ tender.date_created }}</p>
+                                <a href="{% url 'furnBid' tender.id %}"
+                                   class="btn btn--radius btn--green">Bid</a>
+                            </div>
+                        {% empty %}
+                            <li>No Tenders Available</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

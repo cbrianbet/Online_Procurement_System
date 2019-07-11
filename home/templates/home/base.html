@@ -1,78 +1,146 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %}{% endblock %}</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  {% load static %}
+    <style>
+        .dropbtn {
+            background-color: #f3c649;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-  <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts1.css' %}">
-  <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts2.css' %}">
-  <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts3.css' %}">
-  <link rel="stylesheet" href="{% static 'home/assets/bootstrap-material-design-font/css/material.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/et-line-font-plugin/style.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/tether/tether.min.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/bootstrap/css/bootstrap.min.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/dropdown/css/style.css'%}">
-  <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css'%}">
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #8a6d3b;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts1.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts2.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/fonts/fonts3.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/bootstrap-material-design-font/css/material.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/et-line-font-plugin/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/tether/tether.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css' %}">
 
 
 </head>
 <body>
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 <section id="menu-0">
 
-        <nav class="navbar bg-color bg-color transparent navbar-fixed-top">
-            <div class="container">
-                <div class="mbr-table">
-                    <div class="mbr-table-cell">
-                        <div class="navbar-brand">
-                            <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
-                               href={% block link%} {% endblock %}>HOME</a>
-                        </div>
+    <nav class="navbar bg-color bg-color transparent navbar-fixed-top">
+        <div class="container">
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+                    <div class="navbar-brand">
+                        <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
+                           href={% block link %} {% endblock %}>HOME</a>
                     </div>
-                    <div class="mbr-table-cell" style="padding: 15px">
-                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
-                            id="exCollapsingNavbar">
-                            <a class="nav-link link" href="{% url 'logout' %}">LOGOUT</a>
-                        </div>
-                        <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
-                            id="exCollapsingNavbar">
-                            <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
-                        </div>
+                </div>
+                <div class="mbr-table-cell" style="padding: 15px">
+                    <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                         id="exCollapsingNavbar">
+                        <a class="nav-link link" href="{% url 'logout' %}">LOGOUT</a>
+                    </div>
+                    <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
+                         id="exCollapsingNavbar">
+                        <a class="nav-link link" target="_blank" href="{% url 'help' %}">HELP</a>
                     </div>
                 </div>
             </div>
-        </nav>
-
-    </section>
-
-    <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-6"
-            style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
-
-        <div class="container">
-            <p class="text-xs-center">Welcome {{ Profile.company_name }}</p>
         </div>
-    </footer>
+    </nav>
+
+</section>
+
+<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-6"
+        style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+
+    <div class="container">
+        <p class="text-xs-center"></p>
+    </div>
+</footer>
 {% block body %}
 {% endblock %}
 
 
 
 
-  <script src="{% static 'home/assets/web/assets/jquery/jquery.min.js'%}"></script>
-  <script src="{% static 'home/assets/tether/tether.min.js'%}"></script>
-  <script src="{% static 'home/assets/bootstrap/js/bootstrap.min.js'%}"></script>
-  <script src="{% static 'home/assets/smooth-scroll/SmoothScroll.js'%}"></script>
-  <script src="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js'%}"></script>
-  <script src="{% static 'home/assets/theme/js/script.js'%}"></script>
-  <script src="{% static 'home/assets/dropdown/js/script.min.js'%}"></script>
-  <script src="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js'%}"></script>
+<script src="{% static 'home/assets/web/assets/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'home/assets/tether/tether.min.js' %}"></script>
+<script src="{% static 'home/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/assets/smooth-scroll/SmoothScroll.js' %}"></script>
+<script src="{% static 'home/assets/viewportChecker/jquery.viewportchecker.js' %}"></script>
+<script src="{% static 'home/assets/theme/js/script.js' %}"></script>
+<script src="{% static 'home/assets/dropdown/js/script.min.js' %}"></script>
+<script src="{% static 'home/assets/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
 
-  <input name="animation" type="hidden">
+<input name="animation" type="hidden">
 
-  </body>
+</body>
 </html>

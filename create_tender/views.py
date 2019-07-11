@@ -1,8 +1,10 @@
+from django.utils import timezone
 from django.http import Http404
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
+from reports.to_pdf import Render
 from create_bids.models import Bids
 from .models import *
 from .forms import *
@@ -108,6 +110,25 @@ def my_tenders(request):
 
 
 @login_required
+def my_tenders_a(request):
+    awarded_tender = AcceptBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    awarded_furn_tender = AcceptFurnBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    awarded_const_tender = AcceptConstBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    my_tender = Desktop_Tender.objects.filter(user=request.user, tender_award__exact="No")
+    my_const_tender = ConstructionTender.objects.filter(user=request.user, tender_award__exact="No")
+    my_furn_tender = FurnitureTender.objects.filter(user=request.user, tender_award__exact="No")
+    context = {
+        "acc_bids": awarded_tender,
+        'acc_furn': awarded_furn_tender,
+        'acc_const': awarded_const_tender,
+        'my_tender': my_tender,
+        'my_furn': my_const_tender,
+        'my_const': my_furn_tender
+    }
+    return render(request, 'create_tender/tenderHistorya.html', context)
+
+
+@login_required
 def tender_type(request):
     return render(request, "create_tender/tenderType.html")
 
@@ -119,14 +140,6 @@ def del_tender(request, pk):
         messages.error(request, f"{tender.tender_title} deleted")
         tender.delete()
     return redirect('tender_history')
-
-
-@login_required
-def acc_list(request, bid_id):
-    context = {
-        "bid": AcceptBid.objects.filter(id=bid_id)
-    }
-    return render(request, "create_tender/acc_bid.html", context)
 
 
 @login_required
@@ -233,3 +246,21 @@ def furn_tender_edit(request, tender_id):
             messages.success(request, "Tender updated successfully")
             return redirect('bid_history')
         # TODO send email
+
+
+def aw_rep(request):
+    const = AcceptConstBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    furn = AcceptFurnBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    desk = AcceptBid.objects.filter(bid_ID__Tender_ID__user=request.user)
+    number = const.count() + furn.count() + desk.count()
+    today = timezone.now()
+
+    params = {
+        'today': today,
+        'sales': const,
+        'furn': furn,
+        'desk': desk,
+        'request': request,
+        'num': number
+    }
+    return Render.render('create_tender/report.html', params)

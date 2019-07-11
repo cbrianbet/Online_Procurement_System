@@ -12,16 +12,21 @@ urlpatterns = [
     path('const_tender', views.const_tender, name="constTender"),
     path('furn_tender', views.furn_tender, name="furnitureTender"),
     url(r'^tender_history/$', views.my_tenders, name='tender_history'),
+    url(r'^tender_historya/$', views.my_tenders_a, name='tender_historyA'),
     url(r'^tenderType/$', views.tender_type, name='tenderType'),
     path('tender_delete<int:pk>/', views.del_tender, name='del_tender'),
-    path('acc_bid_info<int:bid_id>/', views.acc_list, name='acc_bid_info'),
     path('tenderedit<int:tender_id>', views.tender_edit, name='tenderEdit'),
     path('furnedit<int:tender_id>', views.furn_tender_edit, name='furnEdit'),
     path('constedit<int:tender_id>', views.const_tender_edit, name='constEdit'),
+    path('fullrep', views.aw_rep, name='awRep'),
 
     # Bidder Urls and paths
     url(r'^bid/$', bid_view.tender_list, name='tender_feed'),
-    url(r'^bid_history/$', bid_view.my_bids, name='bid_history'),
+    url(r'^bidf/$', bid_view.tender_list_f, name='tender_feedF'),
+    url(r'^bidc/$', bid_view.tender_list_c, name='tender_feedC'),
+    url(r'^bid_historyf/$', bid_view.my_bids_f, name='bid_historyF'),
+    url(r'^bid_history/$', bid_view.my_bids, name='bid_historyD'),
+    url(r'^bid_historyc/$', bid_view.my_bids_c, name='bid_historyC'),
     path('bid<int:tender_id>', bid_view.index, name='bid_tender'),
     path('furn_bid<int:tender_id>', bid_view.furn_bid, name='furnBid'),
     path('const_bid<int:tender_id>', bid_view.const_bid, name='constBid'),
@@ -34,6 +39,7 @@ urlpatterns = [
     path('biddelete<int:pk>/', bid_view.del_bid, name='del_bid'),
     path('bidconstdelete<int:pk>/', bid_view.const_del_bid, name='constDelBid'),
     path('bidfurndelete<int:pk>/', bid_view.furn_del_bid, name='furnDelBid'),
+    path('fullrepb', bid_view.aw_rep, name='awRepb'),
 ]
 
 if settings.DEBUG:

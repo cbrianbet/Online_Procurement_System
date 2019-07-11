@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'reports.apps.ReportsConfig',
     'approve_bids.apps.ApproveBidsConfig',
     'core.apps.CoreConfig',
     'create_bids.apps.CreateBidsConfig',

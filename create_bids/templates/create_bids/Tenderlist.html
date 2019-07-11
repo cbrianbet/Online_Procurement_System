@@ -1,164 +1,46 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tender List</title>
-    {% load static %}
-    <!-- Latest compiled and minified CSS -->
-    <link href="{% static "create_tender/css/bootstrap.min.css" %}" rel="stylesheet">
-    <link href="{% static "create_tender/css/main.css" %}" rel="stylesheet">
-    <link href="{% static 'create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet"
-          media="all">
-    <link rel="stylesheet" href="{% static 'home/assets/bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'home/assets/socicon/css/socicon.min.css' %}">
-    <link rel="stylesheet" href="{% static 'home/assets/theme/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'home/assets/animate.css/animate.min.css' %}">
-    <!-- jQuery library -->
-    <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% extends 'create_tender/base.html' %}
+{% block link %}
+    "{% url 'bidderHome' %}"
+{% endblock %}
+{% block tilte %}
+    Desktop tenders
+{% endblock %}
+{% block body %}
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div id="desktop" class="container tab-pane active">
 
-    <!-- Popper JS -->
-    <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial scale=1 ">
-</head>
-<body>
-<nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
-    <div class="container">
-
-        <div class="mbr-table">
-            <div class="mbr-table-cell">
-                <div class="navbar-brand">
-                    <a class="mbr-iconfont mbr-iconfont-menu navbar-caption"
-                       href="{% url 'bidderHome' %}">HOME</a>
-                </div>
-            </div>
-            <div class="mbr-table-cell" style="padding: 15px">
-                <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm"
-                     id="exCollapsingNavbar">
-                    <a class="nav-link link" href="{% url 'logout' %}">LOGOUT</a>
-                </div>
-                <div class="pull-xs-right nav navbar-nav navbar-toggleable-sm" style="padding-right: 15px"
-                     id="exCollapsingNavbar">
-                    <a class="nav-link link" data-toggle="dropdown-submenu" href="">HELP</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
-    <div class="wrapper wrapper--w680">
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-                <a data-toggle="tab" class="nav-link active" href="#desktop">Desktop tenders</a>
-            </li>
-            <li class="nav-item">
-                <a data-toggle="tab" class="nav-link" href="#construction">Construction tenders</a>
-            </li>
-            <li class="nav-item">
-                <a data-toggle="tab" class="nav-link" href="#furniture">Furniture tenders</a>
-            </li>
-        </ul>
-        <div class="card card-1">
-            <div class="card-heading"></div>
-            <div class="card-body">
-
-
-                <div class="tab-content">
-                    <div id="desktop" class="container tab-pane active">
-
-                        <h3 class="title">Available Desktop Tenders</h3>
-                        {% if messages %}
+                            <h3 class="title">Available Desktop Tenders</h3>
+                            {% if messages %}
+                                <ul>
+                                    {% for message in messages %}
+                                        <div class="alert alert-{{ message.level_tag }}" role="alert">
+                                            <li>{{ message }}</li>
+                                        </div>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
                             <ul>
-                                {% for message in messages %}
-                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
-                                        <li>{{ message }}</li>
+                                {% for tender in tenders %}
+                                    <div class="card card-1 card-body">
+                                        <h4>{{ tender }}</h4>
+                                        <p>posed on:
+                                            {{ tender.date_created }}</p>
+                                        <a href="{% url 'bid_tender' tender.id %}"
+                                           class="btn btn--radius btn--green">Bid</a>
                                     </div>
+                                {% empty %}
+                                    No Tenders Available at the moment
                                 {% endfor %}
                             </ul>
-                        {% endif %}
-                        <ul>
-                            {% for tender in tenders %}
-                                <div class="card card-1 card-body">
-                                    <h4>{{ tender }}</h4>
-                                    <p>posed on:
-                                        {{ tender.date_created }}</p>
-                                    <a href="{% url 'bid_tender' tender.id %}"
-                                       class="btn btn--radius btn--green">Bid</a>
-                                </div>
-                            {% empty %}
-                                <li>No Tenders Available</li>
-                            {% endfor %}
-                        </ul>
-
-                    </div>
-                    <div id="construction" class="container tab-pane">
-
-                        <h3 class="title">Available Construction Tenders</h3>
-                        {% if messages %}
-                            <ul>
-                                {% for message in messages %}
-                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
-                                        <li>{{ message }}</li>
-                                    </div>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                        <ul>
-                            {% for tender in constTender %}
-                                <div class="card card-1 card-body">
-                                    <h4>{{ tender }}</h4>
-                                    <p>posed on:
-                                        {{ tender.date_created }}</p>
-                                    <a href="{% url 'constBid' tender.id %}"
-                                       class="btn btn--radius btn--green">Bid</a>
-                                </div>
-                            {% empty %}
-                                <li>No Tenders Available</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div id="furniture" class="container tab-pane">
-
-                        <h3 class="title">Available Furniture Tenders</h3>
-                        {% if messages %}
-                            <ul>
-                                {% for message in messages %}
-                                    <div class="alert alert-{{ message.level_tag }}" role="alert">
-                                        <li>{{ message }}</li>
-                                    </div>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                        <ul>
-                            {% for tender in furnTender %}
-                                <div class="card card-1 card-body">
-                                    <h4>{{ tender }}</h4>
-                                    <p>posed on:
-                                        {{ tender.date_created }}</p>
-                                    <a href="{% url 'furnBid' tender.id %}"
-                                       class="btn btn--radius btn--green">Bid</a>
-                                </div>
-                            {% empty %}
-                                <li>No Tenders Available</li>
-                            {% endfor %}
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-6"
-        style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
-
-    <div class="container">
-        <p class="text-xs-center">E-Procurement system</p>
-    </div>
-</footer>
-</body>
-</html>
+{% endblock %}

@@ -18,17 +18,25 @@
                     </h5>
                     <p>{{ atend.Product }}</p>
                     <h5>
-                        Material
+                        Processor
                     </h5>
-                    <p>{{ atend.Material }}</p>
+                    <p>{{ atend.Processor }}</p>
                     <h5>
-                        Dimensions
+                        Memory
                     </h5>
-                    <p>{{ atend.Dimensions }}</p>
+                    <p>{{ atend.Memory }}</p>
                     <h5>
-                        Color
+                        Storage
                     </h5>
-                    <p>{{ atend.Color }}</p>
+                    <p>{{ atend.Storage }}</p>
+                    <h5>
+                        Operating Systems
+                    </h5>
+                    <p>{{ atend.Operating_system }}</p>
+                    <h5>
+                        Graphics
+                    </h5>
+                    <p>{{ atend.Graphics }}</p>
                     <h5>
                         Quote Amount
                     </h5>
@@ -37,12 +45,11 @@
                         Documents
                     </h5>
                     {% if atend.Bid_documents_url %}
-                        <a class="btn btn--green" href="{{ atend.Bid_documents_url.url }}">Download</a>
+                        <a href="{{ atend.Bid_documents_url.url }}" class="btn btn--green">Download document</a>
                     {% else %}
                         <p>No documents available</p>
                     {% endif %}<br><br>
-                    <a class="btn--radius btn btn--def" href="{% url 'frep' atend.Tender_ID.id %}" target="_blank">Generate report</a>
-
+                    <a class="btn--radius btn btn--def" href="{% url 'rep' atend.Tender_ID.id %}" target="_blank">Generate report</a>
 
                 </div>
             </div>

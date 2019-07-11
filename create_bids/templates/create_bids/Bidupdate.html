@@ -26,15 +26,16 @@
                     <h5>Memory:</h5>
                     <p>{{ bid.Memory }}</p>
                     <h5>Quoted Amount:</h5>
-                    <p>Ksh. {{ bid.Quote_amount }}</p>                    <h5>Documents Uploaded:</h5>
+                    <p>Ksh. {{ bid.Quote_amount }}</p>
+                    <h5>Documents Uploaded:</h5>
                     {% if bid.Bid_documents_url %}
-                        <a href="{{ 'bid.Bid_documents_url.url' }}" class="btn btn-primary" target="_blank">View
+                        <a href="{{ bid.Bid_documents_url.url }}" class="btn btn-primary" target="_blank">View
                             Document</a>
                     {% else %}
                         <p>No documents available</p>
                     {% endif %}
                     <h5>Posted on:</h5>
-                    <p>{{ bid.Bid_created_date }}</p>
+                    <p>{{ bid.date_created }}</p>
 
                     <div class="p-t-20">
                         <a class="btn btn--radius btn--green" href="{% url 'bid_edit' bid.pk %}">Update</a>

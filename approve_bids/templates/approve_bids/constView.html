@@ -14,21 +14,29 @@
                     <h2 class="title">Bid awarded to {{ atend.user.profile.company_name }}</h2>
 
                     <h5>
-                        Product
+                        Model
                     </h5>
-                    <p>{{ atend.Product }}</p>
+                    <p>{{ atend.Mod }}</p>
                     <h5>
-                        Material
+                        Operating weight
                     </h5>
-                    <p>{{ atend.Material }}</p>
+                    <p>{{ atend.Operating_weight }}</p>
                     <h5>
-                        Dimensions
+                        Net power
                     </h5>
-                    <p>{{ atend.Dimensions }}</p>
+                    <p>{{ atend.Net_power }}</p>
                     <h5>
-                        Color
+                        Engine
                     </h5>
-                    <p>{{ atend.Color }}</p>
+                    <p>{{ atend.Engine }}</p>
+                    <h5>
+                        Electric
+                    </h5>
+                    <p>{{ atend.Electric }}</p>
+                    <h5>
+                        Certification
+                    </h5>
+                    <p>{{ atend.Certification }}</p>
                     <h5>
                         Quote Amount
                     </h5>
@@ -37,11 +45,11 @@
                         Documents
                     </h5>
                     {% if atend.Bid_documents_url %}
-                        <a class="btn btn--green" href="{{ atend.Bid_documents_url.url }}">Download</a>
+                        <a target="_blank" href="{{ atend.Bid_documents_url.url }}" class="btn btn--green">Download</a>
                     {% else %}
                         <p>No documents available</p>
                     {% endif %}<br><br>
-                    <a class="btn--radius btn btn--def" href="{% url 'frep' atend.Tender_ID.id %}" target="_blank">Generate report</a>
+                    <a class="btn--radius btn btn--def" href="{% url 'crep' atend.Tender_ID.id %}" target="_blank">Generate report</a>
 
 
                 </div>
