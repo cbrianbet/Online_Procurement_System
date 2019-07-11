@@ -2,66 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5000f4-9599-4181-b282-627f4b92ca32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/deskView.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/migrations/0023_auto_20190622_2315.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/TenderlistC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Tenderlistf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistoryC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistoryF.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/migrations/0015_auto_20190623_1308.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistorya.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/home/help.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/bid/documents/Course_Outline_-_COMP_302_Algorithm_Analysis_PKXyw7T.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/bid/documents/Course_Outline_-_COMP_302_Algorithm_Analysis_fcWYCcz.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/bid/documents/ONLINE_PROCURMENT_SYSTEM.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/templates/reports/creport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/templates/reports/freport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/templates/reports/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/to_pdf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcurementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcurementSystem/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcurementSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcurementSystem/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/approve_bids/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Bidupdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Bidupdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/ConstBidupdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/ConstBidupdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Tenderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/Tenderlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_bids/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/ConstTenderupdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/FurnTenderupdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/acc_bid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tender/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/bidderLanding.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/bidderLanding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/buyerLanding.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/buyerLanding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login/templates/login/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/create_tender/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="2890">
+              <caret line="180" selection-start-line="180" selection-end-line="180" />
             </state>
           </provider>
         </entry>
@@ -262,24 +204,6 @@
             <path>
               <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProcurementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProcurementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="create_tender" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -486,6 +410,7 @@
       <workItem from="1561570209887" duration="1503000" />
       <workItem from="1561573107793" duration="25091000" />
       <workItem from="1561648477404" duration="521000" />
+      <workItem from="1562843936682" duration="2173000" />
     </task>
     <task id="LOCAL-00001" summary="Added the signup page">
       <created>1556177680292</created>
@@ -613,11 +538,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560948870844</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Presented project">
+      <created>1562844155377</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1562844155377</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582588000" />
+    <option name="totallyTimeSpent" value="584761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -632,7 +564,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.45499182" side_tool="true" weight="0.20953101" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.5450082" visible="true" weight="0.21255673" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.5450082" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="2" sideWeight="0.45499182" side_tool="true" weight="0.20953101" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3633388" />
@@ -745,7 +677,8 @@
     <MESSAGE value="added furniture bids and tenders&#10;End of business" />
     <MESSAGE value="added reject and award tender&#10;End of business today" />
     <MESSAGE value="added view awarded tender&#10;added update tender&#10;End of business today" />
-    <option name="LAST_COMMIT_MESSAGE" value="added view awarded tender&#10;added update tender&#10;End of business today" />
+    <MESSAGE value="Presented project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Presented project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1225,8 +1158,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/create_tender/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="2890">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
         </state>
       </provider>
     </entry>
