@@ -1,9 +1,0 @@
-{% extends 'login/base.html' %}
-
-{% block body %}
-    <form action="." method="post" class="text-center border border-light p-5" style="width: 50%; margin: 0 auto; margin-top: 100px">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <p><input type="submit" value="Log-in"></p>
-    </form>
-{% endblock %}
