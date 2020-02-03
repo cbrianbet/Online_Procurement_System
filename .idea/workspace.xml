@@ -2,222 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5000f4-9599-4181-b282-627f4b92ca32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/login/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/login/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20f152cc-1a53-4b09-b9c1-484cd643d3ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20f152cc-1a53-4b09-b9c1-484cd643d3ba.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcurementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcurementSystem/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/bidslist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constTenderBid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/constView.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/deskView.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/furnTenderBid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/tenderBid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/approve_bids/templates/approve_bids/view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Bidupdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/ConstBidupdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/ConstCreate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/FurnBidupdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/FurnCreate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Tenderlist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/TenderlistC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Tenderlistf.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/Updatebid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistoryC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/bidHistoryF.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_bids/templates/create_bids/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 133331.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 133742.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 133948.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 134955.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 135426.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 135533.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 135704.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 135813.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 140024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 140217.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 140340.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 140503.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 140625.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 140746.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 141802.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 141938.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 142033.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 142145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 142257.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Annotation 2019-06-27 142347.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Bi home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/Bu home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/bg-head-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/bg-head-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/bid doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/pick bi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/pick ten.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/signup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/images/ten doc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/js/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/daterangepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/datepicker/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/HELP-US-OUT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/font-awesome-4.7/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/css/material-design-iconic-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/css/material-design-iconic-font.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/mdi-font/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/static/create_tender/vendor/select2/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/Create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/UpdateTender.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderHistorya.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tender/templates/create_tender/tenderType.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/animate.css/animate.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/bootstrap-material-design-font/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/bootstrap-material-design-font/fonts/Material-Design-Icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/bootstrap-material-design-font/fonts/Material-Design-Icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/bootstrap-material-design-font/fonts/Material-Design-Icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/bootstrap-material-design-font/fonts/Material-Design-Icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/et-line-font-plugin/fonts/et-line.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/et-line-font-plugin/fonts/et-line.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/et-line-font-plugin/fonts/et-line.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/et-line-font-plugin/fonts/et-line.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/fonts/fonts1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/fonts/fonts2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/fonts/fonts3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/smooth-scroll/SmoothScroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/css/socicon.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/fonts/socicon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/fonts/socicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/fonts/socicon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/fonts/socicon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/socicon/fonts/socicon.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/tether/tether.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/tether/tether.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/touchSwipe/jquery.touchSwipe.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/viewportChecker/jquery.viewportchecker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/home/assets/web/assets/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/bidderLanding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/buyerLanding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/css/mixins.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/css/variables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/font-awesome.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/fonts/poppins/Poppins-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/animate/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/animsition/css/animsition.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/animsition/css/animsition.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/animsition/js/animsition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/animsition/js/animsition.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/bootstrap/js/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/countdowntime/countdowntime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/css-hamburgers/hamburgers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/daterangepicker/daterangepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/daterangepicker/daterangepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/daterangepicker/moment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/daterangepicker/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/select2/select2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/static/login/vendor/select2/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/templates/reports/creport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/templates/reports/freport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/templates/reports/report.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -278,19 +63,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\templates\create_tender" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\reports\templates\reports" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\approve_bids\templates\approve_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\static\create_tender" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\SourceCode\Python\ProcurementSystem\media" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\media\bid" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\media\bid\documents" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\static\tender_feed" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\core\templates\core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\templates\create_tender" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\reports\templates\reports" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\approve_bids\templates\approve_bids" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\static\create_tender" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -467,7 +252,7 @@
       <workItem from="1561573107793" duration="25091000" />
       <workItem from="1561648477404" duration="521000" />
       <workItem from="1562843936682" duration="2173000" />
-      <workItem from="1580732815653" duration="2019000" />
+      <workItem from="1580732815653" duration="2640000" />
     </task>
     <task id="LOCAL-00001" summary="Added the signup page">
       <created>1556177680292</created>
