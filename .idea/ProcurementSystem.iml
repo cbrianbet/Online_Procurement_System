@@ -14,7 +14,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Fitness)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="popper" level="application" />
@@ -24,13 +24,8 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/login/templates" />
-        <option value="$MODULE_DIR$/home/templates" />
-        <option value="$MODULE_DIR$/create_tender/templates" />
-        <option value="$MODULE_DIR$/core/templates" />
-        <option value="$MODULE_DIR$/create_bids/templates" />
-        <option value="$MODULE_DIR$/approve_bids/templates" />
         <option value="$MODULE_DIR$/reports/templates" />
+        <option value="$MODULE_DIR$/templates" />
       </list>
     </option>
   </component>
