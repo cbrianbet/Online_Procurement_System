@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dash.apps.DashConfig',
     'reports.apps.ReportsConfig',
     'approve_bids.apps.ApproveBidsConfig',
     'core.apps.CoreConfig',

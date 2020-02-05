@@ -2,8 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e5000f4-9599-4181-b282-627f4b92ca32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/migrations/0009_auto_20200204_1633.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dash/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/home/assets/dropdown/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/home/assets/dropdown/js/script.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/home/assets/theme/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/home/assets/theme/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/fonts/fontawesome-all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/avatars/avatar (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/avatars/avatar1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/avatars/avatar2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/avatars/avatar3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/avatars/avatar4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/avatars/avatar5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/dogs/forget.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/dogs/image1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/dogs/image2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/dogs/image3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/dogs/lock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/img/dogs/sign.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/js/chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/new_login/assets/js/script.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/forgot-password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/login/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProcurementSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcurementSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProcurementSystem/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/buyerLanding.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/buyerLanding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +90,7 @@
         <option value="Setup Script" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -57,26 +111,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/new login" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Source\Online_Procurement_System\static\new login" />
+      <recent name="D:\Source\Online_Procurement_System\templates\login" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\templates\create_tender" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
+      <recent name="E:\SourceCode\Python\ProcurementSystem\reports\templates\reports" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\SourceCode\Python\ProcurementSystem\media" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\media\bid" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\media\bid\documents" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\tender_feed\static\tender_feed" />
       <recent name="E:\SourceCode\Python\ProcurementSystem\core\templates\core" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\templates\create_tender" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_bids\templates\create_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\reports\templates\reports" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\approve_bids\templates\approve_bids" />
-      <recent name="E:\SourceCode\Python\ProcurementSystem\create_tender\static\create_tender" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -253,7 +307,8 @@
       <workItem from="1561573107793" duration="25091000" />
       <workItem from="1561648477404" duration="521000" />
       <workItem from="1562843936682" duration="2173000" />
-      <workItem from="1580732815653" duration="3843000" />
+      <workItem from="1580732815653" duration="4542000" />
+      <workItem from="1580794672881" duration="13600000" />
     </task>
     <task id="LOCAL-00001" summary="Added the signup page">
       <created>1556177680292</created>

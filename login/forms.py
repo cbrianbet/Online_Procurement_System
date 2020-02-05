@@ -6,14 +6,16 @@ class LoginForm(forms.Form):
         max_length=20,
         widget=forms.TextInput(
             attrs={
-                'class': 'wrap-input100 ',
+                'class': 'form-control form-control-user',
+                'id': 'exampleInputEmail',
             }
         )
     )
     password = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
-                'class': 'wrap-input100 validate-input',
+                'class': 'form-control form-control-user',
+                'id': 'exampleInputPassword',
             }
         )
     )
